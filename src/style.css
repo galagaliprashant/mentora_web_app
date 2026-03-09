@@ -917,31 +917,17 @@ img {
 .about__image {
   flex: 0 0 45%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .about__image img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
   border-radius: var(--radius-lg);
-  position: relative;
-  z-index: 2;
-}
-
-.about__image img.about__logo-crop {
-  object-fit: cover;
-  object-position: top;
-  aspect-ratio: 16 / 9;
-  clip-path: inset(0 0 30% 0);
-  border-radius: 0;
-}
-
-.about__shape {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: rgba(232, 97, 10, .15);
-  z-index: 1;
 }
 
 .about__text {
@@ -1241,6 +1227,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .faculty-card h3 {
