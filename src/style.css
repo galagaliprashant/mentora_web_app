@@ -293,6 +293,7 @@ img {
 .main-nav__logo img {
   height: 72px;
   width: auto;
+  padding-left: 20px;
 }
 
 .main-nav__menu {
@@ -924,6 +925,14 @@ img {
   z-index: 2;
 }
 
+.about__image img.about__logo-crop {
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 16 / 9;
+  clip-path: inset(0 0 30% 0);
+  border-radius: 0;
+}
+
 .about__shape {
   position: absolute;
   bottom: -20px;
@@ -1304,10 +1313,33 @@ img {
   gap: 40px;
 }
 
+.footer__inner--inline {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__brand--inline {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__brand--inline p {
+  margin-bottom: 0;
+  max-width: 500px;
+}
+
+.footer__brand--inline h4 {
+  margin-bottom: 0;
+}
+
 .footer__logo {
   height: 50px;
   width: auto;
   margin-bottom: 16px;
+  padding-left: 15px;
 }
 
 .footer__brand p {
