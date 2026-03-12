@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Login – Mentora IAS</title>
+  <meta name="description" content="Sign in or create your Mentora IAS student account." />
+  <link rel="icon" type="image/png" href="Mentora_logo_2.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== STICKY SITE HEADER ===== -->
+  <header class="site-header">
+
+  <!-- ===== TOP UTILITY BAR ===== -->
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <div class="top-bar__left">
+        <span><i class="fas fa-phone-alt"></i> +91 9133333035</span>
+        <span><i class="fas fa-phone-alt"></i> +91 9133333034</span>
+        <span><i class="fas fa-envelope"></i> Info@mentoraias.com</span>
+      </div>
+      <div class="top-bar__right">
+        <a href="/login.html" class="top-bar__login"><i class="fas fa-user-circle"></i> Student Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN NAVIGATION ===== -->
+  <nav class="main-nav" id="main-nav">
+    <div class="container main-nav__inner">
+      <a href="/" class="main-nav__logo">
+        <img src="Mentora_logo_2.png" alt="Mentora IAS Logo" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="main-nav__menu" id="nav-menu">
+        <li class="has-dropdown">
+          <a href="/">HOME <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="/#hero">Intro</a></li>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#faculty">Faculty</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="/student-corner.html">STUDENT CORNER <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="/student-corner.html#about-civil-services">About Civil Services</a></li>
+            <li><a href="/student-corner.html#pyq">Previous Year Questions</a></li>
+            <li><a href="/student-corner.html#study-material">Study Material</a></li>
+            <li><a href="/student-corner.html#current-affairs">Current Affairs</a></li>
+            <li><a href="/student-corner.html#daily-quiz">Daily Quiz</a></li>
+          </ul>
+        </li>
+        <li><a href="/videos.html">VIDEOS</a></li>
+        <li class="has-dropdown">
+          <a href="/courses.html">COURSES <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="/courses.html#gs1">1-Year GS Foundation</a></li>
+            <li><a href="/courses.html#gs2">2-Year GS Foundation</a></li>
+            <li><a href="/courses.html#gs3">3-Year GS Foundation</a></li>
+            <li><a href="/courses.html#apmc1">APMC-1.0</a></li>
+            <li><a href="/courses.html#apmc2">APMC-2.0</a></li>
+          </ul>
+        </li>
+        <li><a href="/#contact">CONTACT US</a></li>
+        <li><a href="/free-class.html" class="nav-free-batch"><i class="fas fa-gift"></i> FREE ONLINE BATCH</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <!-- ===== AUTH SECTION ===== -->
+  <section class="auth-section">
+    <div class="auth-container">
+
+      <!-- Tab switcher -->
+      <div class="auth-tabs">
+        <button class="auth-tab auth-tab--active" id="tab-login">Sign In</button>
+        <button class="auth-tab" id="tab-signup">Sign Up</button>
+      </div>
+
+      <!-- ===== LOGIN FORM ===== -->
+      <form class="auth-form auth-form--active" id="login-form" novalidate>
+        <h2 class="auth-form__title">Welcome Back</h2>
+        <p class="auth-form__subtitle">Sign in to access your courses</p>
+
+        <div class="auth-field">
+          <label for="login-email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="login-email" placeholder="you@example.com" required autocomplete="email" />
+        </div>
+
+        <div class="auth-field">
+          <label for="login-password"><i class="fas fa-lock"></i> Password</label>
+          <div class="auth-field__password">
+            <input type="password" id="login-password" placeholder="Enter your password" required
+              autocomplete="current-password" />
+            <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="auth-error" id="login-error"></div>
+
+        <button type="submit" class="auth-btn" id="login-btn">Sign In</button>
+
+        <p class="auth-switch">Don't have an account? <a href="#signup" id="goto-signup">Create one</a></p>
+      </form>
+
+      <!-- ===== SIGNUP FORM ===== -->
+      <form class="auth-form" id="signup-form" novalidate>
+        <h2 class="auth-form__title">Create Account</h2>
+        <p class="auth-form__subtitle">Register to enroll in Mentora IAS courses</p>
+
+        <div class="auth-field">
+          <label for="signup-name"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="signup-name" placeholder="Enter your full name" required autocomplete="name" />
+        </div>
+
+        <div class="auth-field">
+          <label for="signup-email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="signup-email" placeholder="you@example.com" required autocomplete="email" />
+        </div>
+
+        <div class="auth-field">
+          <label for="signup-password"><i class="fas fa-lock"></i> Password (min 6 characters)</label>
+          <div class="auth-field__password">
+            <input type="password" id="signup-password" placeholder="Create a password" required minlength="6"
+              autocomplete="new-password" />
+            <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="auth-field">
+          <label for="signup-phone"><i class="fas fa-phone"></i> Phone Number <span
+              class="auth-field__optional">(optional)</span></label>
+          <input type="tel" id="signup-phone" placeholder="+91 9XXXXXXXXX" autocomplete="tel" />
+        </div>
+
+        <div class="auth-field">
+          <label><i class="fas fa-book"></i> Courses you have paid for</label>
+          <div class="courses-grid" id="courses-grid"></div>
+        </div>
+
+        <div class="auth-error" id="signup-error"></div>
+
+        <button type="submit" class="auth-btn" id="signup-btn">Create Account</button>
+
+        <p class="auth-switch">Already have an account? <a href="#" id="goto-login">Sign in</a></p>
+      </form>
+
+      <!-- ===== SIGNUP SUCCESS (Pending Approval) ===== -->
+      <div class="auth-success hidden" id="signup-success">
+        <div class="auth-success__icon"><i class="fas fa-check-circle"></i></div>
+        <h2>Registration Submitted!</h2>
+        <div class="auth-success__steps">
+          <div class="auth-success__step auth-success__step--done">
+            <i class="fas fa-check-circle"></i>
+            <span>Registration submitted successfully</span>
+          </div>
+          <div class="auth-success__step auth-success__step--progress">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Payment verification in progress</span>
+          </div>
+          <div class="auth-success__step auth-success__step--pending">
+            <i class="fas fa-clock"></i>
+            <span>Course activation within 24 hours</span>
+          </div>
+        </div>
+        <button class="auth-btn" onclick="document.getElementById('tab-login').click(); document.getElementById('signup-success').classList.add('hidden'); document.getElementById('signup-form').classList.add('auth-form--active');">
+          Go to Sign In
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner footer__inner--inline">
+      <div class="footer__brand footer__brand--inline">
+        <img src="Mentora_logo_2.png" alt="Mentora IAS" class="footer__logo" />
+        <p>Mentora IAS is a dedicated institute for UPSC Civil Services Examination preparation, built on the vision of
+          providing quality guidance with a student-centric approach.</p>
+        <h4>FOLLOW US ON:</h4>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/profile.php?id=61579993256481" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mentora.ias?igsh=MXRzbTk3cTBsODNweQ==" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/MentoraIASofficial" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i
+              class="fab fa-telegram-plane"></i></a>
+          <a href="https://youtube.com/@mentora_ias?si=Z_g7UYP8lPy47cvO" target="_blank" rel="noopener noreferrer"
+            aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>Copyright &copy; 2025 <a href="#">Mentora IAS</a> All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/auth.ts"></script>
+</body>
+
+</html>
