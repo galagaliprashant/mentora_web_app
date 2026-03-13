@@ -1,8 +1,8 @@
 import './style.css';
 
 // ===== HERO SLIDER =====
-const slides = document.querySelectorAll('.hero__slide') as NodeListOf<HTMLElement>;
-const dots = document.querySelectorAll('.hero__dot') as NodeListOf<HTMLButtonElement>;
+const slides = document.querySelectorAll('.hero__slide');
+const dots = document.querySelectorAll('.hero__dot');
 let currentSlide = 0;
 let slideInterval: ReturnType<typeof setInterval>;
 
@@ -33,12 +33,13 @@ dots.forEach((dot, i) => {
 if (slides.length > 0) startSlider();
 
 // ===== CLASSES HUB TABS =====
-const tabBtns = document.querySelectorAll('.tab-btn') as NodeListOf<HTMLButtonElement>;
-const tabPanels = document.querySelectorAll('.tab-panel') as NodeListOf<HTMLElement>;
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
 
-tabBtns.forEach(btn => {
+tabBtns.forEach((btn) => {
+  const btn_ = btn as HTMLElement;
+  const tab = btn_.dataset.tab;
   btn.addEventListener('click', () => {
-    const tab = btn.dataset.tab;
     tabBtns.forEach(b => b.classList.remove('tab-btn--active'));
     tabPanels.forEach(p => p.classList.remove('tab-panel--active'));
     btn.classList.add('tab-btn--active');
@@ -93,7 +94,7 @@ document.addEventListener('click', (e) => {
 
 // ===== STATS COUNTER ANIMATION =====
 function animateCounters() {
-  const stats = document.querySelectorAll('.stat__number') as NodeListOf<HTMLElement>;
+  const stats = document.querySelectorAll<HTMLElement>('.stat__number');
   stats.forEach(stat => {
     const target = parseInt(stat.dataset.target || '0');
     const duration = 2000;
@@ -188,9 +189,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===== FACULTY CAROUSEL =====
-const carouselTrack = document.querySelector('.faculty-carousel__track') as HTMLElement | null;
-const prevBtn = document.querySelector('.faculty-carousel__btn--prev') as HTMLButtonElement | null;
-const nextBtn = document.querySelector('.faculty-carousel__btn--next') as HTMLButtonElement | null;
+const carouselTrack = document.querySelector<HTMLElement>('.faculty-carousel__track');
+const prevBtn = document.querySelector('.faculty-carousel__btn--prev');
+const nextBtn = document.querySelector('.faculty-carousel__btn--next');
 
 if (carouselTrack) {
   const originalCards = Array.from(carouselTrack.children) as HTMLElement[];
@@ -258,4 +259,4 @@ if (carouselTrack) {
   startCarousel();
 }
 
-console.log('Mentora IAS website loaded successfully!');
+// Mentora IAS website loaded successfully
