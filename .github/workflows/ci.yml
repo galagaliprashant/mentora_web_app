@@ -21,6 +21,42 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Notify — Pipeline Started
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "🔄 CI Pipeline Started — ${{ github.repository }}"
+          to: ${{ secrets.DEV_EMAIL }}
+          from: ${{ secrets.SMTP_FROM || secrets.SMTP_USERNAME }}
+          content_type: text/html
+          body: |
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+              <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 24px; border-radius: 12px 12px 0 0;">
+                <h2 style="color: white; margin: 0;">🔄 CI Pipeline Started</h2>
+              </div>
+              <div style="background: #f8f9fa; padding: 24px; border-radius: 0 0 12px 12px; border: 1px solid #e9ecef;">
+                <table style="width: 100%; border-collapse: collapse;">
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Repository</td><td style="padding: 8px 0; font-weight: 600;">${{ github.repository }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Branch</td><td style="padding: 8px 0; font-weight: 600;">${{ github.ref_name }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Triggered by</td><td style="padding: 8px 0; font-weight: 600;">${{ github.actor }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Event</td><td style="padding: 8px 0; font-weight: 600;">${{ github.event_name }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Commit</td><td style="padding: 8px 0; font-weight: 600;">${{ github.sha }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Message</td><td style="padding: 8px 0; font-weight: 600;">${{ github.event.head_commit.message || github.event.pull_request.title || 'N/A' }}</td></tr>
+                </table>
+                <div style="margin-top: 16px;">
+                  <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" 
+                     style="display: inline-block; background: #667eea; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600;">
+                    View Pipeline →
+                  </a>
+                </div>
+              </div>
+            </div>
+        continue-on-error: true
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -38,3 +74,81 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Notify — Pipeline Passed ✅
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "✅ CI Pipeline Passed — ${{ github.repository }}"
+          to: ${{ secrets.DEV_EMAIL }}
+          from: ${{ secrets.SMTP_FROM || secrets.SMTP_USERNAME }}
+          content_type: text/html
+          body: |
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+              <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 24px; border-radius: 12px 12px 0 0;">
+                <h2 style="color: white; margin: 0;">✅ All Quality Checks Passed!</h2>
+              </div>
+              <div style="background: #f8f9fa; padding: 24px; border-radius: 0 0 12px 12px; border: 1px solid #e9ecef;">
+                <table style="width: 100%; border-collapse: collapse;">
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Repository</td><td style="padding: 8px 0; font-weight: 600;">${{ github.repository }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Branch</td><td style="padding: 8px 0; font-weight: 600;">${{ github.ref_name }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Triggered by</td><td style="padding: 8px 0; font-weight: 600;">${{ github.actor }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Commit</td><td style="padding: 8px 0; font-weight: 600;">${{ github.sha }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Message</td><td style="padding: 8px 0; font-weight: 600;">${{ github.event.head_commit.message || github.event.pull_request.title || 'N/A' }}</td></tr>
+                </table>
+                <h3 style="margin-top: 20px; color: #28a745;">Checks Summary</h3>
+                <div style="background: white; padding: 16px; border-radius: 8px; border: 1px solid #e9ecef;">
+                  <p style="margin: 4px 0;">✅ TypeScript type check — passed</p>
+                  <p style="margin: 4px 0;">✅ ESLint — passed</p>
+                  <p style="margin: 4px 0;">✅ Vite production build — passed</p>
+                </div>
+                <div style="margin-top: 16px;">
+                  <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" 
+                     style="display: inline-block; background: #28a745; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600;">
+                    View Full Report →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+      - name: Notify — Pipeline Failed ❌
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "❌ CI Pipeline Failed — ${{ github.repository }}"
+          to: ${{ secrets.DEV_EMAIL }}
+          from: ${{ secrets.SMTP_FROM || secrets.SMTP_USERNAME }}
+          content_type: text/html
+          priority: high
+          body: |
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+              <div style="background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%); padding: 24px; border-radius: 12px 12px 0 0;">
+                <h2 style="color: white; margin: 0;">❌ CI Pipeline Failed!</h2>
+              </div>
+              <div style="background: #f8f9fa; padding: 24px; border-radius: 0 0 12px 12px; border: 1px solid #e9ecef;">
+                <table style="width: 100%; border-collapse: collapse;">
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Repository</td><td style="padding: 8px 0; font-weight: 600;">${{ github.repository }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Branch</td><td style="padding: 8px 0; font-weight: 600;">${{ github.ref_name }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Triggered by</td><td style="padding: 8px 0; font-weight: 600;">${{ github.actor }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Commit</td><td style="padding: 8px 0; font-weight: 600;">${{ github.sha }}</td></tr>
+                  <tr><td style="padding: 8px 0; color: #6c757d;">Message</td><td style="padding: 8px 0; font-weight: 600;">${{ github.event.head_commit.message || github.event.pull_request.title || 'N/A' }}</td></tr>
+                </table>
+                <div style="margin-top: 16px; padding: 16px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+                  <strong>⚠️ Action Required:</strong> One or more quality checks failed. Please review the pipeline logs and fix the issues before merging.
+                </div>
+                <div style="margin-top: 16px;">
+                  <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" 
+                     style="display: inline-block; background: #dc3545; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600;">
+                    View Error Logs →
+                  </a>
+                </div>
+              </div>
+            </div>
