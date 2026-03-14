@@ -4,10 +4,14 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  updatePassword,
+  reauthenticateWithCredential,
+  EmailAuthProvider,
 } from 'firebase/auth';
 import {
   doc,
   setDoc,
+  getDoc,
   collection,
   serverTimestamp,
   writeBatch,
@@ -62,6 +66,9 @@ const loginEmail = document.getElementById('login-email') as HTMLInputElement;
 const loginPassword = document.getElementById('login-password') as HTMLInputElement;
 const loginBtn = document.getElementById('login-btn') as HTMLButtonElement;
 const loginError = document.getElementById('login-error') as HTMLElement;
+const loginSuccess = document.getElementById('login-success') as HTMLElement;
+const loginSignoutBtn = document.getElementById('login-signout-btn') as HTMLButtonElement;
+const authTabs = document.querySelector('.auth-tabs') as HTMLElement;
 
 loginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -70,14 +77,135 @@ loginForm.addEventListener('submit', async (e) => {
   loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Signing in...';
 
   try {
-    await signInWithEmailAndPassword(auth, loginEmail.value.trim(), loginPassword.value);
-    window.location.href = '/';
+    const email = loginEmail.value.trim();
+    // Authenticate first, then verify user exists in Firestore
+    const result = await signInWithEmailAndPassword(auth, email, loginPassword.value);
+    const userDoc = await getDoc(doc(db, 'users', result.user.uid));
+    if (!userDoc.exists()) {
+      await signOut(auth);
+      loginError.textContent = 'This account has been deleted or does not exist. Please contact support.';
+      loginBtn.disabled = false;
+      loginBtn.innerHTML = 'Sign In';
+      return;
+    }
+    // Show success message instead of redirecting
+    loginForm.classList.remove('auth-form--active');
+    authTabs.classList.add('hidden');
+    loginSuccess.classList.remove('hidden');
+    // Update header button to show Logout
+    updateHeaderLoginBtn(true);
   } catch {
     loginError.textContent = 'Invalid email or password. Please try again.';
     loginBtn.disabled = false;
     loginBtn.innerHTML = 'Sign In';
   }
 });
+
+// ===== LOGIN SIGN OUT =====
+loginSignoutBtn.addEventListener('click', async () => {
+  await signOut(auth);
+  // Reset to login form
+  loginSuccess.classList.add('hidden');
+  authTabs.classList.remove('hidden');
+  loginForm.classList.add('auth-form--active');
+  loginBtn.disabled = false;
+  loginBtn.innerHTML = 'Sign In';
+  loginEmail.value = '';
+  loginPassword.value = '';
+  loginTab.classList.add('auth-tab--active');
+  signupTab.classList.remove('auth-tab--active');
+  updateHeaderLoginBtn(false);
+});
+
+// ===== CHANGE PASSWORD =====
+const changePasswordSection = document.getElementById('change-password-section') as HTMLElement;
+const changePasswordBtn = document.getElementById('change-password-btn') as HTMLButtonElement;
+const changePasswordCancelBtn = document.getElementById('change-password-cancel-btn') as HTMLButtonElement;
+const changePasswordSubmitBtn = document.getElementById('change-password-submit-btn') as HTMLButtonElement;
+const changePasswordError = document.getElementById('change-password-error') as HTMLElement;
+const changePasswordSuccessMsg = document.getElementById('change-password-success') as HTMLElement;
+const currentPasswordInput = document.getElementById('current-password') as HTMLInputElement;
+const newPasswordInput = document.getElementById('new-password') as HTMLInputElement;
+const confirmPasswordInput = document.getElementById('confirm-password') as HTMLInputElement;
+const loginSuccessButtons = document.getElementById('login-success-buttons') as HTMLElement;
+
+changePasswordBtn.addEventListener('click', () => {
+  changePasswordSection.classList.remove('hidden');
+  loginSuccessButtons.classList.add('hidden');
+  changePasswordError.textContent = '';
+  changePasswordSuccessMsg.classList.add('hidden');
+  currentPasswordInput.value = '';
+  newPasswordInput.value = '';
+  confirmPasswordInput.value = '';
+});
+
+changePasswordCancelBtn.addEventListener('click', () => {
+  changePasswordSection.classList.add('hidden');
+  loginSuccessButtons.classList.remove('hidden');
+});
+
+changePasswordSubmitBtn.addEventListener('click', async () => {
+  changePasswordError.textContent = '';
+  changePasswordSuccessMsg.classList.add('hidden');
+
+  const currentPwd = currentPasswordInput.value;
+  const newPwd = newPasswordInput.value;
+  const confirmPwd = confirmPasswordInput.value;
+
+  if (!currentPwd) { changePasswordError.textContent = 'Please enter your current password.'; return; }
+  if (newPwd.length < 6) { changePasswordError.textContent = 'New password must be at least 6 characters.'; return; }
+  if (newPwd !== confirmPwd) { changePasswordError.textContent = 'New passwords do not match.'; return; }
+
+  changePasswordSubmitBtn.disabled = true;
+  changePasswordSubmitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Updating...';
+
+  try {
+    const user = auth.currentUser!;
+    const credential = EmailAuthProvider.credential(user.email!, currentPwd);
+    await reauthenticateWithCredential(user, credential);
+    await updatePassword(user, newPwd);
+
+    changePasswordSuccessMsg.classList.remove('hidden');
+    changePasswordError.textContent = '';
+    currentPasswordInput.value = '';
+    newPasswordInput.value = '';
+    confirmPasswordInput.value = '';
+
+    setTimeout(() => {
+      changePasswordSection.classList.add('hidden');
+      loginSuccessButtons.classList.remove('hidden');
+      changePasswordSuccessMsg.classList.add('hidden');
+    }, 2000);
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : '';
+    if (msg.includes('wrong-password') || msg.includes('invalid-credential')) {
+      changePasswordError.textContent = 'Current password is incorrect.';
+    } else {
+      changePasswordError.textContent = 'Failed to change password. Please try again.';
+    }
+  } finally {
+    changePasswordSubmitBtn.disabled = false;
+    changePasswordSubmitBtn.innerHTML = 'Update Password';
+  }
+});
+
+// ===== HEADER LOGIN/LOGOUT TOGGLE =====
+function updateHeaderLoginBtn(loggedIn: boolean) {
+  const headerBtn = document.querySelector('.top-bar__login') as HTMLAnchorElement | null;
+  if (!headerBtn) return;
+  if (loggedIn) {
+    headerBtn.innerHTML = '<i class="fas fa-sign-out-alt"></i> Logout';
+    headerBtn.href = '#';
+    headerBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      await signOut(auth);
+      window.location.reload();
+    });
+  } else {
+    headerBtn.innerHTML = '<i class="fas fa-user-circle"></i> Student Login';
+    headerBtn.href = '/login.html';
+  }
+}
 
 // ===== SIGNUP =====
 const signupName = document.getElementById('signup-name') as HTMLInputElement;
@@ -201,8 +329,33 @@ document.getElementById('goto-login')?.addEventListener('click', (e) => {
   e.preventDefault();
   loginTab.click();
 });
+document.getElementById('goto-signin-btn')?.addEventListener('click', () => {
+  loginTab.click();
+  signupSuccess.classList.add('hidden');
+  signupForm.classList.add('auth-form--active');
+});
 
 // ===== CHECK URL HASH FOR TAB =====
 if (window.location.hash === '#signup') {
   signupTab.click();
 }
+
+// ===== AUTH STATE LISTENER (page load) =====
+import { onAuthStateChanged } from 'firebase/auth';
+
+onAuthStateChanged(auth, async (user) => {
+  if (user) {
+    // Check if user still exists in Firestore
+    const userDoc = await getDoc(doc(db, 'users', user.uid));
+    if (!userDoc.exists()) {
+      await signOut(auth);
+      return;
+    }
+    // User is already logged in — show success view
+    loginForm.classList.remove('auth-form--active');
+    signupForm.classList.remove('auth-form--active');
+    authTabs.classList.add('hidden');
+    loginSuccess.classList.remove('hidden');
+    updateHeaderLoginBtn(true);
+  }
+});

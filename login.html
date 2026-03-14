@@ -164,6 +164,60 @@
         <p class="auth-switch">Already have an account? <a href="#" id="goto-login">Sign in</a></p>
       </form>
 
+      <!-- ===== LOGIN SUCCESS ===== -->
+      <div class="auth-success hidden" id="login-success">
+        <div class="auth-success__icon"><i class="fas fa-check-circle"></i></div>
+        <h2>Login Successful</h2>
+        <p class="auth-success__welcome">Welcome to MentoraIAS paid course</p>
+
+        <!-- Change Password Form (hidden until button clicked) -->
+        <div class="change-password hidden" id="change-password-section">
+          <h3 class="change-password__title"><i class="fas fa-key"></i> Change Password</h3>
+          <div class="auth-field">
+            <label for="current-password"><i class="fas fa-lock"></i> Current Password</label>
+            <div class="auth-field__password">
+              <input type="password" id="current-password" placeholder="Enter current password" required />
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="auth-field">
+            <label for="new-password"><i class="fas fa-lock"></i> New Password (min 6 characters)</label>
+            <div class="auth-field__password">
+              <input type="password" id="new-password" placeholder="Enter new password" required minlength="6" />
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="auth-field">
+            <label for="confirm-password"><i class="fas fa-lock"></i> Confirm New Password</label>
+            <div class="auth-field__password">
+              <input type="password" id="confirm-password" placeholder="Confirm new password" required minlength="6" />
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="auth-error" id="change-password-error"></div>
+          <div class="auth-success-msg hidden" id="change-password-success">Password changed successfully!</div>
+          <div class="change-password__actions">
+            <button class="auth-btn" id="change-password-submit-btn">Update Password</button>
+            <button class="auth-btn auth-btn--secondary" id="change-password-cancel-btn">Cancel</button>
+          </div>
+        </div>
+
+        <div class="auth-success__buttons" id="login-success-buttons">
+          <button class="auth-btn auth-btn--change-password" id="change-password-btn">
+            <i class="fas fa-key"></i> Change Password
+          </button>
+          <button class="auth-btn auth-btn--logout" id="login-signout-btn">
+            <i class="fas fa-sign-out-alt"></i> Sign Out
+          </button>
+        </div>
+      </div>
+
       <!-- ===== SIGNUP SUCCESS (Pending Approval) ===== -->
       <div class="auth-success hidden" id="signup-success">
         <div class="auth-success__icon"><i class="fas fa-check-circle"></i></div>
@@ -182,7 +236,7 @@
             <span>Course activation within 24 hours</span>
           </div>
         </div>
-        <button class="auth-btn" onclick="document.getElementById('tab-login').click(); document.getElementById('signup-success').classList.add('hidden'); document.getElementById('signup-form').classList.add('auth-form--active');">
+        <button class="auth-btn" id="goto-signin-btn">
           Go to Sign In
         </button>
       </div>

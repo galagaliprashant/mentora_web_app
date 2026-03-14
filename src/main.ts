@@ -1,4 +1,32 @@
 import './style.css';
+import { auth, db } from './firebase';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { doc, getDoc } from 'firebase/firestore';
+
+// ===== HEADER LOGIN/LOGOUT TOGGLE =====
+onAuthStateChanged(auth, async (user) => {
+  const headerBtn = document.querySelector('.top-bar__login') as HTMLAnchorElement | null;
+  if (!headerBtn) return;
+  if (user) {
+    // Check if user still exists in Firestore
+    const userDoc = await getDoc(doc(db, 'users', user.uid));
+    if (!userDoc.exists()) {
+      await signOut(auth);
+      return;
+    }
+    headerBtn.innerHTML = '<i class="fas fa-sign-out-alt"></i> Logout';
+    headerBtn.href = '#';
+    headerBtn.onclick = async (e) => {
+      e.preventDefault();
+      await signOut(auth);
+      window.location.reload();
+    };
+  } else {
+    headerBtn.innerHTML = '<i class="fas fa-user-circle"></i> Student Login';
+    headerBtn.href = '/login.html';
+    headerBtn.onclick = null;
+  }
+});
 
 // ===== HERO SLIDER =====
 const slides = document.querySelectorAll('.hero__slide') as NodeListOf<HTMLElement>;
