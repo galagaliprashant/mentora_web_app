@@ -1,0 +1,214 @@
+[
+  {
+    "subject": "Art & Culture",
+    "classRange": "11-12",
+    "books": [
+      {
+        "name": "Class 11 — Introduction to Indian Art",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fart-culture%2Fclass-11-introduction-to-indian-art.pdf?alt=media&token=3fc12f89-9cdb-4344-b1e7-971da4af4d3c"
+      },
+      {
+        "name": "Class 11 — Heritage Crafts (Part 2)",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fart-culture%2Fclass-11-part-2-heritage-crafts.pdf?alt=media&token=67255df3-1726-405a-ba03-27fc5d4fb190"
+      },
+      {
+        "name": "Class 12 — Craft Traditions of India",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fart-culture%2Fclass-12-heritage-craft-craft-traditions-of-india.pdf?alt=media&token=99ae18f0-1086-4907-830c-aa90c6313a55"
+      }
+    ]
+  },
+  {
+    "subject": "Economy",
+    "classRange": "9-12",
+    "books": [
+      {
+        "name": "Class 9 — Economics",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Feconomy%2Feconomics-class-9.pdf?alt=media&token=978179cd-650b-4a71-9e0c-6e73e75cb446"
+      },
+      {
+        "name": "Class 10 — Economics",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Feconomy%2Fncert-class-10-economics.pdf?alt=media&token=5bee03fb-a86d-46f0-94fe-c8dbb2b09276"
+      },
+      {
+        "name": "Class 11 — Economics",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Feconomy%2Fncert-class-11-economics.pdf?alt=media&token=589ea511-4f46-41d6-8a26-a2f647b6d934"
+      },
+      {
+        "name": "Class 12 — Economics (Part 1)",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Feconomy%2Fncert-class-12-economics-part-1.pdf?alt=media&token=85438697-907d-4135-aa56-388021ece633"
+      },
+      {
+        "name": "Class 12 — Economics (Part 2)",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Feconomy%2Fncert-class-12-economics-part-2.pdf?alt=media&token=f2e9d4c6-8d1a-46fc-b9f8-d84a56b3ecf9"
+      }
+    ]
+  },
+  {
+    "subject": "Geography",
+    "classRange": "6-12",
+    "books": [
+      {
+        "name": "Class 6 — Geography",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-6-geography.pdf?alt=media&token=65b30e5f-2e22-4671-8ff5-40aade8e6f6c"
+      },
+      {
+        "name": "Class 7 — Our Environment",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-7-our-environmemnt.pdf?alt=media&token=0e3595cd-3520-48b1-9f7e-5857aff02d52"
+      },
+      {
+        "name": "Class 8 — Resources and Development",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-8-social-science.pdf?alt=media&token=1ec79e4a-76be-4090-8d54-1588f9072356"
+      },
+      {
+        "name": "Class 9 — Contemporary India",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-9-geography-1.pdf?alt=media&token=cbeb10d2-42db-4df9-8530-eb003f47fc35"
+      },
+      {
+        "name": "Class 10 — Geography",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-10-geography.pdf?alt=media&token=69c6a3f0-c1a1-4710-aedf-ab6472764bb9"
+      },
+      {
+        "name": "Class 11 — Fundamentals of Physical Geography",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-11-geography-part-1.pdf?alt=media&token=c9f08bd0-151d-4536-9a27-c59f0ca6aa38"
+      },
+      {
+        "name": "Class 11 — India: Physical Environment",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-11-geography-part-2-1.pdf?alt=media&token=15930872-5f67-4587-ae98-fd8c8e201703"
+      },
+      {
+        "name": "Class 11 — Practical Work in Geography",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-11-geography-practical.pdf?alt=media&token=6b9977e3-faf2-4ee4-a1de-2df030cf67b9"
+      },
+      {
+        "name": "Class 12 — Fundamentals of Human Geography",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-12-geography-part-1.pdf?alt=media&token=635327d9-a67f-4b03-ba6d-3d14adae0d8e"
+      },
+      {
+        "name": "Class 12 — India: People and Economy",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fgeography%2Fclass-12-geography-part-2.pdf?alt=media&token=8f06e8c9-6135-4f4f-a426-85bb2875e4bd"
+      }
+    ]
+  },
+  {
+    "subject": "History",
+    "classRange": "6-12",
+    "books": [
+      {
+        "name": "Class 6 — Our Pasts I",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-6-history.pdf?alt=media&token=ea1cc40d-2665-4d6b-a177-2a87d4553c73"
+      },
+      {
+        "name": "Class 7 — Our Pasts II",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-7-our-past-social-science.pdf?alt=media&token=fe4c2d9f-1f16-4888-b358-d75ea9f18897"
+      },
+      {
+        "name": "Class 8 — Our Pasts III (Part 1)",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-8-history-part-1.pdf?alt=media&token=fd820c9a-5141-407a-ad93-6ecdbe56f349"
+      },
+      {
+        "name": "Class 8 — Our Pasts III (Part 2)",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-8-our-past-part-2-class-8-social-science.pdf?alt=media&token=92251ebe-5e9c-44ac-a7c0-7f675bac46bf"
+      },
+      {
+        "name": "Class 9 — India and the Contemporary World I",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-9-abc.pdf?alt=media&token=3196625d-74b4-430d-b9af-47fee97ac97b"
+      },
+      {
+        "name": "Class 10 — India and the Contemporary World II",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-10-history.pdf?alt=media&token=cdfc1c6c-2a60-4a80-9eb2-b4bfc7315c91"
+      },
+      {
+        "name": "Class 11 — Themes in World History",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-11-history.pdf?alt=media&token=cfd23373-1c4c-48d2-bfdb-e2a92ecd29a0"
+      },
+      {
+        "name": "Class 12 — Themes in Indian History I",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-12-history-part-1-1.pdf?alt=media&token=69a3639b-2096-45b4-b744-23b55bbb2360"
+      },
+      {
+        "name": "Class 12 — Themes in Indian History II",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-12-history-part-2.pdf?alt=media&token=f5788cfa-7330-45c4-982e-844203515e58"
+      },
+      {
+        "name": "Class 12 — Themes in Indian History III",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fhistory%2Fclass-12-history-part-3.pdf?alt=media&token=a2f092bd-6226-4939-9513-c011ae2b4d97"
+      }
+    ]
+  },
+  {
+    "subject": "Polity",
+    "classRange": "6-12",
+    "books": [
+      {
+        "name": "Class 6 — Social and Political Life I",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-6-polity.pdf?alt=media&token=5bf34c66-3342-471c-940e-2d46fb399d35"
+      },
+      {
+        "name": "Class 7 — Social and Political Life II",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-7-social-science-7.pdf?alt=media&token=99d534ce-4318-4ead-b36a-9bcfc79e1874"
+      },
+      {
+        "name": "Class 8 — Social and Political Life III",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-8-social-science-and-political-life-part-3.pdf?alt=media&token=f3d3220a-c0dc-4dab-9576-7177f30ff549"
+      },
+      {
+        "name": "Class 9 — Democratic Politics I",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-9-social-science-demo-part-1.pdf?alt=media&token=256ddc4e-c4ef-4430-86a2-c61e30e3847a"
+      },
+      {
+        "name": "Class 10 — Democratic Politics II",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-10-political-science.pdf?alt=media&token=f28be2e5-702c-4606-8874-ff3a9242b4a5"
+      },
+      {
+        "name": "Class 11 — Indian Constitution at Work",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-11-political-science-part-1.pdf?alt=media&token=5e663c2d-fd5e-4b7d-be49-cc8784dbfe11"
+      },
+      {
+        "name": "Class 11 — Political Theory",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-11-political-science-part-2-1.pdf?alt=media&token=16a79b20-7b18-46ce-be6c-4e160ba3c334"
+      },
+      {
+        "name": "Class 12 — Contemporary World Politics",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-12-political-science-part-1.pdf?alt=media&token=95e022af-2d8c-41cd-bfdd-ed2b32008ead"
+      },
+      {
+        "name": "Class 12 — Politics in India since Independence",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fpolity%2Fclass-12-political-science-part-2.pdf?alt=media&token=708585af-bacd-430f-a941-3072aff0735f"
+      }
+    ]
+  },
+  {
+    "subject": "Science",
+    "classRange": "6-10",
+    "books": [
+      {
+        "name": "Class 6 — Science",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fscience%2Fclass-6-science.pdf?alt=media&token=fbe8e50a-c70c-4123-a90d-64e905d2e912"
+      },
+      {
+        "name": "Class 7 — Science",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fscience%2Fclass-7-science.pdf?alt=media&token=91d9a680-534b-477e-98b6-3ec20783b18f"
+      },
+      {
+        "name": "Class 8 — Science",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fscience%2Fclass-8-science.pdf?alt=media&token=8427df88-f130-461a-9845-16326e74dd46"
+      },
+      {
+        "name": "Class 9 — Science",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fscience%2Fclass-9-science.pdf?alt=media&token=2fe25fe4-ed6c-4518-ad32-350d6f88f1e9"
+      },
+      {
+        "name": "Class 9 — Science Exemplar Problems",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fscience%2Fclass-9-science-exemplar-problems.pdf?alt=media&token=028109a5-1c26-4933-b3ba-fff0b1d69c02"
+      },
+      {
+        "name": "Class 10 — Science",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fscience%2Fclass-10-science.pdf?alt=media&token=86c3e18b-8e90-4654-a309-bb8dd78dffd4"
+      },
+      {
+        "name": "Class 10 — Science Exemplar Problems",
+        "url": "https://firebasestorage.googleapis.com/v0/b/mentoraiasmobile.firebasestorage.app/o/study-material%2Fncerts%2Fscience%2Fclass-10-science-exemplar-problems-1.pdf?alt=media&token=5e8062a3-3f8c-4e47-9c86-62687cf7b451"
+      }
+    ]
+  }
+]

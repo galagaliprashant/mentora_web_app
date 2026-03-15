@@ -2,6 +2,8 @@ import './style.css';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
+import { initPyq } from './pyq';
+import { initStudyMaterial } from './study-material';
 
 // ===== HEADER LOGIN/LOGOUT TOGGLE =====
 onAuthStateChanged(auth, async (user) => {
@@ -286,5 +288,11 @@ if (carouselTrack) {
   window.addEventListener('resize', () => slideTo(carouselIndex, false));
   startCarousel();
 }
+
+// ===== PYQ ACCORDION =====
+initPyq();
+
+// ===== STUDY MATERIAL ACCORDION =====
+initStudyMaterial();
 
 // Mentora IAS website loaded successfully

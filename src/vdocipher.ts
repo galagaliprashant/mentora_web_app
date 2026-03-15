@@ -69,14 +69,12 @@ export function initVideoPage() {
         );
         loadingEl?.classList.add('hidden');
       } catch (err: unknown) {
-        console.error('VdoCipher error:', err);
         loadingEl?.classList.add('hidden');
         playerWrap.classList.add('hidden');
         errorEl.classList.remove('hidden');
 
         const msg = err instanceof Error ? err.message : '';
         const code = (err as { code?: string }).code ?? '';
-        console.error('Error code:', code, 'Message:', msg);
 
         if (code.includes('permission-denied') || msg.includes('permission-denied') || msg.includes('PERMISSION_DENIED')) {
           errorEl.textContent =

@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://*.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com https://*.cloudfunctions.net; frame-src 'self' https://www.youtube.com https://*.vdocipher.com;" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Student Corner – Mentora IAS | Your UPSC Preparation Hub</title>
   <meta name="description"
@@ -191,12 +193,9 @@
     <div class="container">
       <div class="section-header">
         <h2>Previous Year Questions</h2>
+        <p>Download UPSC Civil Services question papers from 2011 to 2025</p>
       </div>
-      <div class="sc-coming-soon">
-        <i class="fas fa-file-alt"></i>
-        <h3>Coming Soon</h3>
-        <p>We're compiling a comprehensive bank of UPSC previous year questions with detailed solutions and analysis.</p>
-      </div>
+      <div id="pyq-list" class="pyq-container"></div>
     </div>
   </section>
 
@@ -204,12 +203,9 @@
     <div class="container">
       <div class="section-header">
         <h2>Study Material</h2>
+        <p>Download NCERT textbooks essential for UPSC Civil Services preparation</p>
       </div>
-      <div class="sc-coming-soon">
-        <i class="fas fa-book-open"></i>
-        <h3>Coming Soon</h3>
-        <p>Comprehensive notes and resources curated by our expert faculty will be available here shortly.</p>
-      </div>
+      <div id="study-material-list" class="pyq-container"></div>
     </div>
   </section>
 
