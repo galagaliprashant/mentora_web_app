@@ -1448,6 +1448,164 @@ img {
   line-height: 1.7;
 }
 
+/* ===== PYQ ACCORDION ===== */
+.pyq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pyq-year {
+  background: #fff;
+  border-radius: var(--radius, 12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+  transition: box-shadow 0.3s ease;
+}
+
+.pyq-year:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.pyq-year__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  gap: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.pyq-year__header:hover {
+  background-color: #fff8f0;
+}
+
+.pyq-year__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.pyq-year__badge {
+  font-size: 0.8rem;
+  color: #666;
+  background: #f0f0f0;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.pyq-year__chevron {
+  margin-left: auto;
+  color: #999;
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+}
+
+.pyq-year--open .pyq-year__chevron {
+  transform: rotate(180deg);
+}
+
+.pyq-year__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.pyq-year--open .pyq-year__body {
+  max-height: 800px;
+}
+
+.pyq-type {
+  padding: 8px 20px 16px;
+}
+
+.pyq-type h4 {
+  font-size: 0.9rem;
+  color: var(--orange, #e07b00);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--orange, #e07b00);
+  padding-bottom: 6px;
+}
+
+.pyq-papers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pyq-paper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.pyq-paper:hover {
+  background: var(--orange, #e07b00);
+  color: #fff;
+  border-color: var(--orange, #e07b00);
+  transform: translateY(-1px);
+}
+
+.pyq-paper:hover .pyq-paper__dl {
+  color: #fff;
+}
+
+.pyq-paper .fa-file-pdf {
+  color: #e74c3c;
+  font-size: 1rem;
+}
+
+.pyq-paper:hover .fa-file-pdf {
+  color: #fff;
+}
+
+.pyq-paper__dl {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .pyq-papers {
+    flex-direction: column;
+  }
+
+  .pyq-paper {
+    width: 100%;
+  }
+
+  .pyq-year__header {
+    padding: 14px 16px;
+  }
+
+  .pyq-type {
+    padding: 8px 16px 16px;
+  }
+}
+
 /* ===== YOUTUBE SUBSCRIBE ===== */
 .yt-subscribe {
   position: relative;
