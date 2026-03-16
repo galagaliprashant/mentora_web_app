@@ -97,6 +97,9 @@
         <p>Access your enrolled course video lectures</p>
       </div>
 
+      <!-- Breadcrumb navigation -->
+      <nav class="breadcrumb" id="video-breadcrumb"></nav>
+
       <!-- Login prompt: shown when NOT logged in -->
       <div class="premium-video__login-prompt" id="video-login-prompt">
         <div class="premium-video__lock-icon">
@@ -109,13 +112,11 @@
 
       <!-- Loading state -->
       <div class="premium-video__loading hidden" id="video-loading">
-        <i class="fas fa-spinner fa-spin"></i> Loading video...
+        <i class="fas fa-spinner fa-spin"></i> Loading...
       </div>
 
-      <!-- Player container: shown when logged in -->
-      <div class="premium-video__player-wrap hidden" id="vdocipher-container">
-        <!-- iframe injected here by JS -->
-      </div>
+      <!-- Dynamic content container (JS renders course grid / video list / player here) -->
+      <div id="video-app" class="hidden"></div>
 
       <!-- Error container -->
       <div class="premium-video__error hidden" id="video-error"></div>
