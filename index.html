@@ -294,9 +294,15 @@
   <div class="floating-enquire-panel" id="enquire-panel">
     <h3>Enquire Now</h3>
     <h4>Contact Form</h4>
-    <form><input type="text" placeholder="Name" required /><input type="tel" placeholder="Phone" required /><input
-        type="email" placeholder="Email" required /><textarea placeholder="Message" rows="3"></textarea><button
-        type="submit" class="btn btn--primary btn--sm">Submit</button></form>
+    <form id="enquiry-form">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="tel" name="phone" placeholder="Phone" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" rows="3"></textarea>
+      <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" />
+      <p id="enquiry-feedback" style="display:none; margin-bottom:8px; font-size:.85rem;"></p>
+      <button type="submit" class="btn btn--primary btn--sm">Submit</button>
+    </form>
   </div>
 
   <script type="module" src="/src/main.ts"></script>

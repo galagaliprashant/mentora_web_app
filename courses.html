@@ -157,8 +157,8 @@
         </ul>
       </div>
       <div class="course-detail__actions">
-        <a href="/#contact" class="btn btn--primary"><i class="fas fa-laptop"></i> Register for Online Batch</a>
-        <a href="/#contact" class="btn btn--outline"><i class="fas fa-building"></i> Register for In-Person Batch</a>
+        <a href="#" class="btn btn--primary register-btn" data-course-id="1_year_foundation" data-course-name="1-Year GS Foundation Course" data-batch-type="online"><i class="fas fa-laptop"></i> Register for Online Batch</a>
+        <a href="#" class="btn btn--outline register-btn" data-course-id="1_year_foundation" data-course-name="1-Year GS Foundation Course" data-batch-type="in-person"><i class="fas fa-building"></i> Register for In-Person Batch</a>
       </div>
     </div>
   </section>
@@ -206,8 +206,8 @@
         </div>
       </div>
       <div class="course-detail__actions">
-        <a href="/#contact" class="btn btn--primary"><i class="fas fa-laptop"></i> Register for Online Batch</a>
-        <a href="/#contact" class="btn btn--outline"><i class="fas fa-building"></i> Register for In-Person Batch</a>
+        <a href="#" class="btn btn--primary register-btn" data-course-id="2_year_foundation" data-course-name="2-Year GS Foundation Course" data-batch-type="online"><i class="fas fa-laptop"></i> Register for Online Batch</a>
+        <a href="#" class="btn btn--outline register-btn" data-course-id="2_year_foundation" data-course-name="2-Year GS Foundation Course" data-batch-type="in-person"><i class="fas fa-building"></i> Register for In-Person Batch</a>
       </div>
     </div>
   </section>
@@ -270,8 +270,8 @@
         </div>
       </div>
       <div class="course-detail__actions">
-        <a href="/#contact" class="btn btn--primary"><i class="fas fa-laptop"></i> Register for Online Batch</a>
-        <a href="/#contact" class="btn btn--outline"><i class="fas fa-building"></i> Register for In-Person Batch</a>
+        <a href="#" class="btn btn--primary register-btn" data-course-id="3_year_foundation" data-course-name="3-Year GS Foundation Course" data-batch-type="online"><i class="fas fa-laptop"></i> Register for Online Batch</a>
+        <a href="#" class="btn btn--outline register-btn" data-course-id="3_year_foundation" data-course-name="3-Year GS Foundation Course" data-batch-type="in-person"><i class="fas fa-building"></i> Register for In-Person Batch</a>
       </div>
     </div>
   </section>
@@ -298,8 +298,8 @@
         </ul>
       </div>
       <div class="course-detail__actions">
-        <a href="/#contact" class="btn btn--primary"><i class="fas fa-laptop"></i> Register for Online Batch</a>
-        <a href="/#contact" class="btn btn--outline"><i class="fas fa-building"></i> Register for In-Person Batch</a>
+        <a href="#" class="btn btn--primary register-btn" data-course-id="apmc_1_0" data-course-name="APMC-1.0" data-batch-type="online"><i class="fas fa-laptop"></i> Register for Online Batch</a>
+        <a href="#" class="btn btn--outline register-btn" data-course-id="apmc_1_0" data-course-name="APMC-1.0" data-batch-type="in-person"><i class="fas fa-building"></i> Register for In-Person Batch</a>
       </div>
     </div>
   </section>
@@ -329,8 +329,8 @@
         </ul>
       </div>
       <div class="course-detail__actions">
-        <a href="/#contact" class="btn btn--primary"><i class="fas fa-laptop"></i> Register for Online Batch</a>
-        <a href="/#contact" class="btn btn--outline"><i class="fas fa-building"></i> Register for In-Person Batch</a>
+        <a href="#" class="btn btn--primary register-btn" data-course-id="apmc_2_0" data-course-name="APMC-2.0" data-batch-type="online"><i class="fas fa-laptop"></i> Register for Online Batch</a>
+        <a href="#" class="btn btn--outline register-btn" data-course-id="apmc_2_0" data-course-name="APMC-2.0" data-batch-type="in-person"><i class="fas fa-building"></i> Register for In-Person Batch</a>
       </div>
     </div>
   </section>
@@ -358,6 +358,26 @@
       </div>
     </div>
   </footer>
+
+  <!-- Course Enquiry Modal -->
+  <div class="modal-overlay" id="course-enquiry-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="course-enquiry-modal-close">&times;</button>
+      <h3>Course Enquiry</h3>
+      <p class="modal-course-info" id="modal-course-info"></p>
+      <form id="course-enquiry-form">
+        <input type="hidden" name="courseId" />
+        <input type="hidden" name="courseName" />
+        <input type="hidden" name="batchType" />
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" />
+        <p id="course-enquiry-feedback" style="display:none; margin-bottom:8px; font-size:.85rem;"></p>
+        <button type="submit" class="btn btn--primary">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

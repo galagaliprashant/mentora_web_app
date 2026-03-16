@@ -295,4 +295,5 @@ initPyq();
 // ===== STUDY MATERIAL ACCORDION =====
 initStudyMaterial();
 
-// Mentora IAS website loaded successfully
+// ===== ENQUIRY FORMS =====
+import './enquiry';
