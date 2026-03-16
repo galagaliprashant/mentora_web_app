@@ -297,3 +297,27 @@ initStudyMaterial();
 
 // ===== ENQUIRY FORMS =====
 import './enquiry';
+
+// ===== FREE CLASS COUNTDOWN =====
+const countdownEl = document.getElementById('countdown');
+if (countdownEl) {
+  const targetDate = new Date('2026-04-01T17:00:00+05:30').getTime();
+  function updateCountdown() {
+    const now = Date.now();
+    const diff = targetDate - now;
+    if (diff <= 0) {
+      countdownEl!.innerHTML = '<p style="font-size:1.3rem;font-weight:700;color:#fff;">The class is LIVE now!</p>';
+      return;
+    }
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('cd-days')!.textContent = String(d).padStart(2, '0');
+    document.getElementById('cd-hours')!.textContent = String(h).padStart(2, '0');
+    document.getElementById('cd-mins')!.textContent = String(m).padStart(2, '0');
+    document.getElementById('cd-secs')!.textContent = String(s).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
