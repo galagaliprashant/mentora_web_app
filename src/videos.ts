@@ -1,4 +1,5 @@
 import './style.css';
+import './idle-logout';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, type User } from 'firebase/auth';
 import { collection, query, where, getDocs } from 'firebase/firestore';
@@ -316,6 +317,8 @@ function route() {
 }
 
 // ===== HEADER LOGIN/LOGOUT =====
+const myCoursesBtn = document.querySelector('.top-bar__my-courses') as HTMLAnchorElement | null;
+
 function updateHeader(user: User | null) {
   if (!headerBtn) return;
   if (user) {
@@ -326,10 +329,12 @@ function updateHeader(user: User | null) {
       await signOut(auth);
       window.location.reload();
     };
+    myCoursesBtn?.classList.remove('hidden');
   } else {
     headerBtn.innerHTML = '<i class="fas fa-user-circle"></i> Student Login';
     headerBtn.href = '/login.html';
     headerBtn.onclick = null;
+    myCoursesBtn?.classList.add('hidden');
   }
 }
 

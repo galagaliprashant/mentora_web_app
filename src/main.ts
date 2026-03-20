@@ -1,4 +1,5 @@
 import './style.css';
+import './idle-logout';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
@@ -9,14 +10,10 @@ import { initCurrentAffairs } from './current-affairs';
 // ===== HEADER LOGIN/LOGOUT TOGGLE =====
 onAuthStateChanged(auth, async (user) => {
   const headerBtn = document.querySelector('.top-bar__login') as HTMLAnchorElement | null;
+  const myCoursesBtn = document.querySelector('.top-bar__my-courses') as HTMLAnchorElement | null;
   if (!headerBtn) return;
   if (user) {
-    // Check if user still exists in Firestore
-    const userDoc = await getDoc(doc(db, 'users', user.uid));
-    if (!userDoc.exists()) {
-      await signOut(auth);
-      return;
-    }
+    // Update UI immediately, then verify in background
     headerBtn.innerHTML = '<i class="fas fa-sign-out-alt"></i> Logout';
     headerBtn.href = '#';
     headerBtn.onclick = async (e) => {
@@ -24,10 +21,18 @@ onAuthStateChanged(auth, async (user) => {
       await signOut(auth);
       window.location.reload();
     };
+    myCoursesBtn?.classList.remove('hidden');
+
+    // Background check: sign out if user doc was deleted
+    const userDoc = await getDoc(doc(db, 'users', user.uid));
+    if (!userDoc.exists()) {
+      await signOut(auth);
+    }
   } else {
     headerBtn.innerHTML = '<i class="fas fa-user-circle"></i> Student Login';
     headerBtn.href = '/login.html';
     headerBtn.onclick = null;
+    myCoursesBtn?.classList.add('hidden');
   }
 });
 

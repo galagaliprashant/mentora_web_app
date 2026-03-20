@@ -11,29 +11,144 @@
           "displayName": "Ecology",
           "icon": "fas fa-leaf",
           "videos": [
-            { "videoId": "90d6d547b7054c7c8a99307794494058", "title": "Introduction to Ecology", "duration": "45:00", "order": 1 },
-            { "videoId": "0db1c25dd475461faa4c91f131b65cfc", "title": "Ecosystem Structure & Function", "duration": "42:00", "order": 2 },
-            { "videoId": "28848d45340841f0b01022f2cf8e9a39", "title": "Energy Flow in Ecosystems", "duration": "38:00", "order": 3 },
-            { "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35", "title": "Nutrient Cycling", "duration": "40:00", "order": 4 },
-            { "videoId": "52d15b3887794cd5a628e3cfac1b2963", "title": "Biodiversity & Its Conservation", "duration": "44:00", "order": 5 },
-            { "videoId": "c7dfafed9aa9440a8402c6afcfa57904", "title": "Hotspots of Biodiversity", "duration": "36:00", "order": 6 },
-            { "videoId": "d05e7c5252e847aebf89f47a3e2264f7", "title": "Threats to Biodiversity", "duration": "41:00", "order": 7 },
-            { "videoId": "ecb1d07d3f264ec7b7c26e65f701e922", "title": "Environmental Pollution", "duration": "39:00", "order": 8 },
-            { "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a", "title": "Climate Change & Global Warming", "duration": "47:00", "order": 9 },
-            { "videoId": "cbd8b6d2d58d45e89c818192e0936790", "title": "Ozone Depletion", "duration": "32:00", "order": 10 },
-            { "videoId": "a3944450bf4840fab7603b69b2a74beb", "title": "Wildlife Protection Act", "duration": "43:00", "order": 11 },
-            { "videoId": "88a6bf7e903f4b44b411b9d2d3722c48", "title": "Environmental Impact Assessment", "duration": "38:00", "order": 12 },
-            { "videoId": "ad66a8fd1a7a421c9e37a58807a914e5", "title": "National Parks & Sanctuaries", "duration": "45:00", "order": 13 },
-            { "videoId": "e6ad43844a3c4733ac1631ab384ed755", "title": "Biosphere Reserves", "duration": "35:00", "order": 14 },
-            { "videoId": "c255ab81b09141899f9275ec7d9f2251", "title": "Wetlands & Ramsar Convention", "duration": "40:00", "order": 15 },
-            { "videoId": "5ebce452a8df4f4bbf306cced9dd24de", "title": "Forest Types of India", "duration": "42:00", "order": 16 },
-            { "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b", "title": "Marine Ecology", "duration": "37:00", "order": 17 },
-            { "videoId": "31dc4a070f804502bad41c9041a71a09", "title": "Ecological Succession", "duration": "34:00", "order": 18 },
-            { "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9", "title": "Environmental Laws & Policies", "duration": "46:00", "order": 19 },
-            { "videoId": "0046140fb85940b6b871b071b746762f", "title": "International Environmental Agreements", "duration": "41:00", "order": 20 },
-            { "videoId": "2d0f8a52e4ce40de8edde300da961769", "title": "Sustainable Development", "duration": "39:00", "order": 21 },
-            { "videoId": "a9191b51b28d4e56983af6ce6272681f", "title": "Ecology PYQ Analysis & Revision", "duration": "50:00", "order": 22 },
-            { "videoId": "b5575ff8d1f248058540a9b3c098d91b", "title": "Ecology Comprehensive Revision", "duration": "48:00", "order": 23 }
+            {
+              "videoId": "90d6d547b7054c7c8a99307794494058",
+              "title": "Ecology, Environment, Biodiversity and Wildlife Management",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "0db1c25dd475461faa4c91f131b65cfc",
+              "title": "Basic Terminology of Ecology",
+              "duration": "1:44:12",
+              "order": 2
+            },
+            {
+              "videoId": "28848d45340841f0b01022f2cf8e9a39",
+              "title": "Population Ecology-I",
+              "duration": "2:07:44",
+              "order": 3
+            },
+            {
+              "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
+              "title": "Population Ecology-II",
+              "duration": "2:05:33",
+              "order": 4
+            },
+            {
+              "videoId": "52d15b3887794cd5a628e3cfac1b2963",
+              "title": "Interspecific Interactions",
+              "duration": "2:07:28",
+              "order": 5
+            },
+            {
+              "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
+              "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
+              "duration": "2:12:19",
+              "order": 6
+            },
+            {
+              "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
+              "title": "Climax Species, Ecosystem Ecology",
+              "duration": "1:43:41",
+              "order": 7
+            },
+            {
+              "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
+              "title": "Food Web",
+              "duration": "1:58:14",
+              "order": 8
+            },
+            {
+              "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
+              "title": "Ecological Pyramids",
+              "duration": "1:50:51",
+              "order": 9
+            },
+            {
+              "videoId": "cbd8b6d2d58d45e89c818192e0936790",
+              "title": "Types of Ecosystems",
+              "duration": "1:53:00",
+              "order": 10
+            },
+            {
+              "videoId": "a3944450bf4840fab7603b69b2a74beb",
+              "title": "Biomes-I",
+              "duration": "1:40:52",
+              "order": 11
+            },
+            {
+              "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
+              "title": "Biomes-II",
+              "duration": "1:26:50",
+              "order": 12
+            },
+            {
+              "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
+              "title": "Biomes-III",
+              "duration": "1:31:22",
+              "order": 13
+            },
+            {
+              "videoId": "e6ad43844a3c4733ac1631ab384ed755",
+              "title": "Biomes-IV",
+              "duration": "1:24:08",
+              "order": 14
+            },
+            {
+              "videoId": "c255ab81b09141899f9275ec7d9f2251",
+              "title": "Biosphere",
+              "duration": "1:51:50",
+              "order": 15
+            },
+            {
+              "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
+              "title": "Nitrogen Cycle",
+              "duration": "1:38:16",
+              "order": 16
+            },
+            {
+              "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
+              "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
+              "duration": "1:36:59",
+              "order": 17
+            },
+            {
+              "videoId": "31dc4a070f804502bad41c9041a71a09",
+              "title": "Biodiversity-I",
+              "duration": "2:08:14",
+              "order": 18
+            },
+            {
+              "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
+              "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
+              "duration": "1:45:01",
+              "order": 19
+            },
+            {
+              "videoId": "0046140fb85940b6b871b071b746762f",
+              "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
+              "duration": "1:32:25",
+              "order": 20
+            },
+            {
+              "videoId": "2d0f8a52e4ce40de8edde300da961769",
+              "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
+              "duration": "1:53:39",
+              "order": 21
+            },
+            {
+              "videoId": "a9191b51b28d4e56983af6ce6272681f",
+              "title": "Biodiversity Hotspots in India-II",
+              "duration": "2:01:41",
+              "order": 22
+            },
+            {
+              "videoId": "b5575ff8d1f248058540a9b3c098d91b",
+              "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
+              "duration": "1:49:59",
+              "order": 23
+            }
           ]
         }
       ]
@@ -49,29 +164,144 @@
           "displayName": "Ecology",
           "icon": "fas fa-leaf",
           "videos": [
-            { "videoId": "90d6d547b7054c7c8a99307794494058", "title": "Introduction to Ecology", "duration": "45:00", "order": 1 },
-            { "videoId": "0db1c25dd475461faa4c91f131b65cfc", "title": "Ecosystem Structure & Function", "duration": "42:00", "order": 2 },
-            { "videoId": "28848d45340841f0b01022f2cf8e9a39", "title": "Energy Flow in Ecosystems", "duration": "38:00", "order": 3 },
-            { "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35", "title": "Nutrient Cycling", "duration": "40:00", "order": 4 },
-            { "videoId": "52d15b3887794cd5a628e3cfac1b2963", "title": "Biodiversity & Its Conservation", "duration": "44:00", "order": 5 },
-            { "videoId": "c7dfafed9aa9440a8402c6afcfa57904", "title": "Hotspots of Biodiversity", "duration": "36:00", "order": 6 },
-            { "videoId": "d05e7c5252e847aebf89f47a3e2264f7", "title": "Threats to Biodiversity", "duration": "41:00", "order": 7 },
-            { "videoId": "ecb1d07d3f264ec7b7c26e65f701e922", "title": "Environmental Pollution", "duration": "39:00", "order": 8 },
-            { "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a", "title": "Climate Change & Global Warming", "duration": "47:00", "order": 9 },
-            { "videoId": "cbd8b6d2d58d45e89c818192e0936790", "title": "Ozone Depletion", "duration": "32:00", "order": 10 },
-            { "videoId": "a3944450bf4840fab7603b69b2a74beb", "title": "Wildlife Protection Act", "duration": "43:00", "order": 11 },
-            { "videoId": "88a6bf7e903f4b44b411b9d2d3722c48", "title": "Environmental Impact Assessment", "duration": "38:00", "order": 12 },
-            { "videoId": "ad66a8fd1a7a421c9e37a58807a914e5", "title": "National Parks & Sanctuaries", "duration": "45:00", "order": 13 },
-            { "videoId": "e6ad43844a3c4733ac1631ab384ed755", "title": "Biosphere Reserves", "duration": "35:00", "order": 14 },
-            { "videoId": "c255ab81b09141899f9275ec7d9f2251", "title": "Wetlands & Ramsar Convention", "duration": "40:00", "order": 15 },
-            { "videoId": "5ebce452a8df4f4bbf306cced9dd24de", "title": "Forest Types of India", "duration": "42:00", "order": 16 },
-            { "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b", "title": "Marine Ecology", "duration": "37:00", "order": 17 },
-            { "videoId": "31dc4a070f804502bad41c9041a71a09", "title": "Ecological Succession", "duration": "34:00", "order": 18 },
-            { "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9", "title": "Environmental Laws & Policies", "duration": "46:00", "order": 19 },
-            { "videoId": "0046140fb85940b6b871b071b746762f", "title": "International Environmental Agreements", "duration": "41:00", "order": 20 },
-            { "videoId": "2d0f8a52e4ce40de8edde300da961769", "title": "Sustainable Development", "duration": "39:00", "order": 21 },
-            { "videoId": "a9191b51b28d4e56983af6ce6272681f", "title": "Ecology PYQ Analysis & Revision", "duration": "50:00", "order": 22 },
-            { "videoId": "b5575ff8d1f248058540a9b3c098d91b", "title": "Ecology Comprehensive Revision", "duration": "48:00", "order": 23 }
+            {
+              "videoId": "90d6d547b7054c7c8a99307794494058",
+              "title": "Ecology, Environment, Biodiversity and Wildlife Management",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "0db1c25dd475461faa4c91f131b65cfc",
+              "title": "Basic Terminology of Ecology",
+              "duration": "1:44:12",
+              "order": 2
+            },
+            {
+              "videoId": "28848d45340841f0b01022f2cf8e9a39",
+              "title": "Population Ecology-I",
+              "duration": "2:07:44",
+              "order": 3
+            },
+            {
+              "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
+              "title": "Population Ecology-II",
+              "duration": "2:05:33",
+              "order": 4
+            },
+            {
+              "videoId": "52d15b3887794cd5a628e3cfac1b2963",
+              "title": "Interspecific Interactions",
+              "duration": "2:07:28",
+              "order": 5
+            },
+            {
+              "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
+              "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
+              "duration": "2:12:19",
+              "order": 6
+            },
+            {
+              "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
+              "title": "Climax Species, Ecosystem Ecology",
+              "duration": "1:43:41",
+              "order": 7
+            },
+            {
+              "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
+              "title": "Food Web",
+              "duration": "1:58:14",
+              "order": 8
+            },
+            {
+              "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
+              "title": "Ecological Pyramids",
+              "duration": "1:50:51",
+              "order": 9
+            },
+            {
+              "videoId": "cbd8b6d2d58d45e89c818192e0936790",
+              "title": "Types of Ecosystems",
+              "duration": "1:53:00",
+              "order": 10
+            },
+            {
+              "videoId": "a3944450bf4840fab7603b69b2a74beb",
+              "title": "Biomes-I",
+              "duration": "1:40:52",
+              "order": 11
+            },
+            {
+              "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
+              "title": "Biomes-II",
+              "duration": "1:26:50",
+              "order": 12
+            },
+            {
+              "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
+              "title": "Biomes-III",
+              "duration": "1:31:22",
+              "order": 13
+            },
+            {
+              "videoId": "e6ad43844a3c4733ac1631ab384ed755",
+              "title": "Biomes-IV",
+              "duration": "1:24:08",
+              "order": 14
+            },
+            {
+              "videoId": "c255ab81b09141899f9275ec7d9f2251",
+              "title": "Biosphere",
+              "duration": "1:51:50",
+              "order": 15
+            },
+            {
+              "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
+              "title": "Nitrogen Cycle",
+              "duration": "1:38:16",
+              "order": 16
+            },
+            {
+              "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
+              "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
+              "duration": "1:36:59",
+              "order": 17
+            },
+            {
+              "videoId": "31dc4a070f804502bad41c9041a71a09",
+              "title": "Biodiversity-I",
+              "duration": "2:08:14",
+              "order": 18
+            },
+            {
+              "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
+              "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
+              "duration": "1:45:01",
+              "order": 19
+            },
+            {
+              "videoId": "0046140fb85940b6b871b071b746762f",
+              "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
+              "duration": "1:32:25",
+              "order": 20
+            },
+            {
+              "videoId": "2d0f8a52e4ce40de8edde300da961769",
+              "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
+              "duration": "1:53:39",
+              "order": 21
+            },
+            {
+              "videoId": "a9191b51b28d4e56983af6ce6272681f",
+              "title": "Biodiversity Hotspots in India-II",
+              "duration": "2:01:41",
+              "order": 22
+            },
+            {
+              "videoId": "b5575ff8d1f248058540a9b3c098d91b",
+              "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
+              "duration": "1:49:59",
+              "order": 23
+            }
           ]
         }
       ]
@@ -87,29 +317,144 @@
           "displayName": "Ecology",
           "icon": "fas fa-leaf",
           "videos": [
-            { "videoId": "90d6d547b7054c7c8a99307794494058", "title": "Introduction to Ecology", "duration": "45:00", "order": 1 },
-            { "videoId": "0db1c25dd475461faa4c91f131b65cfc", "title": "Ecosystem Structure & Function", "duration": "42:00", "order": 2 },
-            { "videoId": "28848d45340841f0b01022f2cf8e9a39", "title": "Energy Flow in Ecosystems", "duration": "38:00", "order": 3 },
-            { "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35", "title": "Nutrient Cycling", "duration": "40:00", "order": 4 },
-            { "videoId": "52d15b3887794cd5a628e3cfac1b2963", "title": "Biodiversity & Its Conservation", "duration": "44:00", "order": 5 },
-            { "videoId": "c7dfafed9aa9440a8402c6afcfa57904", "title": "Hotspots of Biodiversity", "duration": "36:00", "order": 6 },
-            { "videoId": "d05e7c5252e847aebf89f47a3e2264f7", "title": "Threats to Biodiversity", "duration": "41:00", "order": 7 },
-            { "videoId": "ecb1d07d3f264ec7b7c26e65f701e922", "title": "Environmental Pollution", "duration": "39:00", "order": 8 },
-            { "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a", "title": "Climate Change & Global Warming", "duration": "47:00", "order": 9 },
-            { "videoId": "cbd8b6d2d58d45e89c818192e0936790", "title": "Ozone Depletion", "duration": "32:00", "order": 10 },
-            { "videoId": "a3944450bf4840fab7603b69b2a74beb", "title": "Wildlife Protection Act", "duration": "43:00", "order": 11 },
-            { "videoId": "88a6bf7e903f4b44b411b9d2d3722c48", "title": "Environmental Impact Assessment", "duration": "38:00", "order": 12 },
-            { "videoId": "ad66a8fd1a7a421c9e37a58807a914e5", "title": "National Parks & Sanctuaries", "duration": "45:00", "order": 13 },
-            { "videoId": "e6ad43844a3c4733ac1631ab384ed755", "title": "Biosphere Reserves", "duration": "35:00", "order": 14 },
-            { "videoId": "c255ab81b09141899f9275ec7d9f2251", "title": "Wetlands & Ramsar Convention", "duration": "40:00", "order": 15 },
-            { "videoId": "5ebce452a8df4f4bbf306cced9dd24de", "title": "Forest Types of India", "duration": "42:00", "order": 16 },
-            { "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b", "title": "Marine Ecology", "duration": "37:00", "order": 17 },
-            { "videoId": "31dc4a070f804502bad41c9041a71a09", "title": "Ecological Succession", "duration": "34:00", "order": 18 },
-            { "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9", "title": "Environmental Laws & Policies", "duration": "46:00", "order": 19 },
-            { "videoId": "0046140fb85940b6b871b071b746762f", "title": "International Environmental Agreements", "duration": "41:00", "order": 20 },
-            { "videoId": "2d0f8a52e4ce40de8edde300da961769", "title": "Sustainable Development", "duration": "39:00", "order": 21 },
-            { "videoId": "a9191b51b28d4e56983af6ce6272681f", "title": "Ecology PYQ Analysis & Revision", "duration": "50:00", "order": 22 },
-            { "videoId": "b5575ff8d1f248058540a9b3c098d91b", "title": "Ecology Comprehensive Revision", "duration": "48:00", "order": 23 }
+            {
+              "videoId": "90d6d547b7054c7c8a99307794494058",
+              "title": "Ecology, Environment, Biodiversity and Wildlife Management",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "0db1c25dd475461faa4c91f131b65cfc",
+              "title": "Basic Terminology of Ecology",
+              "duration": "1:44:12",
+              "order": 2
+            },
+            {
+              "videoId": "28848d45340841f0b01022f2cf8e9a39",
+              "title": "Population Ecology-I",
+              "duration": "2:07:44",
+              "order": 3
+            },
+            {
+              "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
+              "title": "Population Ecology-II",
+              "duration": "2:05:33",
+              "order": 4
+            },
+            {
+              "videoId": "52d15b3887794cd5a628e3cfac1b2963",
+              "title": "Interspecific Interactions",
+              "duration": "2:07:28",
+              "order": 5
+            },
+            {
+              "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
+              "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
+              "duration": "2:12:19",
+              "order": 6
+            },
+            {
+              "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
+              "title": "Climax Species, Ecosystem Ecology",
+              "duration": "1:43:41",
+              "order": 7
+            },
+            {
+              "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
+              "title": "Food Web",
+              "duration": "1:58:14",
+              "order": 8
+            },
+            {
+              "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
+              "title": "Ecological Pyramids",
+              "duration": "1:50:51",
+              "order": 9
+            },
+            {
+              "videoId": "cbd8b6d2d58d45e89c818192e0936790",
+              "title": "Types of Ecosystems",
+              "duration": "1:53:00",
+              "order": 10
+            },
+            {
+              "videoId": "a3944450bf4840fab7603b69b2a74beb",
+              "title": "Biomes-I",
+              "duration": "1:40:52",
+              "order": 11
+            },
+            {
+              "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
+              "title": "Biomes-II",
+              "duration": "1:26:50",
+              "order": 12
+            },
+            {
+              "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
+              "title": "Biomes-III",
+              "duration": "1:31:22",
+              "order": 13
+            },
+            {
+              "videoId": "e6ad43844a3c4733ac1631ab384ed755",
+              "title": "Biomes-IV",
+              "duration": "1:24:08",
+              "order": 14
+            },
+            {
+              "videoId": "c255ab81b09141899f9275ec7d9f2251",
+              "title": "Biosphere",
+              "duration": "1:51:50",
+              "order": 15
+            },
+            {
+              "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
+              "title": "Nitrogen Cycle",
+              "duration": "1:38:16",
+              "order": 16
+            },
+            {
+              "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
+              "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
+              "duration": "1:36:59",
+              "order": 17
+            },
+            {
+              "videoId": "31dc4a070f804502bad41c9041a71a09",
+              "title": "Biodiversity-I",
+              "duration": "2:08:14",
+              "order": 18
+            },
+            {
+              "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
+              "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
+              "duration": "1:45:01",
+              "order": 19
+            },
+            {
+              "videoId": "0046140fb85940b6b871b071b746762f",
+              "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
+              "duration": "1:32:25",
+              "order": 20
+            },
+            {
+              "videoId": "2d0f8a52e4ce40de8edde300da961769",
+              "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
+              "duration": "1:53:39",
+              "order": 21
+            },
+            {
+              "videoId": "a9191b51b28d4e56983af6ce6272681f",
+              "title": "Biodiversity Hotspots in India-II",
+              "duration": "2:01:41",
+              "order": 22
+            },
+            {
+              "videoId": "b5575ff8d1f248058540a9b3c098d91b",
+              "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
+              "duration": "1:49:59",
+              "order": 23
+            }
           ]
         }
       ]
@@ -125,29 +470,144 @@
           "displayName": "Ecology",
           "icon": "fas fa-leaf",
           "videos": [
-            { "videoId": "90d6d547b7054c7c8a99307794494058", "title": "Introduction to Ecology", "duration": "45:00", "order": 1 },
-            { "videoId": "0db1c25dd475461faa4c91f131b65cfc", "title": "Ecosystem Structure & Function", "duration": "42:00", "order": 2 },
-            { "videoId": "28848d45340841f0b01022f2cf8e9a39", "title": "Energy Flow in Ecosystems", "duration": "38:00", "order": 3 },
-            { "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35", "title": "Nutrient Cycling", "duration": "40:00", "order": 4 },
-            { "videoId": "52d15b3887794cd5a628e3cfac1b2963", "title": "Biodiversity & Its Conservation", "duration": "44:00", "order": 5 },
-            { "videoId": "c7dfafed9aa9440a8402c6afcfa57904", "title": "Hotspots of Biodiversity", "duration": "36:00", "order": 6 },
-            { "videoId": "d05e7c5252e847aebf89f47a3e2264f7", "title": "Threats to Biodiversity", "duration": "41:00", "order": 7 },
-            { "videoId": "ecb1d07d3f264ec7b7c26e65f701e922", "title": "Environmental Pollution", "duration": "39:00", "order": 8 },
-            { "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a", "title": "Climate Change & Global Warming", "duration": "47:00", "order": 9 },
-            { "videoId": "cbd8b6d2d58d45e89c818192e0936790", "title": "Ozone Depletion", "duration": "32:00", "order": 10 },
-            { "videoId": "a3944450bf4840fab7603b69b2a74beb", "title": "Wildlife Protection Act", "duration": "43:00", "order": 11 },
-            { "videoId": "88a6bf7e903f4b44b411b9d2d3722c48", "title": "Environmental Impact Assessment", "duration": "38:00", "order": 12 },
-            { "videoId": "ad66a8fd1a7a421c9e37a58807a914e5", "title": "National Parks & Sanctuaries", "duration": "45:00", "order": 13 },
-            { "videoId": "e6ad43844a3c4733ac1631ab384ed755", "title": "Biosphere Reserves", "duration": "35:00", "order": 14 },
-            { "videoId": "c255ab81b09141899f9275ec7d9f2251", "title": "Wetlands & Ramsar Convention", "duration": "40:00", "order": 15 },
-            { "videoId": "5ebce452a8df4f4bbf306cced9dd24de", "title": "Forest Types of India", "duration": "42:00", "order": 16 },
-            { "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b", "title": "Marine Ecology", "duration": "37:00", "order": 17 },
-            { "videoId": "31dc4a070f804502bad41c9041a71a09", "title": "Ecological Succession", "duration": "34:00", "order": 18 },
-            { "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9", "title": "Environmental Laws & Policies", "duration": "46:00", "order": 19 },
-            { "videoId": "0046140fb85940b6b871b071b746762f", "title": "International Environmental Agreements", "duration": "41:00", "order": 20 },
-            { "videoId": "2d0f8a52e4ce40de8edde300da961769", "title": "Sustainable Development", "duration": "39:00", "order": 21 },
-            { "videoId": "a9191b51b28d4e56983af6ce6272681f", "title": "Ecology PYQ Analysis & Revision", "duration": "50:00", "order": 22 },
-            { "videoId": "b5575ff8d1f248058540a9b3c098d91b", "title": "Ecology Comprehensive Revision", "duration": "48:00", "order": 23 }
+            {
+              "videoId": "90d6d547b7054c7c8a99307794494058",
+              "title": "Ecology, Environment, Biodiversity and Wildlife Management",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "0db1c25dd475461faa4c91f131b65cfc",
+              "title": "Basic Terminology of Ecology",
+              "duration": "1:44:12",
+              "order": 2
+            },
+            {
+              "videoId": "28848d45340841f0b01022f2cf8e9a39",
+              "title": "Population Ecology-I",
+              "duration": "2:07:44",
+              "order": 3
+            },
+            {
+              "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
+              "title": "Population Ecology-II",
+              "duration": "2:05:33",
+              "order": 4
+            },
+            {
+              "videoId": "52d15b3887794cd5a628e3cfac1b2963",
+              "title": "Interspecific Interactions",
+              "duration": "2:07:28",
+              "order": 5
+            },
+            {
+              "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
+              "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
+              "duration": "2:12:19",
+              "order": 6
+            },
+            {
+              "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
+              "title": "Climax Species, Ecosystem Ecology",
+              "duration": "1:43:41",
+              "order": 7
+            },
+            {
+              "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
+              "title": "Food Web",
+              "duration": "1:58:14",
+              "order": 8
+            },
+            {
+              "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
+              "title": "Ecological Pyramids",
+              "duration": "1:50:51",
+              "order": 9
+            },
+            {
+              "videoId": "cbd8b6d2d58d45e89c818192e0936790",
+              "title": "Types of Ecosystems",
+              "duration": "1:53:00",
+              "order": 10
+            },
+            {
+              "videoId": "a3944450bf4840fab7603b69b2a74beb",
+              "title": "Biomes-I",
+              "duration": "1:40:52",
+              "order": 11
+            },
+            {
+              "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
+              "title": "Biomes-II",
+              "duration": "1:26:50",
+              "order": 12
+            },
+            {
+              "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
+              "title": "Biomes-III",
+              "duration": "1:31:22",
+              "order": 13
+            },
+            {
+              "videoId": "e6ad43844a3c4733ac1631ab384ed755",
+              "title": "Biomes-IV",
+              "duration": "1:24:08",
+              "order": 14
+            },
+            {
+              "videoId": "c255ab81b09141899f9275ec7d9f2251",
+              "title": "Biosphere",
+              "duration": "1:51:50",
+              "order": 15
+            },
+            {
+              "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
+              "title": "Nitrogen Cycle",
+              "duration": "1:38:16",
+              "order": 16
+            },
+            {
+              "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
+              "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
+              "duration": "1:36:59",
+              "order": 17
+            },
+            {
+              "videoId": "31dc4a070f804502bad41c9041a71a09",
+              "title": "Biodiversity-I",
+              "duration": "2:08:14",
+              "order": 18
+            },
+            {
+              "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
+              "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
+              "duration": "1:45:01",
+              "order": 19
+            },
+            {
+              "videoId": "0046140fb85940b6b871b071b746762f",
+              "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
+              "duration": "1:32:25",
+              "order": 20
+            },
+            {
+              "videoId": "2d0f8a52e4ce40de8edde300da961769",
+              "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
+              "duration": "1:53:39",
+              "order": 21
+            },
+            {
+              "videoId": "a9191b51b28d4e56983af6ce6272681f",
+              "title": "Biodiversity Hotspots in India-II",
+              "duration": "2:01:41",
+              "order": 22
+            },
+            {
+              "videoId": "b5575ff8d1f248058540a9b3c098d91b",
+              "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
+              "duration": "1:49:59",
+              "order": 23
+            }
           ]
         }
       ]
@@ -163,29 +623,144 @@
           "displayName": "Ecology",
           "icon": "fas fa-leaf",
           "videos": [
-            { "videoId": "90d6d547b7054c7c8a99307794494058", "title": "Introduction to Ecology", "duration": "45:00", "order": 1 },
-            { "videoId": "0db1c25dd475461faa4c91f131b65cfc", "title": "Ecosystem Structure & Function", "duration": "42:00", "order": 2 },
-            { "videoId": "28848d45340841f0b01022f2cf8e9a39", "title": "Energy Flow in Ecosystems", "duration": "38:00", "order": 3 },
-            { "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35", "title": "Nutrient Cycling", "duration": "40:00", "order": 4 },
-            { "videoId": "52d15b3887794cd5a628e3cfac1b2963", "title": "Biodiversity & Its Conservation", "duration": "44:00", "order": 5 },
-            { "videoId": "c7dfafed9aa9440a8402c6afcfa57904", "title": "Hotspots of Biodiversity", "duration": "36:00", "order": 6 },
-            { "videoId": "d05e7c5252e847aebf89f47a3e2264f7", "title": "Threats to Biodiversity", "duration": "41:00", "order": 7 },
-            { "videoId": "ecb1d07d3f264ec7b7c26e65f701e922", "title": "Environmental Pollution", "duration": "39:00", "order": 8 },
-            { "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a", "title": "Climate Change & Global Warming", "duration": "47:00", "order": 9 },
-            { "videoId": "cbd8b6d2d58d45e89c818192e0936790", "title": "Ozone Depletion", "duration": "32:00", "order": 10 },
-            { "videoId": "a3944450bf4840fab7603b69b2a74beb", "title": "Wildlife Protection Act", "duration": "43:00", "order": 11 },
-            { "videoId": "88a6bf7e903f4b44b411b9d2d3722c48", "title": "Environmental Impact Assessment", "duration": "38:00", "order": 12 },
-            { "videoId": "ad66a8fd1a7a421c9e37a58807a914e5", "title": "National Parks & Sanctuaries", "duration": "45:00", "order": 13 },
-            { "videoId": "e6ad43844a3c4733ac1631ab384ed755", "title": "Biosphere Reserves", "duration": "35:00", "order": 14 },
-            { "videoId": "c255ab81b09141899f9275ec7d9f2251", "title": "Wetlands & Ramsar Convention", "duration": "40:00", "order": 15 },
-            { "videoId": "5ebce452a8df4f4bbf306cced9dd24de", "title": "Forest Types of India", "duration": "42:00", "order": 16 },
-            { "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b", "title": "Marine Ecology", "duration": "37:00", "order": 17 },
-            { "videoId": "31dc4a070f804502bad41c9041a71a09", "title": "Ecological Succession", "duration": "34:00", "order": 18 },
-            { "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9", "title": "Environmental Laws & Policies", "duration": "46:00", "order": 19 },
-            { "videoId": "0046140fb85940b6b871b071b746762f", "title": "International Environmental Agreements", "duration": "41:00", "order": 20 },
-            { "videoId": "2d0f8a52e4ce40de8edde300da961769", "title": "Sustainable Development", "duration": "39:00", "order": 21 },
-            { "videoId": "a9191b51b28d4e56983af6ce6272681f", "title": "Ecology PYQ Analysis & Revision", "duration": "50:00", "order": 22 },
-            { "videoId": "b5575ff8d1f248058540a9b3c098d91b", "title": "Ecology Comprehensive Revision", "duration": "48:00", "order": 23 }
+            {
+              "videoId": "90d6d547b7054c7c8a99307794494058",
+              "title": "Ecology, Environment, Biodiversity and Wildlife Management",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "0db1c25dd475461faa4c91f131b65cfc",
+              "title": "Basic Terminology of Ecology",
+              "duration": "1:44:12",
+              "order": 2
+            },
+            {
+              "videoId": "28848d45340841f0b01022f2cf8e9a39",
+              "title": "Population Ecology-I",
+              "duration": "2:07:44",
+              "order": 3
+            },
+            {
+              "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
+              "title": "Population Ecology-II",
+              "duration": "2:05:33",
+              "order": 4
+            },
+            {
+              "videoId": "52d15b3887794cd5a628e3cfac1b2963",
+              "title": "Interspecific Interactions",
+              "duration": "2:07:28",
+              "order": 5
+            },
+            {
+              "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
+              "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
+              "duration": "2:12:19",
+              "order": 6
+            },
+            {
+              "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
+              "title": "Climax Species, Ecosystem Ecology",
+              "duration": "1:43:41",
+              "order": 7
+            },
+            {
+              "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
+              "title": "Food Web",
+              "duration": "1:58:14",
+              "order": 8
+            },
+            {
+              "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
+              "title": "Ecological Pyramids",
+              "duration": "1:50:51",
+              "order": 9
+            },
+            {
+              "videoId": "cbd8b6d2d58d45e89c818192e0936790",
+              "title": "Types of Ecosystems",
+              "duration": "1:53:00",
+              "order": 10
+            },
+            {
+              "videoId": "a3944450bf4840fab7603b69b2a74beb",
+              "title": "Biomes-I",
+              "duration": "1:40:52",
+              "order": 11
+            },
+            {
+              "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
+              "title": "Biomes-II",
+              "duration": "1:26:50",
+              "order": 12
+            },
+            {
+              "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
+              "title": "Biomes-III",
+              "duration": "1:31:22",
+              "order": 13
+            },
+            {
+              "videoId": "e6ad43844a3c4733ac1631ab384ed755",
+              "title": "Biomes-IV",
+              "duration": "1:24:08",
+              "order": 14
+            },
+            {
+              "videoId": "c255ab81b09141899f9275ec7d9f2251",
+              "title": "Biosphere",
+              "duration": "1:51:50",
+              "order": 15
+            },
+            {
+              "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
+              "title": "Nitrogen Cycle",
+              "duration": "1:38:16",
+              "order": 16
+            },
+            {
+              "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
+              "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
+              "duration": "1:36:59",
+              "order": 17
+            },
+            {
+              "videoId": "31dc4a070f804502bad41c9041a71a09",
+              "title": "Biodiversity-I",
+              "duration": "2:08:14",
+              "order": 18
+            },
+            {
+              "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
+              "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
+              "duration": "1:45:01",
+              "order": 19
+            },
+            {
+              "videoId": "0046140fb85940b6b871b071b746762f",
+              "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
+              "duration": "1:32:25",
+              "order": 20
+            },
+            {
+              "videoId": "2d0f8a52e4ce40de8edde300da961769",
+              "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
+              "duration": "1:53:39",
+              "order": 21
+            },
+            {
+              "videoId": "a9191b51b28d4e56983af6ce6272681f",
+              "title": "Biodiversity Hotspots in India-II",
+              "duration": "2:01:41",
+              "order": 22
+            },
+            {
+              "videoId": "b5575ff8d1f248058540a9b3c098d91b",
+              "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
+              "duration": "1:49:59",
+              "order": 23
+            }
           ]
         }
       ]

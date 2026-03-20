@@ -317,6 +317,26 @@ img {
   color: var(--white);
 }
 
+.top-bar__my-courses {
+  background: var(--orange);
+  color: var(--white);
+  padding: 5px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: .82rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--orange);
+  transition: var(--transition);
+}
+
+.top-bar__my-courses:hover {
+  background: var(--orange-dark);
+  border-color: var(--orange-dark);
+  color: var(--white);
+}
+
 /* ===== MAIN NAV ===== */
 .main-nav {
   background: var(--white);
@@ -3800,6 +3820,16 @@ img {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.auth-btn--my-courses {
+  background: var(--orange);
+  text-align: center;
+  text-decoration: none;
+}
+
+.auth-btn--my-courses:hover {
+  background: var(--orange-dark);
 }
 
 .auth-btn--change-password {
