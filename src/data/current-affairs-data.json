@@ -1,0 +1,211 @@
+[
+  {
+    "series": "Core Concept Series",
+    "lectures": [
+      {
+        "name": "Lecture 1",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-1.pdf",
+        "youtubeLinks": [
+          { "label": "Part 1", "url": "https://youtu.be/WkdPS1kp0bE" },
+          { "label": "Part 2", "url": "https://youtu.be/imZDe3ATjTM" }
+        ]
+      },
+      {
+        "name": "Lecture 2",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-2.pdf",
+        "youtubeLinks": [
+          { "label": "Watch", "url": "https://youtu.be/2wl-OFb8hIk" }
+        ]
+      },
+      {
+        "name": "Lecture 3",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-3.pdf",
+        "youtubeLinks": [
+          { "label": "Watch", "url": "https://youtu.be/6P8A_aj-Ur0" }
+        ]
+      },
+      {
+        "name": "Lecture 4",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-4.pdf",
+        "youtubeLinks": [
+          { "label": "Watch", "url": "https://youtu.be/wFomQnw2qnY" }
+        ]
+      },
+      {
+        "name": "Lecture 5",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-5.pdf",
+        "youtubeLinks": [
+          { "label": "Watch", "url": "https://youtu.be/evo3Xnk9Eag" }
+        ]
+      },
+      {
+        "name": "Lecture 6",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-6.pdf",
+        "youtubeLinks": [
+          { "label": "Watch", "url": "https://youtu.be/giZgI1xwMTc" }
+        ]
+      },
+      {
+        "name": "Lecture 7",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-7.pdf"
+      },
+      {
+        "name": "Lecture 8",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-8.pdf"
+      },
+      {
+        "name": "Lecture 9",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-9.pdf"
+      },
+      {
+        "name": "Lecture 10",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-10.pdf"
+      },
+      {
+        "name": "Lecture 11",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-11.pdf"
+      },
+      {
+        "name": "Lecture 12",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-12.pdf"
+      },
+      {
+        "name": "Lecture 13",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-13.pdf"
+      },
+      {
+        "name": "Lecture 14",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-14.pdf"
+      },
+      {
+        "name": "Lecture 15",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-15.pdf"
+      },
+      {
+        "name": "Lecture 16",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/core-concept-series/core-concept-lecture-16.pdf"
+      }
+    ]
+  },
+  {
+    "series": "Current Saar Series",
+    "lectures": [
+      {
+        "name": "Lecture 1",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-1.pdf"
+      },
+      {
+        "name": "Lecture 2",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-2.pdf"
+      },
+      {
+        "name": "Lecture 3",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-3.pdf"
+      },
+      {
+        "name": "Lecture 4",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-4.pdf"
+      },
+      {
+        "name": "Lecture 5",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-5.pdf"
+      },
+      {
+        "name": "Lecture 6",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-6.pdf"
+      },
+      {
+        "name": "Lecture 7",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-7.pdf"
+      },
+      {
+        "name": "Lecture 8",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-8.pdf"
+      },
+      {
+        "name": "Lecture 9",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-9.pdf"
+      },
+      {
+        "name": "Lecture 10",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-10.pdf"
+      },
+      {
+        "name": "Lecture 11",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-11.pdf"
+      },
+      {
+        "name": "Lecture 12",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-12.pdf"
+      },
+      {
+        "name": "Lecture 13",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-13.pdf"
+      },
+      {
+        "name": "Lecture 14",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-14.pdf"
+      },
+      {
+        "name": "Lecture 15",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-15.pdf"
+      },
+      {
+        "name": "Lecture 16",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-16.pdf"
+      },
+      {
+        "name": "Lecture 17",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-17.pdf"
+      },
+      {
+        "name": "Lecture 18",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-18.pdf"
+      },
+      {
+        "name": "Lecture 19",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-19.pdf"
+      },
+      {
+        "name": "Lecture 20",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-20.pdf"
+      },
+      {
+        "name": "Lecture 21",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-21.pdf"
+      },
+      {
+        "name": "Lecture 22",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-22.pdf"
+      },
+      {
+        "name": "Lecture 23",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-23.pdf"
+      },
+      {
+        "name": "Lecture 24",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-24.pdf"
+      },
+      {
+        "name": "Lecture 25",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-25.pdf"
+      },
+      {
+        "name": "Lecture 26",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-26.pdf"
+      },
+      {
+        "name": "Lecture 27",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-27.pdf"
+      },
+      {
+        "name": "Lecture 28",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-28.pdf"
+      },
+      {
+        "name": "Lecture 29",
+        "pdfUrl": "https://storage.googleapis.com/mentoraiasmobile.firebasestorage.app/current-affairs/current-saar-series/current-saar-lecture-29.pdf"
+      }
+    ]
+  }
+]

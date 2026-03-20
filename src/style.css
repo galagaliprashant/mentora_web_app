@@ -2009,6 +2009,15 @@ img {
   margin-left: 4px;
 }
 
+.pyq-paper--yt .fa-youtube {
+  color: #ff0000;
+  font-size: 1rem;
+}
+
+.pyq-paper--yt:hover .fa-youtube {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .pyq-papers {
     flex-direction: column;

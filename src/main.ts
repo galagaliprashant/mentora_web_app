@@ -4,6 +4,7 @@ import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
 import { initPyq } from './pyq';
 import { initStudyMaterial } from './study-material';
+import { initCurrentAffairs } from './current-affairs';
 
 // ===== HEADER LOGIN/LOGOUT TOGGLE =====
 onAuthStateChanged(auth, async (user) => {
@@ -294,6 +295,9 @@ initPyq();
 
 // ===== STUDY MATERIAL ACCORDION =====
 initStudyMaterial();
+
+// ===== CURRENT AFFAIRS ACCORDION =====
+initCurrentAffairs();
 
 // ===== ENQUIRY FORMS =====
 import './enquiry';
