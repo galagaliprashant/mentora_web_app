@@ -16,6 +16,9 @@ import {
   collection,
   serverTimestamp,
   writeBatch,
+  query,
+  where,
+  getDocs,
 } from 'firebase/firestore';
 
 // ===== COURSES (must match Android app) =====
@@ -69,6 +72,39 @@ const loginBtn = document.getElementById('login-btn') as HTMLButtonElement;
 const loginError = document.getElementById('login-error') as HTMLElement;
 const loginSuccess = document.getElementById('login-success') as HTMLElement;
 const loginSignoutBtn = document.getElementById('login-signout-btn') as HTMLButtonElement;
+const pendingVerification = document.getElementById('pending-verification') as HTMLElement;
+
+/** Check if user has any approved enrollments */
+async function checkEnrollmentStatus(uid: string): Promise<boolean> {
+  const q = query(
+    collection(db, 'enrollments'),
+    where('uid', '==', uid),
+    where('status', '==', 'approved'),
+  );
+  const snap = await getDocs(q);
+  return !snap.empty;
+}
+
+/** Show/hide the pending verification vs normal login success UI */
+function showLoginSuccessState(hasApprovedCourses: boolean) {
+  const successButtons = document.getElementById('login-success-buttons') as HTMLElement;
+  const successIcon = document.getElementById('login-success-icon') as HTMLElement;
+  const successHeading = document.getElementById('login-success-heading') as HTMLElement;
+  const successWelcome = document.getElementById('login-success-welcome') as HTMLElement;
+  if (hasApprovedCourses) {
+    pendingVerification.classList.add('hidden');
+    successButtons.classList.remove('hidden');
+    successIcon.classList.remove('hidden');
+    successHeading.classList.remove('hidden');
+    successWelcome.classList.remove('hidden');
+  } else {
+    pendingVerification.classList.remove('hidden');
+    successButtons.classList.add('hidden');
+    successIcon.classList.add('hidden');
+    successHeading.classList.add('hidden');
+    successWelcome.classList.add('hidden');
+  }
+}
 const authTabs = document.querySelector('.auth-tabs') as HTMLElement;
 
 loginForm.addEventListener('submit', async (e) => {
@@ -95,6 +131,9 @@ loginForm.addEventListener('submit', async (e) => {
     loginSuccess.classList.remove('hidden');
     // Update header button to show Logout
     updateHeaderLoginBtn(true);
+    // Check enrollment status and show appropriate UI
+    const hasApproved = await checkEnrollmentStatus(result.user.uid);
+    showLoginSuccessState(hasApproved);
   } catch {
     loginError.textContent = 'Invalid email or password. Please try again.';
     loginBtn.disabled = false;
@@ -212,6 +251,8 @@ function updateHeaderLoginBtn(loggedIn: boolean) {
   }
 }
 
+let signupInProgress = false;
+
 // ===== SIGNUP =====
 const signupName = document.getElementById('signup-name') as HTMLInputElement;
 const signupEmail = document.getElementById('signup-email') as HTMLInputElement;
@@ -256,6 +297,7 @@ signupForm.addEventListener('submit', async (e) => {
 
   signupBtn.disabled = true;
   signupBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating account...';
+  signupInProgress = true;
 
   try {
     const result = await createUserWithEmailAndPassword(auth, email, password);
@@ -290,10 +332,14 @@ signupForm.addEventListener('submit', async (e) => {
     // Sign out after signup (matches Android flow)
     await signOut(auth);
 
+    signupInProgress = false;
+
     // Show success, hide form
     signupForm.classList.remove('auth-form--active');
+    authTabs.classList.add('hidden');
     signupSuccess.classList.remove('hidden');
   } catch (err: unknown) {
+    signupInProgress = false;
     const msg = err instanceof Error ? err.message : '';
     if (msg.includes('email-already-in-use')) {
       signupError.textContent = 'This email is already registered. Please sign in instead.';
@@ -349,7 +395,7 @@ if (window.location.hash === '#signup') {
 import { onAuthStateChanged } from 'firebase/auth';
 
 onAuthStateChanged(auth, async (user) => {
-  if (user) {
+  if (user && !signupInProgress) {
     // Update UI immediately
     loginForm.classList.remove('auth-form--active');
     signupForm.classList.remove('auth-form--active');
@@ -361,6 +407,11 @@ onAuthStateChanged(auth, async (user) => {
     const userDoc = await getDoc(doc(db, 'users', user.uid));
     if (!userDoc.exists()) {
       await signOut(auth);
+      return;
     }
+
+    // Check enrollment status and show appropriate UI
+    const hasApproved = await checkEnrollmentStatus(user.uid);
+    showLoginSuccessState(hasApproved);
   }
 });
