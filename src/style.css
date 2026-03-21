@@ -3685,26 +3685,27 @@ img {
 /* Courses grid */
 .courses-grid {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 8px;
 }
 
 .course-option {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border: 1.5px solid var(--gray-300);
-  border-radius: var(--radius);
+  gap: 0;
+  padding: 10px 18px;
+  border: 2px solid var(--gray-300);
+  border-radius: 50px;
   cursor: pointer;
-  transition: var(--transition);
+  transition: all .2s ease;
   user-select: none;
+  background: var(--white);
 }
 
 .course-option:hover {
   border-color: var(--orange-light);
-  background: rgba(232, 97, 10, .03);
+  background: rgba(232, 97, 10, .05);
 }
 
 .course-option input[type="checkbox"] {
@@ -3712,34 +3713,24 @@ img {
 }
 
 .course-option__check {
-  width: 22px;
-  height: 22px;
-  border: 2px solid var(--gray-300);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: var(--transition);
-  font-size: .75rem;
-  color: transparent;
-}
-
-.course-option input:checked ~ .course-option__check {
-  background: var(--orange);
-  border-color: var(--orange);
-  color: var(--white);
+  display: none;
 }
 
 .course-option input:checked ~ .course-option__name {
-  color: var(--orange);
-  font-weight: 600;
+  color: var(--white);
+}
+
+.course-option:has(input:checked) {
+  background: var(--orange);
+  border-color: var(--orange);
+  box-shadow: 0 2px 8px rgba(232, 97, 10, .3);
 }
 
 .course-option__name {
-  font-size: .95rem;
+  font-size: .9rem;
   color: var(--gray-700);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* Success / Pending approval */

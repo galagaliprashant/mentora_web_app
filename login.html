@@ -169,9 +169,23 @@
 
       <!-- ===== LOGIN SUCCESS ===== -->
       <div class="auth-success hidden" id="login-success">
-        <div class="auth-success__icon"><i class="fas fa-check-circle"></i></div>
-        <h2>Login Successful</h2>
-        <p class="auth-success__welcome">Welcome to MentoraIAS paid course</p>
+        <div class="auth-success__icon" id="login-success-icon"><i class="fas fa-check-circle"></i></div>
+        <h2 id="login-success-heading">Login Successful</h2>
+        <p class="auth-success__welcome" id="login-success-welcome">Welcome to MentoraIAS paid course</p>
+
+        <!-- Pending Verification (shown when no approved courses) -->
+        <div class="hidden" id="pending-verification">
+          <div class="auth-success__steps">
+            <div class="auth-success__step auth-success__step--done">
+              <i class="fas fa-check-circle"></i>
+              <span>Sign up successful</span>
+            </div>
+            <div class="auth-success__step auth-success__step--progress">
+              <i class="fas fa-hourglass-half"></i>
+              <span>Waiting for Mentora IAS office to verify your records</span>
+            </div>
+          </div>
+        </div>
 
         <!-- Change Password Form (hidden until button clicked) -->
         <div class="change-password hidden" id="change-password-section">
@@ -218,6 +232,8 @@
           <button class="auth-btn auth-btn--change-password" id="change-password-btn">
             <i class="fas fa-key"></i> Change Password
           </button>
+        </div>
+        <div class="auth-success__buttons">
           <button class="auth-btn auth-btn--logout" id="login-signout-btn">
             <i class="fas fa-sign-out-alt"></i> Sign Out
           </button>
