@@ -68,7 +68,8 @@ function initEnquiryForm() {
         feedback.style.display = 'none';
         document.getElementById('enquire-panel')?.classList.remove('open');
       }, 2000);
-    } catch {
+    } catch (err) {
+      console.error('Enquiry submission error:', err);
       showFeedback(feedback, 'Something went wrong. Please try again.', true);
     } finally {
       if (submitBtn) {
@@ -172,7 +173,8 @@ function initCourseEnquiryModal() {
       setTimeout(() => {
         modal.classList.remove('open');
       }, 2000);
-    } catch {
+    } catch (err) {
+      console.error('Course enquiry submission error:', err);
       showFeedback(feedback, 'Something went wrong. Please try again.', true);
     } finally {
       if (submitBtn) {
