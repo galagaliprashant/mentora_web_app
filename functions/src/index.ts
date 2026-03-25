@@ -5,7 +5,119 @@ import * as https from "https";
 
 admin.initializeApp();
 
+const db = admin.firestore();
 const vdocipherApiSecret = defineSecret("VDOCIPHER_API_SECRET");
+
+// ===== ADMIN HELPER =====
+
+async function verifyAdmin(uid: string): Promise<void> {
+  const userDoc = await db.collection("users").doc(uid).get();
+  if (userDoc.data()?.role !== "admin") {
+    throw new HttpsError("permission-denied", "Admin access required.");
+  }
+}
+
+// ===== ADMIN: ENROLLMENT MANAGEMENT =====
+
+interface AdminEnrollmentRequest {
+  enrollmentId: string;
+  action: "approve" | "reject" | "revoke" | "delete";
+}
+
+export const adminUpdateEnrollment = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError("unauthenticated", "You must be signed in.");
+  }
+
+  await verifyAdmin(request.auth.uid);
+
+  const {enrollmentId, action} = request.data as AdminEnrollmentRequest;
+
+  if (!enrollmentId || !action) {
+    throw new HttpsError("invalid-argument", "enrollmentId and action are required.");
+  }
+
+  const enrollmentRef = db.collection("enrollments").doc(enrollmentId);
+  const enrollmentDoc = await enrollmentRef.get();
+
+  if (!enrollmentDoc.exists) {
+    throw new HttpsError("not-found", "Enrollment not found.");
+  }
+
+  switch (action) {
+  case "approve":
+    await enrollmentRef.update({
+      status: "approved",
+      reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+    break;
+  case "reject":
+    await enrollmentRef.update({
+      status: "rejected",
+      reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+    break;
+  case "revoke":
+    await enrollmentRef.update({
+      status: "pending",
+      reviewedAt: admin.firestore.FieldValue.delete(),
+    });
+    break;
+  case "delete":
+    await enrollmentRef.delete();
+    break;
+  default:
+    throw new HttpsError("invalid-argument", `Unknown action: ${action}`);
+  }
+
+  return {success: true, action, enrollmentId};
+});
+
+// ===== ADMIN: ENQUIRY MANAGEMENT =====
+
+interface AdminEnquiryRequest {
+  enquiryId: string;
+  action: "contacted" | "resolved" | "reopen" | "delete";
+}
+
+export const adminUpdateEnquiry = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError("unauthenticated", "You must be signed in.");
+  }
+
+  await verifyAdmin(request.auth.uid);
+
+  const {enquiryId, action} = request.data as AdminEnquiryRequest;
+
+  if (!enquiryId || !action) {
+    throw new HttpsError("invalid-argument", "enquiryId and action are required.");
+  }
+
+  const enquiryRef = db.collection("enquiries").doc(enquiryId);
+  const enquiryDoc = await enquiryRef.get();
+
+  if (!enquiryDoc.exists) {
+    throw new HttpsError("not-found", "Enquiry not found.");
+  }
+
+  if (action === "delete") {
+    await enquiryRef.delete();
+    return {success: true, action, enquiryId};
+  }
+
+  const statusMap: Record<string, string> = {
+    contacted: "contacted",
+    resolved: "resolved",
+    reopen: "new",
+  };
+
+  await enquiryRef.update({
+    followUpStatus: statusMap[action],
+    followUpUpdatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+
+  return {success: true, action, enquiryId};
+});
 
 interface OtpRequest {
   videoId: string;
@@ -87,8 +199,7 @@ export const getVdoCipherOtp = onCall(
 
     // Verify enrollment
     const uid = request.auth.uid;
-    const enrollmentsSnap = await admin
-      .firestore()
+    const enrollmentsSnap = await db
       .collection("enrollments")
       .where("uid", "==", uid)
       .where("courseId", "==", courseId)
@@ -104,7 +215,7 @@ export const getVdoCipherOtp = onCall(
     }
 
     // Get user details for watermark
-    const userDoc = await admin.firestore().collection("users").doc(uid).get();
+    const userDoc = await db.collection("users").doc(uid).get();
     const userData = userDoc.data();
     const userName = userData?.name ?? "Student";
     const userEmail = userData?.email ?? request.auth.token.email ?? "";

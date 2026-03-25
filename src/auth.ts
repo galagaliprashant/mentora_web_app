@@ -410,6 +410,11 @@ onAuthStateChanged(auth, async (user) => {
       return;
     }
 
+    // Show admin button if admin
+    if (userDoc.data()?.role === 'admin') {
+      document.querySelector('.top-bar__admin')?.classList.remove('hidden');
+    }
+
     // Check enrollment status and show appropriate UI
     const hasApproved = await checkEnrollmentStatus(user.uid);
     showLoginSuccessState(hasApproved);

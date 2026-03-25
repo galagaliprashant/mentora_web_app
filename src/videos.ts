@@ -2,7 +2,7 @@ import './style.css';
 import './idle-logout';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, type User } from 'firebase/auth';
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
 import { loadVdoCipherPlayer } from './vdocipher';
 import coursesData from './data/courses-videos.json';
 
@@ -355,6 +355,12 @@ onAuthStateChanged(auth, async (user) => {
       enrollments = await fetchEnrollments(user.uid);
     } catch {
       enrollments = new Map();
+    }
+
+    // Show admin button if admin
+    const userDoc = await getDoc(doc(db, 'users', user.uid));
+    if (userDoc.exists() && userDoc.data()?.role === 'admin') {
+      document.querySelector('.top-bar__admin')?.classList.remove('hidden');
     }
 
     loadingEl.classList.add('hidden');
