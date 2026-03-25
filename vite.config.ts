@@ -11,6 +11,7 @@ export default defineConfig({
         login: resolve(__dirname, 'login.html'),
         studentCorner: resolve(__dirname, 'student-corner.html'),
         videos: resolve(__dirname, 'videos.html'),
+        admin: resolve(__dirname, 'admin.html'),
       },
     },
   },

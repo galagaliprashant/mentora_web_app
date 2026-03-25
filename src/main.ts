@@ -23,16 +23,19 @@ onAuthStateChanged(auth, async (user) => {
     };
     myCoursesBtn?.classList.remove('hidden');
 
-    // Background check: sign out if user doc was deleted
+    // Background check: sign out if user doc was deleted, show admin btn if admin
     const userDoc = await getDoc(doc(db, 'users', user.uid));
     if (!userDoc.exists()) {
       await signOut(auth);
+    } else if (userDoc.data()?.role === 'admin') {
+      document.querySelector('.top-bar__admin')?.classList.remove('hidden');
     }
   } else {
     headerBtn.innerHTML = '<i class="fas fa-user-circle"></i> Student Login';
     headerBtn.href = '/login.html';
     headerBtn.onclick = null;
     myCoursesBtn?.classList.add('hidden');
+    document.querySelector('.top-bar__admin')?.classList.add('hidden');
   }
 });
 
