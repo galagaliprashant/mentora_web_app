@@ -12,135 +12,286 @@
           "icon": "fas fa-leaf",
           "videos": [
             {
+              "videoId": "d8a3dd14709449179bd785f408d0d2c6",
+              "title": "Ecology 1",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "5832a966ecdd4d0bbdbd65ff72ecbbd6",
+              "title": "Ecology 2",
+              "duration": "2:02:36",
+              "order": 2
+            },
+            {
               "videoId": "0db1c25dd475461faa4c91f131b65cfc",
               "title": "Basic Terminology of Ecology",
               "duration": "1:44:12",
-              "order": 1
+              "order": 3
             },
             {
               "videoId": "28848d45340841f0b01022f2cf8e9a39",
               "title": "Population Ecology-I",
               "duration": "2:07:44",
-              "order": 2
+              "order": 4
             },
             {
               "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
               "title": "Population Ecology-II",
               "duration": "2:05:33",
-              "order": 3
+              "order": 5
             },
             {
               "videoId": "52d15b3887794cd5a628e3cfac1b2963",
               "title": "Interspecific Interactions",
               "duration": "2:07:28",
-              "order": 4
+              "order": 6
             },
             {
               "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
               "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
               "duration": "2:12:19",
-              "order": 5
+              "order": 7
             },
             {
               "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
               "title": "Climax Species, Ecosystem Ecology",
               "duration": "1:43:41",
-              "order": 6
+              "order": 8
             },
             {
               "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
               "title": "Food Web",
               "duration": "1:58:14",
-              "order": 7
+              "order": 9
             },
             {
               "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
               "title": "Ecological Pyramids",
               "duration": "1:50:51",
-              "order": 8
+              "order": 10
             },
             {
               "videoId": "cbd8b6d2d58d45e89c818192e0936790",
               "title": "Types of Ecosystems",
               "duration": "1:53:00",
-              "order": 9
+              "order": 11
             },
             {
               "videoId": "a3944450bf4840fab7603b69b2a74beb",
               "title": "Biomes-I",
               "duration": "1:40:52",
-              "order": 10
+              "order": 12
             },
             {
               "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
               "title": "Biomes-II",
               "duration": "1:26:50",
-              "order": 11
+              "order": 13
             },
             {
               "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
               "title": "Biomes-III",
               "duration": "1:31:22",
-              "order": 12
+              "order": 14
             },
             {
               "videoId": "e6ad43844a3c4733ac1631ab384ed755",
               "title": "Biomes-IV",
               "duration": "1:24:08",
-              "order": 13
+              "order": 15
             },
             {
               "videoId": "c255ab81b09141899f9275ec7d9f2251",
               "title": "Biosphere",
               "duration": "1:51:50",
-              "order": 14
+              "order": 16
             },
             {
               "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
               "title": "Nitrogen Cycle",
               "duration": "1:38:16",
-              "order": 15
+              "order": 17
             },
             {
               "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
               "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
               "duration": "1:36:59",
-              "order": 16
+              "order": 18
             },
             {
               "videoId": "31dc4a070f804502bad41c9041a71a09",
               "title": "Biodiversity-I",
               "duration": "2:08:14",
-              "order": 17
+              "order": 19
             },
             {
               "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
               "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
               "duration": "1:45:01",
-              "order": 18
+              "order": 20
             },
             {
               "videoId": "0046140fb85940b6b871b071b746762f",
               "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
               "duration": "1:32:25",
-              "order": 19
+              "order": 21
             },
             {
               "videoId": "2d0f8a52e4ce40de8edde300da961769",
               "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
               "duration": "1:53:39",
-              "order": 20
+              "order": 22
             },
             {
               "videoId": "a9191b51b28d4e56983af6ce6272681f",
               "title": "Biodiversity Hotspots in India-II",
               "duration": "2:01:41",
-              "order": 21
+              "order": 23
             },
             {
               "videoId": "b5575ff8d1f248058540a9b3c098d91b",
               "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
               "duration": "1:49:59",
+              "order": 24
+            }
+          ]
+        },
+        {
+          "subjectId": "csat",
+          "displayName": "CSAT",
+          "icon": "fas fa-brain",
+          "videos": [
+            {
+              "videoId": "d98e78a7940a434d93a6632da33363e3",
+              "title": "CSAT Orientation Class",
+              "duration": "2:10:39",
+              "order": 1
+            },
+            {
+              "videoId": "9f88738c2f8646e1952d28b840b48dee",
+              "title": "Number System Types Of Numbers",
+              "duration": "2:10:18",
+              "order": 2
+            },
+            {
+              "videoId": "f9488f4c1adb4eeb8c4ebe5b36fb9075",
+              "title": "Conversion Of Binary And Decimal Numbers, Concept Of Units Digit",
+              "duration": "2:13:35",
+              "order": 3
+            },
+            {
+              "videoId": "e8c8b1a9a34a4958b9d92c3447f4653f",
+              "title": "Practice On Units Digit And Divisibility Rules",
+              "duration": "2:14:38",
+              "order": 4
+            },
+            {
+              "videoId": "7f97ace63dd04cbeb3073908f89cb8b4",
+              "title": "Divisibility Rules And Prime Numbers",
+              "duration": "2:04:31",
+              "order": 5
+            },
+            {
+              "videoId": "7b5cd5b217be48ef85a0a30f230ebbd9",
+              "title": "Practice On Divisibility, Concept Of HCF And LCM",
+              "duration": "1:35:50",
+              "order": 6
+            },
+            {
+              "videoId": "d2a980af93a94d129e4d58cd572a6a78",
+              "title": "Practice On Divisibility, LCM And HCF",
+              "duration": "2:01:15",
+              "order": 7
+            },
+            {
+              "videoId": "ef027ad36bdb4449bf53810a3ae2b20e",
+              "title": "Practice On Number Systems",
+              "duration": "2:06:33",
+              "order": 8
+            },
+            {
+              "videoId": "1e4c7c7a84484788a3f074e5212877a2",
+              "title": "Time And Work Level 1",
+              "duration": "2:04:53",
+              "order": 9
+            },
+            {
+              "videoId": "4304225e0c6f4f7eb5bee7674583d322",
+              "title": "Time And Work Level 2",
+              "duration": "2:10:32",
+              "order": 10
+            },
+            {
+              "videoId": "b271f906c29146e3b17cdf86ff2a8cfd",
+              "title": "Time And Work Level 3",
+              "duration": "2:08:05",
+              "order": 11
+            },
+            {
+              "videoId": "e3c48ff2822d4dc1a426477d9af3b308",
+              "title": "Practice Session On Time And Work",
+              "duration": "2:17:16",
+              "order": 12
+            },
+            {
+              "videoId": "7b4eb2f047584267885862cb3b801d93",
+              "title": "Remainders, Euler's Totient And Fermat Theorems",
+              "duration": "2:10:00",
+              "order": 13
+            },
+            {
+              "videoId": "a22fbca5483d477ea4d4e40a7f361d70",
+              "title": "Practice Session On Remainders",
+              "duration": "2:06:28",
+              "order": 14
+            },
+            {
+              "videoId": "c1e96072ef2348b891f90a7978e9141c",
+              "title": "Concept Of Average",
+              "duration": "1:50:11",
+              "order": 15
+            },
+            {
+              "videoId": "1f40408099c8473495bbafb7b0e1dd22",
+              "title": "Practice Session On Average",
+              "duration": "1:42:13",
+              "order": 16
+            },
+            {
+              "videoId": "d8b2851c514a4e05a317c4a9001dc904",
+              "title": "Concept Of Arithmetic Progression",
+              "duration": "1:56:22",
+              "order": 17
+            },
+            {
+              "videoId": "ca7dd3daab2b4eddb19fccfa49ccdcc9",
+              "title": "Arithmetic Progression Practice Session",
+              "duration": "1:43:53",
+              "order": 18
+            },
+            {
+              "videoId": "7bb326ec011241d8a1b1d0a2c0f72408",
+              "title": "Geometrical Progression",
+              "duration": "1:55:27",
+              "order": 19
+            },
+            {
+              "videoId": "ec0bfa15477044a8a90829bacf513f3b",
+              "title": "Percentage",
+              "duration": "1:55:15",
+              "order": 20
+            },
+            {
+              "videoId": "bf0d34c4c6af4d85bcca86ce05f7c242",
+              "title": "Percentage Practice",
+              "duration": "1:53:50",
+              "order": 21
+            },
+            {
+              "videoId": "9f9a4f61b28f4c208daa1e338728ea9a",
+              "title": "Profit Loss Discount",
+              "duration": "0:53:41",
               "order": 22
             }
           ]
@@ -151,23 +302,184 @@
           "icon": "fas fa-globe-asia",
           "videos": [
             {
-              "videoId": "ddabf0dacf604790983f5bec1d992e08",
+              "videoId": "9c78fe9b5f1e40d1956854dc87fb212c",
+              "title": "Geography Orientation Class",
+              "duration": "0:58:28",
+              "order": 1
+            },
+            {
+              "videoId": "8f60bced2ca04ce493745ef4b30df540",
+              "title": "Introduction To Geography For UPSC",
+              "duration": "1:57:33",
+              "order": 2
+            },
+            {
+              "videoId": "b1cd91d0011c4380b7244afe36ec5fd8",
               "title": "Basic Introduction To Universe",
               "duration": "2:01:13",
-              "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "csat",
-          "displayName": "CSAT",
-          "icon": "fas fa-brain",
-          "videos": [
+              "order": 3
+            },
             {
-              "videoId": "cfa6941ef6034ffca2dd2cab156afc06",
-              "title": "Number System Types Of Numbers",
-              "duration": "2:10:18",
-              "order": 1
+              "videoId": "58f74d1ecbc047bbaa38553e45e74c97",
+              "title": "Basic Physical Concepts And Life Cycle Of A Star",
+              "duration": "2:03:07",
+              "order": 4
+            },
+            {
+              "videoId": "06a5b547997846069a2dff0f7b558262",
+              "title": "Solar System",
+              "duration": "2:17:51",
+              "order": 5
+            },
+            {
+              "videoId": "893f896619c34851bbb257d834a8148b",
+              "title": "Basic Principles And Nebular Hypothesis",
+              "duration": "0:53:55",
+              "order": 6
+            },
+            {
+              "videoId": "a9b1abdfedd54af5b25101510df91479",
+              "title": "Theories Of Evolution Of Universe",
+              "duration": "2:00:48",
+              "order": 7
+            },
+            {
+              "videoId": "89ac01484f09488087916cd369627070",
+              "title": "Fundamental Physical Concepts Used In Geography",
+              "duration": "1:34:23",
+              "order": 8
+            },
+            {
+              "videoId": "ac4cbc7094dc455dbbd7f11699754f61",
+              "title": "Origin Of Earth, Motions Of Earth",
+              "duration": "1:59:47",
+              "order": 9
+            },
+            {
+              "videoId": "2a5fd9f350cd426c90b049e1591f93b7",
+              "title": "Latitudes, Longitudes And Maps",
+              "duration": "2:19:13",
+              "order": 10
+            },
+            {
+              "videoId": "e6b8fd712a794bc1bae555143b793eaf",
+              "title": "Concept Of Time Keeping",
+              "duration": "2:03:54",
+              "order": 11
+            },
+            {
+              "videoId": "5b4256384b144590bb8cd07a51d40c49",
+              "title": "Layers In The Interior Of The Earth",
+              "duration": "1:53:07",
+              "order": 12
+            },
+            {
+              "videoId": "724e967a887c4cbda063eec5e21a2fb7",
+              "title": "Science Of Earthquake",
+              "duration": "2:03:24",
+              "order": 13
+            },
+            {
+              "videoId": "4a9c3529e51647bdb9703973d8e57abb",
+              "title": "Effects Of Earthquakes",
+              "duration": "2:04:21",
+              "order": 14
+            },
+            {
+              "videoId": "e46864945ecb4eacb94e8cc38e7bb334",
+              "title": "Volcanism",
+              "duration": "1:58:40",
+              "order": 15
+            },
+            {
+              "videoId": "d8d33ee3218c40bfbc1a7cd9bdd3a391",
+              "title": "General Doubt Clearing",
+              "duration": "1:01:23",
+              "order": 16
+            },
+            {
+              "videoId": "b4ae0c514fd144f5a0f967232a0d89fd",
+              "title": "Volcanism And Tsunami",
+              "duration": "2:11:15",
+              "order": 17
+            },
+            {
+              "videoId": "4accbb1cecf14b0e9ade1395caf444ba",
+              "title": "Rocks And Minerals I",
+              "duration": "2:00:02",
+              "order": 18
+            },
+            {
+              "videoId": "9d632858ce8747c78f7c9cd0b6636937",
+              "title": "Rocks And Minerals II",
+              "duration": "2:05:20",
+              "order": 19
+            },
+            {
+              "videoId": "6f8587a80ea5478a99db266ac8a45b38",
+              "title": "Continental Drift Theory",
+              "duration": "2:03:38",
+              "order": 20
+            },
+            {
+              "videoId": "6e82279517ae4f8bb6e271796c84ea39",
+              "title": "Convective Current Theory And Theory Of Plate Tectonics",
+              "duration": "2:09:35",
+              "order": 21
+            },
+            {
+              "videoId": "7df3902763df4c779dec889c0e812c48",
+              "title": "The Journey Of Indian Plate And The Rise Of The Himalayas",
+              "duration": "0:53:19",
+              "order": 22
+            },
+            {
+              "videoId": "8818376e9d90472f8cc60e23a52bc1a4",
+              "title": "Introduction To Temperature",
+              "duration": "2:02:59",
+              "order": 23
+            },
+            {
+              "videoId": "e6e93ac4490e40b7877f73146d445cd9",
+              "title": "Basic Concepts Of Climatology",
+              "duration": "2:09:58",
+              "order": 24
+            },
+            {
+              "videoId": "d8b6f3a1075a48fab6da9f7ffc027b3f",
+              "title": "Heat Transfer And Urban Rural Temperature Contrast",
+              "duration": "2:03:21",
+              "order": 25
+            },
+            {
+              "videoId": "c8c1de46f62b48a78019d6ec13618d47",
+              "title": "The Urban Heat Island",
+              "duration": "2:00:30",
+              "order": 26
+            },
+            {
+              "videoId": "dd4b5f2701f44190b83a6a6896b17f74",
+              "title": "Global Energy Balance",
+              "duration": "1:54:06",
+              "order": 27
+            },
+            {
+              "videoId": "aa81975c0e064f1d8ee483feccb31efd",
+              "title": "Mode Of Heat Transfer",
+              "duration": "1:32:50",
+              "order": 28
+            },
+            {
+              "videoId": "a057bd129f984610a1c67ad4cce8d1b7",
+              "title": "Global Energy Balance II",
+              "duration": "1:42:53",
+              "order": 29
+            },
+            {
+              "videoId": "970bcfd6686f4ea492bf9133dfcdad16",
+              "title": "Global Temperatures Patterns And On Winds",
+              "duration": "1:58:24",
+              "order": 30
             }
           ]
         }
@@ -185,135 +497,286 @@
           "icon": "fas fa-leaf",
           "videos": [
             {
+              "videoId": "d8a3dd14709449179bd785f408d0d2c6",
+              "title": "Ecology 1",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "5832a966ecdd4d0bbdbd65ff72ecbbd6",
+              "title": "Ecology 2",
+              "duration": "2:02:36",
+              "order": 2
+            },
+            {
               "videoId": "0db1c25dd475461faa4c91f131b65cfc",
               "title": "Basic Terminology of Ecology",
               "duration": "1:44:12",
-              "order": 1
+              "order": 3
             },
             {
               "videoId": "28848d45340841f0b01022f2cf8e9a39",
               "title": "Population Ecology-I",
               "duration": "2:07:44",
-              "order": 2
+              "order": 4
             },
             {
               "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
               "title": "Population Ecology-II",
               "duration": "2:05:33",
-              "order": 3
+              "order": 5
             },
             {
               "videoId": "52d15b3887794cd5a628e3cfac1b2963",
               "title": "Interspecific Interactions",
               "duration": "2:07:28",
-              "order": 4
+              "order": 6
             },
             {
               "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
               "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
               "duration": "2:12:19",
-              "order": 5
+              "order": 7
             },
             {
               "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
               "title": "Climax Species, Ecosystem Ecology",
               "duration": "1:43:41",
-              "order": 6
+              "order": 8
             },
             {
               "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
               "title": "Food Web",
               "duration": "1:58:14",
-              "order": 7
+              "order": 9
             },
             {
               "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
               "title": "Ecological Pyramids",
               "duration": "1:50:51",
-              "order": 8
+              "order": 10
             },
             {
               "videoId": "cbd8b6d2d58d45e89c818192e0936790",
               "title": "Types of Ecosystems",
               "duration": "1:53:00",
-              "order": 9
+              "order": 11
             },
             {
               "videoId": "a3944450bf4840fab7603b69b2a74beb",
               "title": "Biomes-I",
               "duration": "1:40:52",
-              "order": 10
+              "order": 12
             },
             {
               "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
               "title": "Biomes-II",
               "duration": "1:26:50",
-              "order": 11
+              "order": 13
             },
             {
               "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
               "title": "Biomes-III",
               "duration": "1:31:22",
-              "order": 12
+              "order": 14
             },
             {
               "videoId": "e6ad43844a3c4733ac1631ab384ed755",
               "title": "Biomes-IV",
               "duration": "1:24:08",
-              "order": 13
+              "order": 15
             },
             {
               "videoId": "c255ab81b09141899f9275ec7d9f2251",
               "title": "Biosphere",
               "duration": "1:51:50",
-              "order": 14
+              "order": 16
             },
             {
               "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
               "title": "Nitrogen Cycle",
               "duration": "1:38:16",
-              "order": 15
+              "order": 17
             },
             {
               "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
               "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
               "duration": "1:36:59",
-              "order": 16
+              "order": 18
             },
             {
               "videoId": "31dc4a070f804502bad41c9041a71a09",
               "title": "Biodiversity-I",
               "duration": "2:08:14",
-              "order": 17
+              "order": 19
             },
             {
               "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
               "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
               "duration": "1:45:01",
-              "order": 18
+              "order": 20
             },
             {
               "videoId": "0046140fb85940b6b871b071b746762f",
               "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
               "duration": "1:32:25",
-              "order": 19
+              "order": 21
             },
             {
               "videoId": "2d0f8a52e4ce40de8edde300da961769",
               "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
               "duration": "1:53:39",
-              "order": 20
+              "order": 22
             },
             {
               "videoId": "a9191b51b28d4e56983af6ce6272681f",
               "title": "Biodiversity Hotspots in India-II",
               "duration": "2:01:41",
-              "order": 21
+              "order": 23
             },
             {
               "videoId": "b5575ff8d1f248058540a9b3c098d91b",
               "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
               "duration": "1:49:59",
+              "order": 24
+            }
+          ]
+        },
+        {
+          "subjectId": "csat",
+          "displayName": "CSAT",
+          "icon": "fas fa-brain",
+          "videos": [
+            {
+              "videoId": "d98e78a7940a434d93a6632da33363e3",
+              "title": "CSAT Orientation Class",
+              "duration": "2:10:39",
+              "order": 1
+            },
+            {
+              "videoId": "9f88738c2f8646e1952d28b840b48dee",
+              "title": "Number System Types Of Numbers",
+              "duration": "2:10:18",
+              "order": 2
+            },
+            {
+              "videoId": "f9488f4c1adb4eeb8c4ebe5b36fb9075",
+              "title": "Conversion Of Binary And Decimal Numbers, Concept Of Units Digit",
+              "duration": "2:13:35",
+              "order": 3
+            },
+            {
+              "videoId": "e8c8b1a9a34a4958b9d92c3447f4653f",
+              "title": "Practice On Units Digit And Divisibility Rules",
+              "duration": "2:14:38",
+              "order": 4
+            },
+            {
+              "videoId": "7f97ace63dd04cbeb3073908f89cb8b4",
+              "title": "Divisibility Rules And Prime Numbers",
+              "duration": "2:04:31",
+              "order": 5
+            },
+            {
+              "videoId": "7b5cd5b217be48ef85a0a30f230ebbd9",
+              "title": "Practice On Divisibility, Concept Of HCF And LCM",
+              "duration": "1:35:50",
+              "order": 6
+            },
+            {
+              "videoId": "d2a980af93a94d129e4d58cd572a6a78",
+              "title": "Practice On Divisibility, LCM And HCF",
+              "duration": "2:01:15",
+              "order": 7
+            },
+            {
+              "videoId": "ef027ad36bdb4449bf53810a3ae2b20e",
+              "title": "Practice On Number Systems",
+              "duration": "2:06:33",
+              "order": 8
+            },
+            {
+              "videoId": "1e4c7c7a84484788a3f074e5212877a2",
+              "title": "Time And Work Level 1",
+              "duration": "2:04:53",
+              "order": 9
+            },
+            {
+              "videoId": "4304225e0c6f4f7eb5bee7674583d322",
+              "title": "Time And Work Level 2",
+              "duration": "2:10:32",
+              "order": 10
+            },
+            {
+              "videoId": "b271f906c29146e3b17cdf86ff2a8cfd",
+              "title": "Time And Work Level 3",
+              "duration": "2:08:05",
+              "order": 11
+            },
+            {
+              "videoId": "e3c48ff2822d4dc1a426477d9af3b308",
+              "title": "Practice Session On Time And Work",
+              "duration": "2:17:16",
+              "order": 12
+            },
+            {
+              "videoId": "7b4eb2f047584267885862cb3b801d93",
+              "title": "Remainders, Euler's Totient And Fermat Theorems",
+              "duration": "2:10:00",
+              "order": 13
+            },
+            {
+              "videoId": "a22fbca5483d477ea4d4e40a7f361d70",
+              "title": "Practice Session On Remainders",
+              "duration": "2:06:28",
+              "order": 14
+            },
+            {
+              "videoId": "c1e96072ef2348b891f90a7978e9141c",
+              "title": "Concept Of Average",
+              "duration": "1:50:11",
+              "order": 15
+            },
+            {
+              "videoId": "1f40408099c8473495bbafb7b0e1dd22",
+              "title": "Practice Session On Average",
+              "duration": "1:42:13",
+              "order": 16
+            },
+            {
+              "videoId": "d8b2851c514a4e05a317c4a9001dc904",
+              "title": "Concept Of Arithmetic Progression",
+              "duration": "1:56:22",
+              "order": 17
+            },
+            {
+              "videoId": "ca7dd3daab2b4eddb19fccfa49ccdcc9",
+              "title": "Arithmetic Progression Practice Session",
+              "duration": "1:43:53",
+              "order": 18
+            },
+            {
+              "videoId": "7bb326ec011241d8a1b1d0a2c0f72408",
+              "title": "Geometrical Progression",
+              "duration": "1:55:27",
+              "order": 19
+            },
+            {
+              "videoId": "ec0bfa15477044a8a90829bacf513f3b",
+              "title": "Percentage",
+              "duration": "1:55:15",
+              "order": 20
+            },
+            {
+              "videoId": "bf0d34c4c6af4d85bcca86ce05f7c242",
+              "title": "Percentage Practice",
+              "duration": "1:53:50",
+              "order": 21
+            },
+            {
+              "videoId": "9f9a4f61b28f4c208daa1e338728ea9a",
+              "title": "Profit Loss Discount",
+              "duration": "0:53:41",
               "order": 22
             }
           ]
@@ -324,23 +787,184 @@
           "icon": "fas fa-globe-asia",
           "videos": [
             {
-              "videoId": "ddabf0dacf604790983f5bec1d992e08",
+              "videoId": "9c78fe9b5f1e40d1956854dc87fb212c",
+              "title": "Geography Orientation Class",
+              "duration": "0:58:28",
+              "order": 1
+            },
+            {
+              "videoId": "8f60bced2ca04ce493745ef4b30df540",
+              "title": "Introduction To Geography For UPSC",
+              "duration": "1:57:33",
+              "order": 2
+            },
+            {
+              "videoId": "b1cd91d0011c4380b7244afe36ec5fd8",
               "title": "Basic Introduction To Universe",
               "duration": "2:01:13",
-              "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "csat",
-          "displayName": "CSAT",
-          "icon": "fas fa-brain",
-          "videos": [
+              "order": 3
+            },
             {
-              "videoId": "cfa6941ef6034ffca2dd2cab156afc06",
-              "title": "Number System Types Of Numbers",
-              "duration": "2:10:18",
-              "order": 1
+              "videoId": "58f74d1ecbc047bbaa38553e45e74c97",
+              "title": "Basic Physical Concepts And Life Cycle Of A Star",
+              "duration": "2:03:07",
+              "order": 4
+            },
+            {
+              "videoId": "06a5b547997846069a2dff0f7b558262",
+              "title": "Solar System",
+              "duration": "2:17:51",
+              "order": 5
+            },
+            {
+              "videoId": "893f896619c34851bbb257d834a8148b",
+              "title": "Basic Principles And Nebular Hypothesis",
+              "duration": "0:53:55",
+              "order": 6
+            },
+            {
+              "videoId": "a9b1abdfedd54af5b25101510df91479",
+              "title": "Theories Of Evolution Of Universe",
+              "duration": "2:00:48",
+              "order": 7
+            },
+            {
+              "videoId": "89ac01484f09488087916cd369627070",
+              "title": "Fundamental Physical Concepts Used In Geography",
+              "duration": "1:34:23",
+              "order": 8
+            },
+            {
+              "videoId": "ac4cbc7094dc455dbbd7f11699754f61",
+              "title": "Origin Of Earth, Motions Of Earth",
+              "duration": "1:59:47",
+              "order": 9
+            },
+            {
+              "videoId": "2a5fd9f350cd426c90b049e1591f93b7",
+              "title": "Latitudes, Longitudes And Maps",
+              "duration": "2:19:13",
+              "order": 10
+            },
+            {
+              "videoId": "e6b8fd712a794bc1bae555143b793eaf",
+              "title": "Concept Of Time Keeping",
+              "duration": "2:03:54",
+              "order": 11
+            },
+            {
+              "videoId": "5b4256384b144590bb8cd07a51d40c49",
+              "title": "Layers In The Interior Of The Earth",
+              "duration": "1:53:07",
+              "order": 12
+            },
+            {
+              "videoId": "724e967a887c4cbda063eec5e21a2fb7",
+              "title": "Science Of Earthquake",
+              "duration": "2:03:24",
+              "order": 13
+            },
+            {
+              "videoId": "4a9c3529e51647bdb9703973d8e57abb",
+              "title": "Effects Of Earthquakes",
+              "duration": "2:04:21",
+              "order": 14
+            },
+            {
+              "videoId": "e46864945ecb4eacb94e8cc38e7bb334",
+              "title": "Volcanism",
+              "duration": "1:58:40",
+              "order": 15
+            },
+            {
+              "videoId": "d8d33ee3218c40bfbc1a7cd9bdd3a391",
+              "title": "General Doubt Clearing",
+              "duration": "1:01:23",
+              "order": 16
+            },
+            {
+              "videoId": "b4ae0c514fd144f5a0f967232a0d89fd",
+              "title": "Volcanism And Tsunami",
+              "duration": "2:11:15",
+              "order": 17
+            },
+            {
+              "videoId": "4accbb1cecf14b0e9ade1395caf444ba",
+              "title": "Rocks And Minerals I",
+              "duration": "2:00:02",
+              "order": 18
+            },
+            {
+              "videoId": "9d632858ce8747c78f7c9cd0b6636937",
+              "title": "Rocks And Minerals II",
+              "duration": "2:05:20",
+              "order": 19
+            },
+            {
+              "videoId": "6f8587a80ea5478a99db266ac8a45b38",
+              "title": "Continental Drift Theory",
+              "duration": "2:03:38",
+              "order": 20
+            },
+            {
+              "videoId": "6e82279517ae4f8bb6e271796c84ea39",
+              "title": "Convective Current Theory And Theory Of Plate Tectonics",
+              "duration": "2:09:35",
+              "order": 21
+            },
+            {
+              "videoId": "7df3902763df4c779dec889c0e812c48",
+              "title": "The Journey Of Indian Plate And The Rise Of The Himalayas",
+              "duration": "0:53:19",
+              "order": 22
+            },
+            {
+              "videoId": "8818376e9d90472f8cc60e23a52bc1a4",
+              "title": "Introduction To Temperature",
+              "duration": "2:02:59",
+              "order": 23
+            },
+            {
+              "videoId": "e6e93ac4490e40b7877f73146d445cd9",
+              "title": "Basic Concepts Of Climatology",
+              "duration": "2:09:58",
+              "order": 24
+            },
+            {
+              "videoId": "d8b6f3a1075a48fab6da9f7ffc027b3f",
+              "title": "Heat Transfer And Urban Rural Temperature Contrast",
+              "duration": "2:03:21",
+              "order": 25
+            },
+            {
+              "videoId": "c8c1de46f62b48a78019d6ec13618d47",
+              "title": "The Urban Heat Island",
+              "duration": "2:00:30",
+              "order": 26
+            },
+            {
+              "videoId": "dd4b5f2701f44190b83a6a6896b17f74",
+              "title": "Global Energy Balance",
+              "duration": "1:54:06",
+              "order": 27
+            },
+            {
+              "videoId": "aa81975c0e064f1d8ee483feccb31efd",
+              "title": "Mode Of Heat Transfer",
+              "duration": "1:32:50",
+              "order": 28
+            },
+            {
+              "videoId": "a057bd129f984610a1c67ad4cce8d1b7",
+              "title": "Global Energy Balance II",
+              "duration": "1:42:53",
+              "order": 29
+            },
+            {
+              "videoId": "970bcfd6686f4ea492bf9133dfcdad16",
+              "title": "Global Temperatures Patterns And On Winds",
+              "duration": "1:58:24",
+              "order": 30
             }
           ]
         }
@@ -358,135 +982,286 @@
           "icon": "fas fa-leaf",
           "videos": [
             {
+              "videoId": "d8a3dd14709449179bd785f408d0d2c6",
+              "title": "Ecology 1",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "5832a966ecdd4d0bbdbd65ff72ecbbd6",
+              "title": "Ecology 2",
+              "duration": "2:02:36",
+              "order": 2
+            },
+            {
               "videoId": "0db1c25dd475461faa4c91f131b65cfc",
               "title": "Basic Terminology of Ecology",
               "duration": "1:44:12",
-              "order": 1
+              "order": 3
             },
             {
               "videoId": "28848d45340841f0b01022f2cf8e9a39",
               "title": "Population Ecology-I",
               "duration": "2:07:44",
-              "order": 2
+              "order": 4
             },
             {
               "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
               "title": "Population Ecology-II",
               "duration": "2:05:33",
-              "order": 3
+              "order": 5
             },
             {
               "videoId": "52d15b3887794cd5a628e3cfac1b2963",
               "title": "Interspecific Interactions",
               "duration": "2:07:28",
-              "order": 4
+              "order": 6
             },
             {
               "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
               "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
               "duration": "2:12:19",
-              "order": 5
+              "order": 7
             },
             {
               "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
               "title": "Climax Species, Ecosystem Ecology",
               "duration": "1:43:41",
-              "order": 6
+              "order": 8
             },
             {
               "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
               "title": "Food Web",
               "duration": "1:58:14",
-              "order": 7
+              "order": 9
             },
             {
               "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
               "title": "Ecological Pyramids",
               "duration": "1:50:51",
-              "order": 8
+              "order": 10
             },
             {
               "videoId": "cbd8b6d2d58d45e89c818192e0936790",
               "title": "Types of Ecosystems",
               "duration": "1:53:00",
-              "order": 9
+              "order": 11
             },
             {
               "videoId": "a3944450bf4840fab7603b69b2a74beb",
               "title": "Biomes-I",
               "duration": "1:40:52",
-              "order": 10
+              "order": 12
             },
             {
               "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
               "title": "Biomes-II",
               "duration": "1:26:50",
-              "order": 11
+              "order": 13
             },
             {
               "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
               "title": "Biomes-III",
               "duration": "1:31:22",
-              "order": 12
+              "order": 14
             },
             {
               "videoId": "e6ad43844a3c4733ac1631ab384ed755",
               "title": "Biomes-IV",
               "duration": "1:24:08",
-              "order": 13
+              "order": 15
             },
             {
               "videoId": "c255ab81b09141899f9275ec7d9f2251",
               "title": "Biosphere",
               "duration": "1:51:50",
-              "order": 14
+              "order": 16
             },
             {
               "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
               "title": "Nitrogen Cycle",
               "duration": "1:38:16",
-              "order": 15
+              "order": 17
             },
             {
               "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
               "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
               "duration": "1:36:59",
-              "order": 16
+              "order": 18
             },
             {
               "videoId": "31dc4a070f804502bad41c9041a71a09",
               "title": "Biodiversity-I",
               "duration": "2:08:14",
-              "order": 17
+              "order": 19
             },
             {
               "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
               "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
               "duration": "1:45:01",
-              "order": 18
+              "order": 20
             },
             {
               "videoId": "0046140fb85940b6b871b071b746762f",
               "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
               "duration": "1:32:25",
-              "order": 19
+              "order": 21
             },
             {
               "videoId": "2d0f8a52e4ce40de8edde300da961769",
               "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
               "duration": "1:53:39",
-              "order": 20
+              "order": 22
             },
             {
               "videoId": "a9191b51b28d4e56983af6ce6272681f",
               "title": "Biodiversity Hotspots in India-II",
               "duration": "2:01:41",
-              "order": 21
+              "order": 23
             },
             {
               "videoId": "b5575ff8d1f248058540a9b3c098d91b",
               "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
               "duration": "1:49:59",
+              "order": 24
+            }
+          ]
+        },
+        {
+          "subjectId": "csat",
+          "displayName": "CSAT",
+          "icon": "fas fa-brain",
+          "videos": [
+            {
+              "videoId": "d98e78a7940a434d93a6632da33363e3",
+              "title": "CSAT Orientation Class",
+              "duration": "2:10:39",
+              "order": 1
+            },
+            {
+              "videoId": "9f88738c2f8646e1952d28b840b48dee",
+              "title": "Number System Types Of Numbers",
+              "duration": "2:10:18",
+              "order": 2
+            },
+            {
+              "videoId": "f9488f4c1adb4eeb8c4ebe5b36fb9075",
+              "title": "Conversion Of Binary And Decimal Numbers, Concept Of Units Digit",
+              "duration": "2:13:35",
+              "order": 3
+            },
+            {
+              "videoId": "e8c8b1a9a34a4958b9d92c3447f4653f",
+              "title": "Practice On Units Digit And Divisibility Rules",
+              "duration": "2:14:38",
+              "order": 4
+            },
+            {
+              "videoId": "7f97ace63dd04cbeb3073908f89cb8b4",
+              "title": "Divisibility Rules And Prime Numbers",
+              "duration": "2:04:31",
+              "order": 5
+            },
+            {
+              "videoId": "7b5cd5b217be48ef85a0a30f230ebbd9",
+              "title": "Practice On Divisibility, Concept Of HCF And LCM",
+              "duration": "1:35:50",
+              "order": 6
+            },
+            {
+              "videoId": "d2a980af93a94d129e4d58cd572a6a78",
+              "title": "Practice On Divisibility, LCM And HCF",
+              "duration": "2:01:15",
+              "order": 7
+            },
+            {
+              "videoId": "ef027ad36bdb4449bf53810a3ae2b20e",
+              "title": "Practice On Number Systems",
+              "duration": "2:06:33",
+              "order": 8
+            },
+            {
+              "videoId": "1e4c7c7a84484788a3f074e5212877a2",
+              "title": "Time And Work Level 1",
+              "duration": "2:04:53",
+              "order": 9
+            },
+            {
+              "videoId": "4304225e0c6f4f7eb5bee7674583d322",
+              "title": "Time And Work Level 2",
+              "duration": "2:10:32",
+              "order": 10
+            },
+            {
+              "videoId": "b271f906c29146e3b17cdf86ff2a8cfd",
+              "title": "Time And Work Level 3",
+              "duration": "2:08:05",
+              "order": 11
+            },
+            {
+              "videoId": "e3c48ff2822d4dc1a426477d9af3b308",
+              "title": "Practice Session On Time And Work",
+              "duration": "2:17:16",
+              "order": 12
+            },
+            {
+              "videoId": "7b4eb2f047584267885862cb3b801d93",
+              "title": "Remainders, Euler's Totient And Fermat Theorems",
+              "duration": "2:10:00",
+              "order": 13
+            },
+            {
+              "videoId": "a22fbca5483d477ea4d4e40a7f361d70",
+              "title": "Practice Session On Remainders",
+              "duration": "2:06:28",
+              "order": 14
+            },
+            {
+              "videoId": "c1e96072ef2348b891f90a7978e9141c",
+              "title": "Concept Of Average",
+              "duration": "1:50:11",
+              "order": 15
+            },
+            {
+              "videoId": "1f40408099c8473495bbafb7b0e1dd22",
+              "title": "Practice Session On Average",
+              "duration": "1:42:13",
+              "order": 16
+            },
+            {
+              "videoId": "d8b2851c514a4e05a317c4a9001dc904",
+              "title": "Concept Of Arithmetic Progression",
+              "duration": "1:56:22",
+              "order": 17
+            },
+            {
+              "videoId": "ca7dd3daab2b4eddb19fccfa49ccdcc9",
+              "title": "Arithmetic Progression Practice Session",
+              "duration": "1:43:53",
+              "order": 18
+            },
+            {
+              "videoId": "7bb326ec011241d8a1b1d0a2c0f72408",
+              "title": "Geometrical Progression",
+              "duration": "1:55:27",
+              "order": 19
+            },
+            {
+              "videoId": "ec0bfa15477044a8a90829bacf513f3b",
+              "title": "Percentage",
+              "duration": "1:55:15",
+              "order": 20
+            },
+            {
+              "videoId": "bf0d34c4c6af4d85bcca86ce05f7c242",
+              "title": "Percentage Practice",
+              "duration": "1:53:50",
+              "order": 21
+            },
+            {
+              "videoId": "9f9a4f61b28f4c208daa1e338728ea9a",
+              "title": "Profit Loss Discount",
+              "duration": "0:53:41",
               "order": 22
             }
           ]
@@ -497,23 +1272,184 @@
           "icon": "fas fa-globe-asia",
           "videos": [
             {
-              "videoId": "ddabf0dacf604790983f5bec1d992e08",
+              "videoId": "9c78fe9b5f1e40d1956854dc87fb212c",
+              "title": "Geography Orientation Class",
+              "duration": "0:58:28",
+              "order": 1
+            },
+            {
+              "videoId": "8f60bced2ca04ce493745ef4b30df540",
+              "title": "Introduction To Geography For UPSC",
+              "duration": "1:57:33",
+              "order": 2
+            },
+            {
+              "videoId": "b1cd91d0011c4380b7244afe36ec5fd8",
               "title": "Basic Introduction To Universe",
               "duration": "2:01:13",
-              "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "csat",
-          "displayName": "CSAT",
-          "icon": "fas fa-brain",
-          "videos": [
+              "order": 3
+            },
             {
-              "videoId": "cfa6941ef6034ffca2dd2cab156afc06",
-              "title": "Number System Types Of Numbers",
-              "duration": "2:10:18",
-              "order": 1
+              "videoId": "58f74d1ecbc047bbaa38553e45e74c97",
+              "title": "Basic Physical Concepts And Life Cycle Of A Star",
+              "duration": "2:03:07",
+              "order": 4
+            },
+            {
+              "videoId": "06a5b547997846069a2dff0f7b558262",
+              "title": "Solar System",
+              "duration": "2:17:51",
+              "order": 5
+            },
+            {
+              "videoId": "893f896619c34851bbb257d834a8148b",
+              "title": "Basic Principles And Nebular Hypothesis",
+              "duration": "0:53:55",
+              "order": 6
+            },
+            {
+              "videoId": "a9b1abdfedd54af5b25101510df91479",
+              "title": "Theories Of Evolution Of Universe",
+              "duration": "2:00:48",
+              "order": 7
+            },
+            {
+              "videoId": "89ac01484f09488087916cd369627070",
+              "title": "Fundamental Physical Concepts Used In Geography",
+              "duration": "1:34:23",
+              "order": 8
+            },
+            {
+              "videoId": "ac4cbc7094dc455dbbd7f11699754f61",
+              "title": "Origin Of Earth, Motions Of Earth",
+              "duration": "1:59:47",
+              "order": 9
+            },
+            {
+              "videoId": "2a5fd9f350cd426c90b049e1591f93b7",
+              "title": "Latitudes, Longitudes And Maps",
+              "duration": "2:19:13",
+              "order": 10
+            },
+            {
+              "videoId": "e6b8fd712a794bc1bae555143b793eaf",
+              "title": "Concept Of Time Keeping",
+              "duration": "2:03:54",
+              "order": 11
+            },
+            {
+              "videoId": "5b4256384b144590bb8cd07a51d40c49",
+              "title": "Layers In The Interior Of The Earth",
+              "duration": "1:53:07",
+              "order": 12
+            },
+            {
+              "videoId": "724e967a887c4cbda063eec5e21a2fb7",
+              "title": "Science Of Earthquake",
+              "duration": "2:03:24",
+              "order": 13
+            },
+            {
+              "videoId": "4a9c3529e51647bdb9703973d8e57abb",
+              "title": "Effects Of Earthquakes",
+              "duration": "2:04:21",
+              "order": 14
+            },
+            {
+              "videoId": "e46864945ecb4eacb94e8cc38e7bb334",
+              "title": "Volcanism",
+              "duration": "1:58:40",
+              "order": 15
+            },
+            {
+              "videoId": "d8d33ee3218c40bfbc1a7cd9bdd3a391",
+              "title": "General Doubt Clearing",
+              "duration": "1:01:23",
+              "order": 16
+            },
+            {
+              "videoId": "b4ae0c514fd144f5a0f967232a0d89fd",
+              "title": "Volcanism And Tsunami",
+              "duration": "2:11:15",
+              "order": 17
+            },
+            {
+              "videoId": "4accbb1cecf14b0e9ade1395caf444ba",
+              "title": "Rocks And Minerals I",
+              "duration": "2:00:02",
+              "order": 18
+            },
+            {
+              "videoId": "9d632858ce8747c78f7c9cd0b6636937",
+              "title": "Rocks And Minerals II",
+              "duration": "2:05:20",
+              "order": 19
+            },
+            {
+              "videoId": "6f8587a80ea5478a99db266ac8a45b38",
+              "title": "Continental Drift Theory",
+              "duration": "2:03:38",
+              "order": 20
+            },
+            {
+              "videoId": "6e82279517ae4f8bb6e271796c84ea39",
+              "title": "Convective Current Theory And Theory Of Plate Tectonics",
+              "duration": "2:09:35",
+              "order": 21
+            },
+            {
+              "videoId": "7df3902763df4c779dec889c0e812c48",
+              "title": "The Journey Of Indian Plate And The Rise Of The Himalayas",
+              "duration": "0:53:19",
+              "order": 22
+            },
+            {
+              "videoId": "8818376e9d90472f8cc60e23a52bc1a4",
+              "title": "Introduction To Temperature",
+              "duration": "2:02:59",
+              "order": 23
+            },
+            {
+              "videoId": "e6e93ac4490e40b7877f73146d445cd9",
+              "title": "Basic Concepts Of Climatology",
+              "duration": "2:09:58",
+              "order": 24
+            },
+            {
+              "videoId": "d8b6f3a1075a48fab6da9f7ffc027b3f",
+              "title": "Heat Transfer And Urban Rural Temperature Contrast",
+              "duration": "2:03:21",
+              "order": 25
+            },
+            {
+              "videoId": "c8c1de46f62b48a78019d6ec13618d47",
+              "title": "The Urban Heat Island",
+              "duration": "2:00:30",
+              "order": 26
+            },
+            {
+              "videoId": "dd4b5f2701f44190b83a6a6896b17f74",
+              "title": "Global Energy Balance",
+              "duration": "1:54:06",
+              "order": 27
+            },
+            {
+              "videoId": "aa81975c0e064f1d8ee483feccb31efd",
+              "title": "Mode Of Heat Transfer",
+              "duration": "1:32:50",
+              "order": 28
+            },
+            {
+              "videoId": "a057bd129f984610a1c67ad4cce8d1b7",
+              "title": "Global Energy Balance II",
+              "duration": "1:42:53",
+              "order": 29
+            },
+            {
+              "videoId": "970bcfd6686f4ea492bf9133dfcdad16",
+              "title": "Global Temperatures Patterns And On Winds",
+              "duration": "1:58:24",
+              "order": 30
             }
           ]
         }
@@ -531,135 +1467,286 @@
           "icon": "fas fa-leaf",
           "videos": [
             {
+              "videoId": "d8a3dd14709449179bd785f408d0d2c6",
+              "title": "Ecology 1",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "5832a966ecdd4d0bbdbd65ff72ecbbd6",
+              "title": "Ecology 2",
+              "duration": "2:02:36",
+              "order": 2
+            },
+            {
               "videoId": "0db1c25dd475461faa4c91f131b65cfc",
               "title": "Basic Terminology of Ecology",
               "duration": "1:44:12",
-              "order": 1
+              "order": 3
             },
             {
               "videoId": "28848d45340841f0b01022f2cf8e9a39",
               "title": "Population Ecology-I",
               "duration": "2:07:44",
-              "order": 2
+              "order": 4
             },
             {
               "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
               "title": "Population Ecology-II",
               "duration": "2:05:33",
-              "order": 3
+              "order": 5
             },
             {
               "videoId": "52d15b3887794cd5a628e3cfac1b2963",
               "title": "Interspecific Interactions",
               "duration": "2:07:28",
-              "order": 4
+              "order": 6
             },
             {
               "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
               "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
               "duration": "2:12:19",
-              "order": 5
+              "order": 7
             },
             {
               "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
               "title": "Climax Species, Ecosystem Ecology",
               "duration": "1:43:41",
-              "order": 6
+              "order": 8
             },
             {
               "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
               "title": "Food Web",
               "duration": "1:58:14",
-              "order": 7
+              "order": 9
             },
             {
               "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
               "title": "Ecological Pyramids",
               "duration": "1:50:51",
-              "order": 8
+              "order": 10
             },
             {
               "videoId": "cbd8b6d2d58d45e89c818192e0936790",
               "title": "Types of Ecosystems",
               "duration": "1:53:00",
-              "order": 9
+              "order": 11
             },
             {
               "videoId": "a3944450bf4840fab7603b69b2a74beb",
               "title": "Biomes-I",
               "duration": "1:40:52",
-              "order": 10
+              "order": 12
             },
             {
               "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
               "title": "Biomes-II",
               "duration": "1:26:50",
-              "order": 11
+              "order": 13
             },
             {
               "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
               "title": "Biomes-III",
               "duration": "1:31:22",
-              "order": 12
+              "order": 14
             },
             {
               "videoId": "e6ad43844a3c4733ac1631ab384ed755",
               "title": "Biomes-IV",
               "duration": "1:24:08",
-              "order": 13
+              "order": 15
             },
             {
               "videoId": "c255ab81b09141899f9275ec7d9f2251",
               "title": "Biosphere",
               "duration": "1:51:50",
-              "order": 14
+              "order": 16
             },
             {
               "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
               "title": "Nitrogen Cycle",
               "duration": "1:38:16",
-              "order": 15
+              "order": 17
             },
             {
               "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
               "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
               "duration": "1:36:59",
-              "order": 16
+              "order": 18
             },
             {
               "videoId": "31dc4a070f804502bad41c9041a71a09",
               "title": "Biodiversity-I",
               "duration": "2:08:14",
-              "order": 17
+              "order": 19
             },
             {
               "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
               "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
               "duration": "1:45:01",
-              "order": 18
+              "order": 20
             },
             {
               "videoId": "0046140fb85940b6b871b071b746762f",
               "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
               "duration": "1:32:25",
-              "order": 19
+              "order": 21
             },
             {
               "videoId": "2d0f8a52e4ce40de8edde300da961769",
               "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
               "duration": "1:53:39",
-              "order": 20
+              "order": 22
             },
             {
               "videoId": "a9191b51b28d4e56983af6ce6272681f",
               "title": "Biodiversity Hotspots in India-II",
               "duration": "2:01:41",
-              "order": 21
+              "order": 23
             },
             {
               "videoId": "b5575ff8d1f248058540a9b3c098d91b",
               "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
               "duration": "1:49:59",
+              "order": 24
+            }
+          ]
+        },
+        {
+          "subjectId": "csat",
+          "displayName": "CSAT",
+          "icon": "fas fa-brain",
+          "videos": [
+            {
+              "videoId": "d98e78a7940a434d93a6632da33363e3",
+              "title": "CSAT Orientation Class",
+              "duration": "2:10:39",
+              "order": 1
+            },
+            {
+              "videoId": "9f88738c2f8646e1952d28b840b48dee",
+              "title": "Number System Types Of Numbers",
+              "duration": "2:10:18",
+              "order": 2
+            },
+            {
+              "videoId": "f9488f4c1adb4eeb8c4ebe5b36fb9075",
+              "title": "Conversion Of Binary And Decimal Numbers, Concept Of Units Digit",
+              "duration": "2:13:35",
+              "order": 3
+            },
+            {
+              "videoId": "e8c8b1a9a34a4958b9d92c3447f4653f",
+              "title": "Practice On Units Digit And Divisibility Rules",
+              "duration": "2:14:38",
+              "order": 4
+            },
+            {
+              "videoId": "7f97ace63dd04cbeb3073908f89cb8b4",
+              "title": "Divisibility Rules And Prime Numbers",
+              "duration": "2:04:31",
+              "order": 5
+            },
+            {
+              "videoId": "7b5cd5b217be48ef85a0a30f230ebbd9",
+              "title": "Practice On Divisibility, Concept Of HCF And LCM",
+              "duration": "1:35:50",
+              "order": 6
+            },
+            {
+              "videoId": "d2a980af93a94d129e4d58cd572a6a78",
+              "title": "Practice On Divisibility, LCM And HCF",
+              "duration": "2:01:15",
+              "order": 7
+            },
+            {
+              "videoId": "ef027ad36bdb4449bf53810a3ae2b20e",
+              "title": "Practice On Number Systems",
+              "duration": "2:06:33",
+              "order": 8
+            },
+            {
+              "videoId": "1e4c7c7a84484788a3f074e5212877a2",
+              "title": "Time And Work Level 1",
+              "duration": "2:04:53",
+              "order": 9
+            },
+            {
+              "videoId": "4304225e0c6f4f7eb5bee7674583d322",
+              "title": "Time And Work Level 2",
+              "duration": "2:10:32",
+              "order": 10
+            },
+            {
+              "videoId": "b271f906c29146e3b17cdf86ff2a8cfd",
+              "title": "Time And Work Level 3",
+              "duration": "2:08:05",
+              "order": 11
+            },
+            {
+              "videoId": "e3c48ff2822d4dc1a426477d9af3b308",
+              "title": "Practice Session On Time And Work",
+              "duration": "2:17:16",
+              "order": 12
+            },
+            {
+              "videoId": "7b4eb2f047584267885862cb3b801d93",
+              "title": "Remainders, Euler's Totient And Fermat Theorems",
+              "duration": "2:10:00",
+              "order": 13
+            },
+            {
+              "videoId": "a22fbca5483d477ea4d4e40a7f361d70",
+              "title": "Practice Session On Remainders",
+              "duration": "2:06:28",
+              "order": 14
+            },
+            {
+              "videoId": "c1e96072ef2348b891f90a7978e9141c",
+              "title": "Concept Of Average",
+              "duration": "1:50:11",
+              "order": 15
+            },
+            {
+              "videoId": "1f40408099c8473495bbafb7b0e1dd22",
+              "title": "Practice Session On Average",
+              "duration": "1:42:13",
+              "order": 16
+            },
+            {
+              "videoId": "d8b2851c514a4e05a317c4a9001dc904",
+              "title": "Concept Of Arithmetic Progression",
+              "duration": "1:56:22",
+              "order": 17
+            },
+            {
+              "videoId": "ca7dd3daab2b4eddb19fccfa49ccdcc9",
+              "title": "Arithmetic Progression Practice Session",
+              "duration": "1:43:53",
+              "order": 18
+            },
+            {
+              "videoId": "7bb326ec011241d8a1b1d0a2c0f72408",
+              "title": "Geometrical Progression",
+              "duration": "1:55:27",
+              "order": 19
+            },
+            {
+              "videoId": "ec0bfa15477044a8a90829bacf513f3b",
+              "title": "Percentage",
+              "duration": "1:55:15",
+              "order": 20
+            },
+            {
+              "videoId": "bf0d34c4c6af4d85bcca86ce05f7c242",
+              "title": "Percentage Practice",
+              "duration": "1:53:50",
+              "order": 21
+            },
+            {
+              "videoId": "9f9a4f61b28f4c208daa1e338728ea9a",
+              "title": "Profit Loss Discount",
+              "duration": "0:53:41",
               "order": 22
             }
           ]
@@ -670,23 +1757,184 @@
           "icon": "fas fa-globe-asia",
           "videos": [
             {
-              "videoId": "ddabf0dacf604790983f5bec1d992e08",
+              "videoId": "9c78fe9b5f1e40d1956854dc87fb212c",
+              "title": "Geography Orientation Class",
+              "duration": "0:58:28",
+              "order": 1
+            },
+            {
+              "videoId": "8f60bced2ca04ce493745ef4b30df540",
+              "title": "Introduction To Geography For UPSC",
+              "duration": "1:57:33",
+              "order": 2
+            },
+            {
+              "videoId": "b1cd91d0011c4380b7244afe36ec5fd8",
               "title": "Basic Introduction To Universe",
               "duration": "2:01:13",
-              "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "csat",
-          "displayName": "CSAT",
-          "icon": "fas fa-brain",
-          "videos": [
+              "order": 3
+            },
             {
-              "videoId": "cfa6941ef6034ffca2dd2cab156afc06",
-              "title": "Number System Types Of Numbers",
-              "duration": "2:10:18",
-              "order": 1
+              "videoId": "58f74d1ecbc047bbaa38553e45e74c97",
+              "title": "Basic Physical Concepts And Life Cycle Of A Star",
+              "duration": "2:03:07",
+              "order": 4
+            },
+            {
+              "videoId": "06a5b547997846069a2dff0f7b558262",
+              "title": "Solar System",
+              "duration": "2:17:51",
+              "order": 5
+            },
+            {
+              "videoId": "893f896619c34851bbb257d834a8148b",
+              "title": "Basic Principles And Nebular Hypothesis",
+              "duration": "0:53:55",
+              "order": 6
+            },
+            {
+              "videoId": "a9b1abdfedd54af5b25101510df91479",
+              "title": "Theories Of Evolution Of Universe",
+              "duration": "2:00:48",
+              "order": 7
+            },
+            {
+              "videoId": "89ac01484f09488087916cd369627070",
+              "title": "Fundamental Physical Concepts Used In Geography",
+              "duration": "1:34:23",
+              "order": 8
+            },
+            {
+              "videoId": "ac4cbc7094dc455dbbd7f11699754f61",
+              "title": "Origin Of Earth, Motions Of Earth",
+              "duration": "1:59:47",
+              "order": 9
+            },
+            {
+              "videoId": "2a5fd9f350cd426c90b049e1591f93b7",
+              "title": "Latitudes, Longitudes And Maps",
+              "duration": "2:19:13",
+              "order": 10
+            },
+            {
+              "videoId": "e6b8fd712a794bc1bae555143b793eaf",
+              "title": "Concept Of Time Keeping",
+              "duration": "2:03:54",
+              "order": 11
+            },
+            {
+              "videoId": "5b4256384b144590bb8cd07a51d40c49",
+              "title": "Layers In The Interior Of The Earth",
+              "duration": "1:53:07",
+              "order": 12
+            },
+            {
+              "videoId": "724e967a887c4cbda063eec5e21a2fb7",
+              "title": "Science Of Earthquake",
+              "duration": "2:03:24",
+              "order": 13
+            },
+            {
+              "videoId": "4a9c3529e51647bdb9703973d8e57abb",
+              "title": "Effects Of Earthquakes",
+              "duration": "2:04:21",
+              "order": 14
+            },
+            {
+              "videoId": "e46864945ecb4eacb94e8cc38e7bb334",
+              "title": "Volcanism",
+              "duration": "1:58:40",
+              "order": 15
+            },
+            {
+              "videoId": "d8d33ee3218c40bfbc1a7cd9bdd3a391",
+              "title": "General Doubt Clearing",
+              "duration": "1:01:23",
+              "order": 16
+            },
+            {
+              "videoId": "b4ae0c514fd144f5a0f967232a0d89fd",
+              "title": "Volcanism And Tsunami",
+              "duration": "2:11:15",
+              "order": 17
+            },
+            {
+              "videoId": "4accbb1cecf14b0e9ade1395caf444ba",
+              "title": "Rocks And Minerals I",
+              "duration": "2:00:02",
+              "order": 18
+            },
+            {
+              "videoId": "9d632858ce8747c78f7c9cd0b6636937",
+              "title": "Rocks And Minerals II",
+              "duration": "2:05:20",
+              "order": 19
+            },
+            {
+              "videoId": "6f8587a80ea5478a99db266ac8a45b38",
+              "title": "Continental Drift Theory",
+              "duration": "2:03:38",
+              "order": 20
+            },
+            {
+              "videoId": "6e82279517ae4f8bb6e271796c84ea39",
+              "title": "Convective Current Theory And Theory Of Plate Tectonics",
+              "duration": "2:09:35",
+              "order": 21
+            },
+            {
+              "videoId": "7df3902763df4c779dec889c0e812c48",
+              "title": "The Journey Of Indian Plate And The Rise Of The Himalayas",
+              "duration": "0:53:19",
+              "order": 22
+            },
+            {
+              "videoId": "8818376e9d90472f8cc60e23a52bc1a4",
+              "title": "Introduction To Temperature",
+              "duration": "2:02:59",
+              "order": 23
+            },
+            {
+              "videoId": "e6e93ac4490e40b7877f73146d445cd9",
+              "title": "Basic Concepts Of Climatology",
+              "duration": "2:09:58",
+              "order": 24
+            },
+            {
+              "videoId": "d8b6f3a1075a48fab6da9f7ffc027b3f",
+              "title": "Heat Transfer And Urban Rural Temperature Contrast",
+              "duration": "2:03:21",
+              "order": 25
+            },
+            {
+              "videoId": "c8c1de46f62b48a78019d6ec13618d47",
+              "title": "The Urban Heat Island",
+              "duration": "2:00:30",
+              "order": 26
+            },
+            {
+              "videoId": "dd4b5f2701f44190b83a6a6896b17f74",
+              "title": "Global Energy Balance",
+              "duration": "1:54:06",
+              "order": 27
+            },
+            {
+              "videoId": "aa81975c0e064f1d8ee483feccb31efd",
+              "title": "Mode Of Heat Transfer",
+              "duration": "1:32:50",
+              "order": 28
+            },
+            {
+              "videoId": "a057bd129f984610a1c67ad4cce8d1b7",
+              "title": "Global Energy Balance II",
+              "duration": "1:42:53",
+              "order": 29
+            },
+            {
+              "videoId": "970bcfd6686f4ea492bf9133dfcdad16",
+              "title": "Global Temperatures Patterns And On Winds",
+              "duration": "1:58:24",
+              "order": 30
             }
           ]
         }
@@ -704,135 +1952,286 @@
           "icon": "fas fa-leaf",
           "videos": [
             {
+              "videoId": "d8a3dd14709449179bd785f408d0d2c6",
+              "title": "Ecology 1",
+              "duration": "2:06:08",
+              "order": 1
+            },
+            {
+              "videoId": "5832a966ecdd4d0bbdbd65ff72ecbbd6",
+              "title": "Ecology 2",
+              "duration": "2:02:36",
+              "order": 2
+            },
+            {
               "videoId": "0db1c25dd475461faa4c91f131b65cfc",
               "title": "Basic Terminology of Ecology",
               "duration": "1:44:12",
-              "order": 1
+              "order": 3
             },
             {
               "videoId": "28848d45340841f0b01022f2cf8e9a39",
               "title": "Population Ecology-I",
               "duration": "2:07:44",
-              "order": 2
+              "order": 4
             },
             {
               "videoId": "4b62b77dfe904b5a9ce065ac1dc00f35",
               "title": "Population Ecology-II",
               "duration": "2:05:33",
-              "order": 3
+              "order": 5
             },
             {
               "videoId": "52d15b3887794cd5a628e3cfac1b2963",
               "title": "Interspecific Interactions",
               "duration": "2:07:28",
-              "order": 4
+              "order": 6
             },
             {
               "videoId": "c7dfafed9aa9440a8402c6afcfa57904",
               "title": "Keystone Species, Ecological Niche, Ecological Guild, Succession",
               "duration": "2:12:19",
-              "order": 5
+              "order": 7
             },
             {
               "videoId": "d05e7c5252e847aebf89f47a3e2264f7",
               "title": "Climax Species, Ecosystem Ecology",
               "duration": "1:43:41",
-              "order": 6
+              "order": 8
             },
             {
               "videoId": "ecb1d07d3f264ec7b7c26e65f701e922",
               "title": "Food Web",
               "duration": "1:58:14",
-              "order": 7
+              "order": 9
             },
             {
               "videoId": "50ab8f80a43b46f4b3d0cff280f3a68a",
               "title": "Ecological Pyramids",
               "duration": "1:50:51",
-              "order": 8
+              "order": 10
             },
             {
               "videoId": "cbd8b6d2d58d45e89c818192e0936790",
               "title": "Types of Ecosystems",
               "duration": "1:53:00",
-              "order": 9
+              "order": 11
             },
             {
               "videoId": "a3944450bf4840fab7603b69b2a74beb",
               "title": "Biomes-I",
               "duration": "1:40:52",
-              "order": 10
+              "order": 12
             },
             {
               "videoId": "88a6bf7e903f4b44b411b9d2d3722c48",
               "title": "Biomes-II",
               "duration": "1:26:50",
-              "order": 11
+              "order": 13
             },
             {
               "videoId": "ad66a8fd1a7a421c9e37a58807a914e5",
               "title": "Biomes-III",
               "duration": "1:31:22",
-              "order": 12
+              "order": 14
             },
             {
               "videoId": "e6ad43844a3c4733ac1631ab384ed755",
               "title": "Biomes-IV",
               "duration": "1:24:08",
-              "order": 13
+              "order": 15
             },
             {
               "videoId": "c255ab81b09141899f9275ec7d9f2251",
               "title": "Biosphere",
               "duration": "1:51:50",
-              "order": 14
+              "order": 16
             },
             {
               "videoId": "5ebce452a8df4f4bbf306cced9dd24de",
               "title": "Nitrogen Cycle",
               "duration": "1:38:16",
-              "order": 15
+              "order": 17
             },
             {
               "videoId": "d1e079ea0b8b4cb6a6f05d2245c5096b",
               "title": "Carbon Cycle, Sulphur Cycle, Phosphorous Cycle",
               "duration": "1:36:59",
-              "order": 16
+              "order": 18
             },
             {
               "videoId": "31dc4a070f804502bad41c9041a71a09",
               "title": "Biodiversity-I",
               "duration": "2:08:14",
-              "order": 17
+              "order": 19
             },
             {
               "videoId": "18b3f4dbd7fe42b995c078cdf4171ee9",
               "title": "Biodiversity-II: Threats to Biodiversity, Invasive Species",
               "duration": "1:45:01",
-              "order": 18
+              "order": 20
             },
             {
               "videoId": "0046140fb85940b6b871b071b746762f",
               "title": "Biodiversity-III: Mass Extinction, Human Animal Conflict",
               "duration": "1:32:25",
-              "order": 19
+              "order": 21
             },
             {
               "videoId": "2d0f8a52e4ce40de8edde300da961769",
               "title": "Biodiversity Conservation-II: Biodiversity Hotspots in India",
               "duration": "1:53:39",
-              "order": 20
+              "order": 22
             },
             {
               "videoId": "a9191b51b28d4e56983af6ce6272681f",
               "title": "Biodiversity Hotspots in India-II",
               "duration": "2:01:41",
-              "order": 21
+              "order": 23
             },
             {
               "videoId": "b5575ff8d1f248058540a9b3c098d91b",
               "title": "Biodiversity Hotspots in India-III and Biodiversity Conservation",
               "duration": "1:49:59",
+              "order": 24
+            }
+          ]
+        },
+        {
+          "subjectId": "csat",
+          "displayName": "CSAT",
+          "icon": "fas fa-brain",
+          "videos": [
+            {
+              "videoId": "d98e78a7940a434d93a6632da33363e3",
+              "title": "CSAT Orientation Class",
+              "duration": "2:10:39",
+              "order": 1
+            },
+            {
+              "videoId": "9f88738c2f8646e1952d28b840b48dee",
+              "title": "Number System Types Of Numbers",
+              "duration": "2:10:18",
+              "order": 2
+            },
+            {
+              "videoId": "f9488f4c1adb4eeb8c4ebe5b36fb9075",
+              "title": "Conversion Of Binary And Decimal Numbers, Concept Of Units Digit",
+              "duration": "2:13:35",
+              "order": 3
+            },
+            {
+              "videoId": "e8c8b1a9a34a4958b9d92c3447f4653f",
+              "title": "Practice On Units Digit And Divisibility Rules",
+              "duration": "2:14:38",
+              "order": 4
+            },
+            {
+              "videoId": "7f97ace63dd04cbeb3073908f89cb8b4",
+              "title": "Divisibility Rules And Prime Numbers",
+              "duration": "2:04:31",
+              "order": 5
+            },
+            {
+              "videoId": "7b5cd5b217be48ef85a0a30f230ebbd9",
+              "title": "Practice On Divisibility, Concept Of HCF And LCM",
+              "duration": "1:35:50",
+              "order": 6
+            },
+            {
+              "videoId": "d2a980af93a94d129e4d58cd572a6a78",
+              "title": "Practice On Divisibility, LCM And HCF",
+              "duration": "2:01:15",
+              "order": 7
+            },
+            {
+              "videoId": "ef027ad36bdb4449bf53810a3ae2b20e",
+              "title": "Practice On Number Systems",
+              "duration": "2:06:33",
+              "order": 8
+            },
+            {
+              "videoId": "1e4c7c7a84484788a3f074e5212877a2",
+              "title": "Time And Work Level 1",
+              "duration": "2:04:53",
+              "order": 9
+            },
+            {
+              "videoId": "4304225e0c6f4f7eb5bee7674583d322",
+              "title": "Time And Work Level 2",
+              "duration": "2:10:32",
+              "order": 10
+            },
+            {
+              "videoId": "b271f906c29146e3b17cdf86ff2a8cfd",
+              "title": "Time And Work Level 3",
+              "duration": "2:08:05",
+              "order": 11
+            },
+            {
+              "videoId": "e3c48ff2822d4dc1a426477d9af3b308",
+              "title": "Practice Session On Time And Work",
+              "duration": "2:17:16",
+              "order": 12
+            },
+            {
+              "videoId": "7b4eb2f047584267885862cb3b801d93",
+              "title": "Remainders, Euler's Totient And Fermat Theorems",
+              "duration": "2:10:00",
+              "order": 13
+            },
+            {
+              "videoId": "a22fbca5483d477ea4d4e40a7f361d70",
+              "title": "Practice Session On Remainders",
+              "duration": "2:06:28",
+              "order": 14
+            },
+            {
+              "videoId": "c1e96072ef2348b891f90a7978e9141c",
+              "title": "Concept Of Average",
+              "duration": "1:50:11",
+              "order": 15
+            },
+            {
+              "videoId": "1f40408099c8473495bbafb7b0e1dd22",
+              "title": "Practice Session On Average",
+              "duration": "1:42:13",
+              "order": 16
+            },
+            {
+              "videoId": "d8b2851c514a4e05a317c4a9001dc904",
+              "title": "Concept Of Arithmetic Progression",
+              "duration": "1:56:22",
+              "order": 17
+            },
+            {
+              "videoId": "ca7dd3daab2b4eddb19fccfa49ccdcc9",
+              "title": "Arithmetic Progression Practice Session",
+              "duration": "1:43:53",
+              "order": 18
+            },
+            {
+              "videoId": "7bb326ec011241d8a1b1d0a2c0f72408",
+              "title": "Geometrical Progression",
+              "duration": "1:55:27",
+              "order": 19
+            },
+            {
+              "videoId": "ec0bfa15477044a8a90829bacf513f3b",
+              "title": "Percentage",
+              "duration": "1:55:15",
+              "order": 20
+            },
+            {
+              "videoId": "bf0d34c4c6af4d85bcca86ce05f7c242",
+              "title": "Percentage Practice",
+              "duration": "1:53:50",
+              "order": 21
+            },
+            {
+              "videoId": "9f9a4f61b28f4c208daa1e338728ea9a",
+              "title": "Profit Loss Discount",
+              "duration": "0:53:41",
               "order": 22
             }
           ]
@@ -843,23 +2242,331 @@
           "icon": "fas fa-globe-asia",
           "videos": [
             {
-              "videoId": "ddabf0dacf604790983f5bec1d992e08",
+              "videoId": "9c78fe9b5f1e40d1956854dc87fb212c",
+              "title": "Geography Orientation Class",
+              "duration": "0:58:28",
+              "order": 1
+            },
+            {
+              "videoId": "8f60bced2ca04ce493745ef4b30df540",
+              "title": "Introduction To Geography For UPSC",
+              "duration": "1:57:33",
+              "order": 2
+            },
+            {
+              "videoId": "b1cd91d0011c4380b7244afe36ec5fd8",
               "title": "Basic Introduction To Universe",
               "duration": "2:01:13",
-              "order": 1
+              "order": 3
+            },
+            {
+              "videoId": "58f74d1ecbc047bbaa38553e45e74c97",
+              "title": "Basic Physical Concepts And Life Cycle Of A Star",
+              "duration": "2:03:07",
+              "order": 4
+            },
+            {
+              "videoId": "06a5b547997846069a2dff0f7b558262",
+              "title": "Solar System",
+              "duration": "2:17:51",
+              "order": 5
+            },
+            {
+              "videoId": "893f896619c34851bbb257d834a8148b",
+              "title": "Basic Principles And Nebular Hypothesis",
+              "duration": "0:53:55",
+              "order": 6
+            },
+            {
+              "videoId": "a9b1abdfedd54af5b25101510df91479",
+              "title": "Theories Of Evolution Of Universe",
+              "duration": "2:00:48",
+              "order": 7
+            },
+            {
+              "videoId": "89ac01484f09488087916cd369627070",
+              "title": "Fundamental Physical Concepts Used In Geography",
+              "duration": "1:34:23",
+              "order": 8
+            },
+            {
+              "videoId": "ac4cbc7094dc455dbbd7f11699754f61",
+              "title": "Origin Of Earth, Motions Of Earth",
+              "duration": "1:59:47",
+              "order": 9
+            },
+            {
+              "videoId": "2a5fd9f350cd426c90b049e1591f93b7",
+              "title": "Latitudes, Longitudes And Maps",
+              "duration": "2:19:13",
+              "order": 10
+            },
+            {
+              "videoId": "e6b8fd712a794bc1bae555143b793eaf",
+              "title": "Concept Of Time Keeping",
+              "duration": "2:03:54",
+              "order": 11
+            },
+            {
+              "videoId": "5b4256384b144590bb8cd07a51d40c49",
+              "title": "Layers In The Interior Of The Earth",
+              "duration": "1:53:07",
+              "order": 12
+            },
+            {
+              "videoId": "724e967a887c4cbda063eec5e21a2fb7",
+              "title": "Science Of Earthquake",
+              "duration": "2:03:24",
+              "order": 13
+            },
+            {
+              "videoId": "4a9c3529e51647bdb9703973d8e57abb",
+              "title": "Effects Of Earthquakes",
+              "duration": "2:04:21",
+              "order": 14
+            },
+            {
+              "videoId": "e46864945ecb4eacb94e8cc38e7bb334",
+              "title": "Volcanism",
+              "duration": "1:58:40",
+              "order": 15
+            },
+            {
+              "videoId": "d8d33ee3218c40bfbc1a7cd9bdd3a391",
+              "title": "General Doubt Clearing",
+              "duration": "1:01:23",
+              "order": 16
+            },
+            {
+              "videoId": "b4ae0c514fd144f5a0f967232a0d89fd",
+              "title": "Volcanism And Tsunami",
+              "duration": "2:11:15",
+              "order": 17
+            },
+            {
+              "videoId": "4accbb1cecf14b0e9ade1395caf444ba",
+              "title": "Rocks And Minerals I",
+              "duration": "2:00:02",
+              "order": 18
+            },
+            {
+              "videoId": "9d632858ce8747c78f7c9cd0b6636937",
+              "title": "Rocks And Minerals II",
+              "duration": "2:05:20",
+              "order": 19
+            },
+            {
+              "videoId": "6f8587a80ea5478a99db266ac8a45b38",
+              "title": "Continental Drift Theory",
+              "duration": "2:03:38",
+              "order": 20
+            },
+            {
+              "videoId": "6e82279517ae4f8bb6e271796c84ea39",
+              "title": "Convective Current Theory And Theory Of Plate Tectonics",
+              "duration": "2:09:35",
+              "order": 21
+            },
+            {
+              "videoId": "7df3902763df4c779dec889c0e812c48",
+              "title": "The Journey Of Indian Plate And The Rise Of The Himalayas",
+              "duration": "0:53:19",
+              "order": 22
+            },
+            {
+              "videoId": "8818376e9d90472f8cc60e23a52bc1a4",
+              "title": "Introduction To Temperature",
+              "duration": "2:02:59",
+              "order": 23
+            },
+            {
+              "videoId": "e6e93ac4490e40b7877f73146d445cd9",
+              "title": "Basic Concepts Of Climatology",
+              "duration": "2:09:58",
+              "order": 24
+            },
+            {
+              "videoId": "d8b6f3a1075a48fab6da9f7ffc027b3f",
+              "title": "Heat Transfer And Urban Rural Temperature Contrast",
+              "duration": "2:03:21",
+              "order": 25
+            },
+            {
+              "videoId": "c8c1de46f62b48a78019d6ec13618d47",
+              "title": "The Urban Heat Island",
+              "duration": "2:00:30",
+              "order": 26
+            },
+            {
+              "videoId": "dd4b5f2701f44190b83a6a6896b17f74",
+              "title": "Global Energy Balance",
+              "duration": "1:54:06",
+              "order": 27
+            },
+            {
+              "videoId": "aa81975c0e064f1d8ee483feccb31efd",
+              "title": "Mode Of Heat Transfer",
+              "duration": "1:32:50",
+              "order": 28
+            },
+            {
+              "videoId": "a057bd129f984610a1c67ad4cce8d1b7",
+              "title": "Global Energy Balance II",
+              "duration": "1:42:53",
+              "order": 29
+            },
+            {
+              "videoId": "970bcfd6686f4ea492bf9133dfcdad16",
+              "title": "Global Temperatures Patterns And On Winds",
+              "duration": "1:58:24",
+              "order": 30
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "courseId": "csat",
+      "displayName": "CSAT",
+      "description": "CSAT preparation programme",
+      "icon": "fas fa-brain",
+      "subjects": [
         {
           "subjectId": "csat",
           "displayName": "CSAT",
           "icon": "fas fa-brain",
           "videos": [
             {
-              "videoId": "cfa6941ef6034ffca2dd2cab156afc06",
+              "videoId": "d98e78a7940a434d93a6632da33363e3",
+              "title": "CSAT Orientation Class",
+              "duration": "2:10:39",
+              "order": 1
+            },
+            {
+              "videoId": "9f88738c2f8646e1952d28b840b48dee",
               "title": "Number System Types Of Numbers",
               "duration": "2:10:18",
-              "order": 1
+              "order": 2
+            },
+            {
+              "videoId": "f9488f4c1adb4eeb8c4ebe5b36fb9075",
+              "title": "Conversion Of Binary And Decimal Numbers, Concept Of Units Digit",
+              "duration": "2:13:35",
+              "order": 3
+            },
+            {
+              "videoId": "e8c8b1a9a34a4958b9d92c3447f4653f",
+              "title": "Practice On Units Digit And Divisibility Rules",
+              "duration": "2:14:38",
+              "order": 4
+            },
+            {
+              "videoId": "7f97ace63dd04cbeb3073908f89cb8b4",
+              "title": "Divisibility Rules And Prime Numbers",
+              "duration": "2:04:31",
+              "order": 5
+            },
+            {
+              "videoId": "7b5cd5b217be48ef85a0a30f230ebbd9",
+              "title": "Practice On Divisibility, Concept Of HCF And LCM",
+              "duration": "1:35:50",
+              "order": 6
+            },
+            {
+              "videoId": "d2a980af93a94d129e4d58cd572a6a78",
+              "title": "Practice On Divisibility, LCM And HCF",
+              "duration": "2:01:15",
+              "order": 7
+            },
+            {
+              "videoId": "ef027ad36bdb4449bf53810a3ae2b20e",
+              "title": "Practice On Number Systems",
+              "duration": "2:06:33",
+              "order": 8
+            },
+            {
+              "videoId": "1e4c7c7a84484788a3f074e5212877a2",
+              "title": "Time And Work Level 1",
+              "duration": "2:04:53",
+              "order": 9
+            },
+            {
+              "videoId": "4304225e0c6f4f7eb5bee7674583d322",
+              "title": "Time And Work Level 2",
+              "duration": "2:10:32",
+              "order": 10
+            },
+            {
+              "videoId": "b271f906c29146e3b17cdf86ff2a8cfd",
+              "title": "Time And Work Level 3",
+              "duration": "2:08:05",
+              "order": 11
+            },
+            {
+              "videoId": "e3c48ff2822d4dc1a426477d9af3b308",
+              "title": "Practice Session On Time And Work",
+              "duration": "2:17:16",
+              "order": 12
+            },
+            {
+              "videoId": "7b4eb2f047584267885862cb3b801d93",
+              "title": "Remainders, Euler's Totient And Fermat Theorems",
+              "duration": "2:10:00",
+              "order": 13
+            },
+            {
+              "videoId": "a22fbca5483d477ea4d4e40a7f361d70",
+              "title": "Practice Session On Remainders",
+              "duration": "2:06:28",
+              "order": 14
+            },
+            {
+              "videoId": "c1e96072ef2348b891f90a7978e9141c",
+              "title": "Concept Of Average",
+              "duration": "1:50:11",
+              "order": 15
+            },
+            {
+              "videoId": "1f40408099c8473495bbafb7b0e1dd22",
+              "title": "Practice Session On Average",
+              "duration": "1:42:13",
+              "order": 16
+            },
+            {
+              "videoId": "d8b2851c514a4e05a317c4a9001dc904",
+              "title": "Concept Of Arithmetic Progression",
+              "duration": "1:56:22",
+              "order": 17
+            },
+            {
+              "videoId": "ca7dd3daab2b4eddb19fccfa49ccdcc9",
+              "title": "Arithmetic Progression Practice Session",
+              "duration": "1:43:53",
+              "order": 18
+            },
+            {
+              "videoId": "7bb326ec011241d8a1b1d0a2c0f72408",
+              "title": "Geometrical Progression",
+              "duration": "1:55:27",
+              "order": 19
+            },
+            {
+              "videoId": "ec0bfa15477044a8a90829bacf513f3b",
+              "title": "Percentage",
+              "duration": "1:55:15",
+              "order": 20
+            },
+            {
+              "videoId": "bf0d34c4c6af4d85bcca86ce05f7c242",
+              "title": "Percentage Practice",
+              "duration": "1:53:50",
+              "order": 21
+            },
+            {
+              "videoId": "9f9a4f61b28f4c208daa1e338728ea9a",
+              "title": "Profit Loss Discount",
+              "duration": "0:53:41",
+              "order": 22
             }
           ]
         }

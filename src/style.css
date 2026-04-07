@@ -2406,6 +2406,10 @@ img {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.courses__grid--6 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .course-overview-card {
   display: flex;
   flex-direction: column;
@@ -3288,6 +3292,10 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .courses__grid--6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .course-detail__features {
     grid-template-columns: 1fr;
   }
@@ -3445,6 +3453,10 @@ img {
   }
 
   .courses__grid--5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .courses__grid--6 {
     grid-template-columns: repeat(2, 1fr);
   }
 

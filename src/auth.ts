@@ -28,6 +28,7 @@ const ALL_COURSES = [
   { id: '3_year_foundation', displayName: '3 Year Foundation' },
   { id: 'apmc_1_0', displayName: 'APMC 1.0' },
   { id: 'apmc_2_0', displayName: 'APMC 2.0' },
+  { id: 'csat', displayName: 'CSAT' },
 ];
 
 // ===== TAB SWITCHING =====
