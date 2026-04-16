@@ -12,6 +12,7 @@ export default defineConfig({
         studentCorner: resolve(__dirname, 'student-corner.html'),
         videos: resolve(__dirname, 'videos.html'),
         admin: resolve(__dirname, 'admin.html'),
+        connect: resolve(__dirname, 'connect.html'),
       },
     },
   },
