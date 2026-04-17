@@ -4495,6 +4495,50 @@ img {
   background: #fde68a;
 }
 
+.admin-action-btn--edit {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.admin-action-btn--edit:hover {
+  background: #ddd6fe;
+}
+
+.edit-courses-student {
+  font-size: 0.9rem;
+  color: var(--text-light, #6b7280);
+  margin-bottom: 16px;
+}
+
+.edit-courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.edit-courses-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.edit-courses-option:hover {
+  background: #f5f3ff;
+}
+
+.edit-courses-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #5b21b6;
+  cursor: pointer;
+}
+
 /* Confirm modal actions */
 .admin-confirm-actions {
   display: flex;
