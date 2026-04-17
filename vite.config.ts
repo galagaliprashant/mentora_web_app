@@ -13,6 +13,7 @@ export default defineConfig({
         videos: resolve(__dirname, 'videos.html'),
         admin: resolve(__dirname, 'admin.html'),
         connect: resolve(__dirname, 'connect.html'),
+        team: resolve(__dirname, 'team.html'),
       },
     },
   },
