@@ -119,6 +119,78 @@ export const adminUpdateEnquiry = onCall(async (request) => {
   return {success: true, action, enquiryId};
 });
 
+// ===== ADMIN: EDIT STUDENT COURSE ACCESS =====
+
+const COURSE_NAMES: Record<string, string> = {
+  "1_year_foundation": "1 Year Foundation",
+  "2_year_foundation": "2 Year Foundation",
+  "3_year_foundation": "3 Year Foundation",
+  "apmc_1_0": "APMC 1.0",
+  "apmc_2_0": "APMC 2.0",
+  "csat": "CSAT",
+};
+
+interface AdminEditCoursesRequest {
+  uid: string;
+  courseIds: string[];
+}
+
+export const adminEditStudentCourses = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError("unauthenticated", "You must be signed in.");
+  }
+
+  await verifyAdmin(request.auth.uid);
+
+  const {uid, courseIds} = request.data as AdminEditCoursesRequest;
+
+  if (!uid || !Array.isArray(courseIds)) {
+    throw new HttpsError("invalid-argument", "uid and courseIds are required.");
+  }
+
+  const existingSnap = await db
+    .collection("enrollments")
+    .where("uid", "==", uid)
+    .get();
+
+  const batch = db.batch();
+  const existingMap = new Map<string, string>();
+
+  for (const d of existingSnap.docs) {
+    existingMap.set(d.data().courseId as string, d.id);
+  }
+
+  // Delete enrollments for courses not in new list
+  for (const [courseId, docId] of existingMap) {
+    if (!courseIds.includes(courseId)) {
+      batch.delete(db.collection("enrollments").doc(docId));
+    }
+  }
+
+  // Upsert enrollments for courses in new list
+  for (const courseId of courseIds) {
+    if (existingMap.has(courseId)) {
+      batch.update(db.collection("enrollments").doc(existingMap.get(courseId)!), {
+        status: "approved",
+        reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+    } else {
+      const newRef = db.collection("enrollments").doc();
+      batch.set(newRef, {
+        uid,
+        courseId,
+        courseName: COURSE_NAMES[courseId] || courseId,
+        status: "approved",
+        submittedAt: admin.firestore.FieldValue.serverTimestamp(),
+        reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+    }
+  }
+
+  await batch.commit();
+  return {success: true};
+});
+
 interface OtpRequest {
   videoId: string;
   courseId: string;

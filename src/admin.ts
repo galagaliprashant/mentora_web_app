@@ -15,6 +15,17 @@ import { httpsCallable } from 'firebase/functions';
 // ===== CLOUD FUNCTION REFS =====
 const adminUpdateEnrollment = httpsCallable(functions, 'adminUpdateEnrollment');
 const adminUpdateEnquiry = httpsCallable(functions, 'adminUpdateEnquiry');
+const adminEditStudentCourses = httpsCallable(functions, 'adminEditStudentCourses');
+
+// ===== COURSE LIST =====
+const COURSES = [
+  { courseId: '1_year_foundation', displayName: '1 Year Foundation' },
+  { courseId: '2_year_foundation', displayName: '2 Year Foundation' },
+  { courseId: '3_year_foundation', displayName: '3 Year Foundation' },
+  { courseId: 'apmc_1_0', displayName: 'APMC 1.0' },
+  { courseId: 'apmc_2_0', displayName: 'APMC 2.0' },
+  { courseId: 'csat', displayName: 'CSAT' },
+];
 
 // ===== DOM REFS =====
 const loadingEl = document.getElementById('admin-loading')!;
@@ -31,6 +42,13 @@ const enrollmentSearch = document.getElementById('enrollment-search') as HTMLInp
 const enquiryTypeFilter = document.getElementById('enquiry-type-filter') as HTMLSelectElement;
 const enquiryStatusFilter = document.getElementById('enquiry-status-filter') as HTMLSelectElement;
 const enquirySearch = document.getElementById('enquiry-search') as HTMLInputElement;
+
+// Edit courses modal
+const editCoursesModal = document.getElementById('edit-courses-modal')!;
+const editCoursesStudentName = document.getElementById('edit-courses-student-name')!;
+const editCoursesCheckboxes = document.getElementById('edit-courses-checkboxes')!;
+const editCoursesSave = document.getElementById('edit-courses-save')!;
+const editCoursesCancel = document.getElementById('edit-courses-cancel')!;
 
 // Confirm modal
 const confirmModal = document.getElementById('admin-confirm-modal')!;
@@ -276,7 +294,7 @@ function renderEnrollments() {
     .map((e) => {
       const user = userMap.get(e.uid) || { name: 'Unknown', email: '' };
       const badgeClass = `admin-badge admin-badge--${e.status}`;
-      const actions = getEnrollmentActions(e);
+      const actions = getEnrollmentActions(e, user.name);
 
       return `
       <tr data-id="${e.id}">
@@ -314,8 +332,11 @@ function renderEnrollments() {
   });
 }
 
-function getEnrollmentActions(e: EnrollmentData): string {
+function getEnrollmentActions(e: EnrollmentData, userName: string): string {
   const buttons: string[] = [];
+
+  const safeName = escapeHtml(userName);
+  buttons.push(`<button class="admin-action-btn admin-action-btn--edit" data-action="edit" data-id="${e.id}" data-uid="${e.uid}" data-username="${safeName}" title="Edit Courses"><i class="fas fa-pencil-alt"></i></button>`);
 
   if (e.status === 'pending') {
     buttons.push(`<button class="admin-action-btn admin-action-btn--approve" data-action="approve" data-id="${e.id}" title="Approve"><i class="fas fa-check"></i></button>`);
@@ -335,6 +356,13 @@ async function handleEnrollmentAction(e: Event) {
   const btn = (e.currentTarget as HTMLElement);
   const action = btn.dataset.action!;
   const enrollmentId = btn.dataset.id!;
+
+  if (action === 'edit') {
+    const uid = btn.dataset.uid!;
+    const userName = btn.dataset.username || 'Student';
+    showEditCoursesModal(uid, userName);
+    return;
+  }
 
   if (action === 'delete' || action === 'reject') {
     const confirmed = await showConfirm(
@@ -469,6 +497,58 @@ async function handleEnquiryAction(e: Event) {
   } catch (err: any) {
     showToast(err.message || 'Action failed. Please try again.', true);
   }
+}
+
+// ===== EDIT COURSES MODAL =====
+function showEditCoursesModal(uid: string, userName: string) {
+  const currentApproved = new Set(
+    allEnrollments
+      .filter((e) => e.uid === uid && e.status === 'approved')
+      .map((e) => e.courseId)
+  );
+
+  editCoursesStudentName.textContent = `Student: ${userName}`;
+  editCoursesCheckboxes.innerHTML = COURSES.map((c) => `
+    <label class="edit-courses-option">
+      <input type="checkbox" value="${c.courseId}" ${currentApproved.has(c.courseId) ? 'checked' : ''} />
+      ${c.displayName}
+    </label>
+  `).join('');
+
+  editCoursesModal.classList.add('open');
+
+  const cleanup = () => {
+    editCoursesModal.classList.remove('open');
+    editCoursesSave.removeEventListener('click', onSave);
+    editCoursesCancel.removeEventListener('click', onCancel);
+  };
+
+  const onCancel = () => cleanup();
+
+  const onSave = async () => {
+    const selected = Array.from(
+      editCoursesCheckboxes.querySelectorAll<HTMLInputElement>('input[type="checkbox"]:checked')
+    ).map((cb) => cb.value);
+
+    editCoursesSave.setAttribute('disabled', 'true');
+    editCoursesSave.textContent = 'Saving…';
+
+    try {
+      await adminEditStudentCourses({ uid, courseIds: selected });
+      cleanup();
+      await fetchEnrollments();
+      renderStats();
+      renderEnrollments();
+      showToast('Course access updated successfully.');
+    } catch (err: any) {
+      showToast(err.message || 'Failed to update courses.', true);
+      editCoursesSave.removeAttribute('disabled');
+      editCoursesSave.textContent = 'Save';
+    }
+  };
+
+  editCoursesSave.addEventListener('click', onSave);
+  editCoursesCancel.addEventListener('click', onCancel);
 }
 
 // ===== CONFIRM MODAL =====
