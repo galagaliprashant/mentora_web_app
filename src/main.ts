@@ -179,7 +179,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.category-card, .course-card, .faculty-card, .class-card, .why-card, .contact__info-card').forEach(el => {
+document.querySelectorAll('.category-card, .course-card, .team-card, .class-card, .why-card, .contact__info-card').forEach(el => {
   el.classList.add('fade-up');
   fadeObserver.observe(el);
 });
@@ -227,76 +227,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ===== FACULTY CAROUSEL =====
-const carouselTrack = document.querySelector<HTMLElement>('.faculty-carousel__track');
-const prevBtn = document.querySelector('.faculty-carousel__btn--prev');
-const nextBtn = document.querySelector('.faculty-carousel__btn--next');
-
-if (carouselTrack) {
-  const originalCards = Array.from(carouselTrack.children) as HTMLElement[];
-  const totalOriginal = originalCards.length;
-
-  // Clone all cards and append for seamless infinite loop
-  originalCards.forEach(card => {
-    carouselTrack.appendChild(card.cloneNode(true) as HTMLElement);
-  });
-
-  let carouselIndex = 0;
-  let carouselTimer: ReturnType<typeof setInterval>;
-  let isTransitioning = false;
-  const GAP = 24;
-
-  function getCardStep() {
-    return carouselTrack!.offsetWidth + GAP;
-  }
-
-  function slideTo(index: number, animate = true) {
-    if (!animate) {
-      carouselTrack!.style.transition = 'none';
-    } else {
-      carouselTrack!.style.transition = 'transform 0.5s ease';
-    }
-    carouselTrack!.style.transform = `translateX(-${index * getCardStep()}px)`;
-    carouselIndex = index;
-  }
-
-  // When transition ends on a cloned region, snap back invisibly
-  carouselTrack.addEventListener('transitionend', () => {
-    isTransitioning = false;
-    if (carouselIndex >= totalOriginal) {
-      slideTo(carouselIndex - totalOriginal, false);
-    } else if (carouselIndex < 0) {
-      slideTo(carouselIndex + totalOriginal, false);
-    }
-  });
-
-  function nextFaculty() {
-    if (isTransitioning) return;
-    isTransitioning = true;
-    slideTo(carouselIndex + 1);
-  }
-
-  function prevFaculty() {
-    if (isTransitioning) return;
-    isTransitioning = true;
-    slideTo(carouselIndex - 1);
-  }
-
-  function startCarousel() {
-    carouselTimer = setInterval(nextFaculty, 3000);
-  }
-
-  function resetCarousel() {
-    clearInterval(carouselTimer);
-    startCarousel();
-  }
-
-  nextBtn?.addEventListener('click', () => { nextFaculty(); resetCarousel(); });
-  prevBtn?.addEventListener('click', () => { prevFaculty(); resetCarousel(); });
-
-  window.addEventListener('resize', () => slideTo(carouselIndex, false));
-  startCarousel();
-}
 
 // ===== PYQ ACCORDION =====
 initPyq();
