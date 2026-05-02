@@ -1,5 +1,4 @@
 import './style.css';
-import './idle-logout';
 import { auth, db } from './firebase';
 import {
   createUserWithEmailAndPassword,
