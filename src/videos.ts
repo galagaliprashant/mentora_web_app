@@ -39,6 +39,7 @@ const appEl = document.getElementById('video-app')!;
 const breadcrumbEl = document.getElementById('video-breadcrumb')!;
 const headerBtn = document.querySelector<HTMLAnchorElement>('.top-bar__login');
 const freeVideosSection = document.getElementById('classes');
+const liveVideoSection = document.getElementById('live-video-section');
 
 // ===== STATE =====
 let enrollments: Map<string, string> = new Map(); // courseId -> status
@@ -350,6 +351,7 @@ onAuthStateChanged(auth, async (user) => {
     loadingEl.classList.remove('hidden');
     errorEl.classList.add('hidden');
     freeVideosSection?.classList.add('hidden');
+    liveVideoSection?.classList.remove('hidden');
 
     try {
       enrollments = await fetchEnrollments(user.uid);
@@ -371,6 +373,7 @@ onAuthStateChanged(auth, async (user) => {
     loadingEl.classList.add('hidden');
     errorEl.classList.add('hidden');
     freeVideosSection?.classList.remove('hidden');
+    liveVideoSection?.classList.add('hidden');
     breadcrumbEl.innerHTML = '';
   }
 });
