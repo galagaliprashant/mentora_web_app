@@ -1,5 +1,4 @@
 import './style.css';
-import './idle-logout';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, type User } from 'firebase/auth';
 import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
