@@ -5051,3 +5051,75 @@ img {
     padding: 22px;
   }
 }
+
+/* ===== IFS 2025 RESULT MODAL ===== */
+.ifs-modal__content {
+  max-width: 480px;
+  text-align: center;
+  padding: 36px 32px 32px;
+  animation: ifsModalIn 0.35s ease-out;
+}
+
+@keyframes ifsModalIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.ifs-modal__icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.9rem;
+  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.35);
+}
+
+.ifs-modal__content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+  color: var(--orange);
+}
+
+.ifs-modal__subtitle {
+  font-weight: 700;
+  color: var(--dark);
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.ifs-modal__body {
+  color: var(--gray-500);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 22px;
+}
+
+.ifs-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ifs-modal__actions .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .ifs-modal__content {
+    padding: 28px 22px 24px;
+  }
+  .ifs-modal__icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+  .ifs-modal__content h3 {
+    font-size: 1.25rem;
+  }
+}
