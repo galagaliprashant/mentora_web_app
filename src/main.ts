@@ -239,23 +239,6 @@ initCurrentAffairs();
 // ===== ENQUIRY FORMS =====
 import './enquiry';
 
-// ===== IFS 2025 RESULT MODAL (HOMEPAGE) =====
-const ifsModal = document.getElementById('ifs-result-modal');
-if (ifsModal) {
-  const closeBtn = document.getElementById('ifs-modal-close');
-  const dismissBtn = document.getElementById('ifs-modal-dismiss');
-  const close = () => ifsModal.classList.remove('open');
-  closeBtn?.addEventListener('click', close);
-  dismissBtn?.addEventListener('click', close);
-  ifsModal.addEventListener('click', (e) => {
-    if (e.target === ifsModal) close();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') close();
-  });
-  setTimeout(() => ifsModal.classList.add('open'), 600);
-}
-
 // ===== FREE CLASS COUNTDOWN =====
 const countdownEl = document.getElementById('countdown');
 if (countdownEl) {
