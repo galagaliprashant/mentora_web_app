@@ -5052,76 +5052,65 @@ img {
   }
 }
 
-/* ===== IFS 2025 RESULT MODAL ===== */
-.ifs-modal__content {
+/* ===== IFoS 2025 RANKS POPUP MODAL ===== */
+.ifos-popup__content {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
   max-width: 480px;
-  text-align: center;
-  padding: 36px 32px 32px;
-  animation: ifsModalIn 0.35s ease-out;
+  width: 92%;
+  animation: ifosPopupIn 0.35s ease-out;
 }
 
-@keyframes ifsModalIn {
+@keyframes ifosPopupIn {
   from { opacity: 0; transform: translateY(20px) scale(0.96); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-.ifs-modal__icon {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto 16px;
+.ifos-popup__link {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.ifos-popup__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ifos-popup__close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  border: none;
+  background: #fff;
+  color: var(--dark);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-size: 1.9rem;
-  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.35);
+  z-index: 2;
 }
 
-.ifs-modal__content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 6px;
+.ifos-popup__close:hover {
   color: var(--orange);
-  line-height: 1.25;
-}
-
-.ifs-modal__subtitle {
-  font-weight: 700;
-  color: var(--dark);
-  font-size: 1.05rem;
-  margin-bottom: 12px;
-}
-
-.ifs-modal__body {
-  color: var(--gray-500);
-  font-size: 0.95rem;
-  line-height: 1.55;
-  margin-bottom: 22px;
-}
-
-.ifs-modal__actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.ifs-modal__actions .btn {
-  width: 100%;
-  justify-content: center;
 }
 
 @media (max-width: 480px) {
-  .ifs-modal__content {
-    padding: 28px 22px 24px;
-  }
-  .ifs-modal__icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.6rem;
-  }
-  .ifs-modal__content h3 {
-    font-size: 1.25rem;
+  .ifos-popup__close {
+    top: -10px;
+    right: -10px;
+    width: 32px;
+    height: 32px;
+    font-size: 1.3rem;
   }
 }
 
