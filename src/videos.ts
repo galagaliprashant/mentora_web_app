@@ -38,7 +38,8 @@ const appEl = document.getElementById('video-app')!;
 const breadcrumbEl = document.getElementById('video-breadcrumb')!;
 const headerBtn = document.querySelector<HTMLAnchorElement>('.top-bar__login');
 const freeVideosSection = document.getElementById('classes');
-const liveVideoSection = document.getElementById('live-video-section');
+
+const LIVE_ID = '665202af9a8e4f47a502891bbdfe8de3';
 
 // ===== STATE =====
 let enrollments: Map<string, string> = new Map(); // courseId -> status
@@ -131,12 +132,11 @@ function renderCourseGrid() {
   });
 }
 
-// ===== VIEW: SUBJECT LIST =====
-function renderSubjectList(courseId: string) {
+// ===== VIEW: CLASS TYPE PICKER (Live / Recorded) =====
+function renderClassTypeView(courseId: string) {
   const course = courses.find((c) => c.courseId === courseId);
   if (!course) { renderCourseGrid(); return; }
 
-  // Check enrollment
   const status = enrollments.get(courseId);
   if (status !== 'approved') {
     renderCourseGrid();
@@ -148,10 +148,69 @@ function renderSubjectList(courseId: string) {
     { label: course.displayName, hash: `#course/${courseId}` },
   ]);
 
+  appEl.innerHTML = `
+    <div class="course-grid">
+      <a href="#course/${courseId}/live" class="subject-card">
+        <div class="subject-card__icon"><i class="fas fa-broadcast-tower"></i></div>
+        <h3 class="subject-card__title">Live Classes</h3>
+        <span class="subject-card__count">Join ongoing sessions</span>
+      </a>
+      <a href="#course/${courseId}/recorded" class="subject-card">
+        <div class="subject-card__icon"><i class="fas fa-photo-video"></i></div>
+        <h3 class="subject-card__title">Recorded Classes</h3>
+        <span class="subject-card__count">${course.subjects.length} subject${course.subjects.length !== 1 ? 's' : ''}</span>
+      </a>
+    </div>
+  `;
+}
+
+// ===== VIEW: LIVE CLASSES =====
+function renderLiveView(courseId: string) {
+  const course = courses.find((c) => c.courseId === courseId);
+  if (!course) { renderCourseGrid(); return; }
+
+  const status = enrollments.get(courseId);
+  if (status !== 'approved') { renderCourseGrid(); return; }
+
+  renderBreadcrumb([
+    { label: 'My Courses', hash: '#courses' },
+    { label: course.displayName, hash: `#course/${courseId}` },
+    { label: 'Live Classes', hash: `#course/${courseId}/live` },
+  ]);
+
+  appEl.innerHTML = `
+    <div class="live-video__player-wrap">
+      <iframe
+        src="https://player.vdocipher.com/live-v2?liveId=${LIVE_ID}"
+        style="border:0;width:720px;aspect-ratio:16/9;max-width:100%;"
+        allow="autoplay,fullscreen"
+        allowfullscreen
+      ></iframe>
+    </div>
+  `;
+}
+
+// ===== VIEW: SUBJECT LIST (Recorded) =====
+function renderSubjectList(courseId: string) {
+  const course = courses.find((c) => c.courseId === courseId);
+  if (!course) { renderCourseGrid(); return; }
+
+  const status = enrollments.get(courseId);
+  if (status !== 'approved') {
+    renderCourseGrid();
+    return;
+  }
+
+  renderBreadcrumb([
+    { label: 'My Courses', hash: '#courses' },
+    { label: course.displayName, hash: `#course/${courseId}` },
+    { label: 'Recorded Classes', hash: `#course/${courseId}/recorded` },
+  ]);
+
   let html = '<div class="course-grid">';
   for (const subject of course.subjects) {
     html += `
-      <a href="#course/${courseId}/${subject.subjectId}" class="subject-card">
+      <a href="#course/${courseId}/recorded/${subject.subjectId}" class="subject-card">
         <div class="subject-card__icon"><i class="${subject.icon}"></i></div>
         <h3 class="subject-card__title">${subject.displayName}</h3>
         <span class="subject-card__count">${subject.videos.length} video${subject.videos.length !== 1 ? 's' : ''}</span>
@@ -176,7 +235,8 @@ function renderVideoList(courseId: string, subjectId: string) {
   renderBreadcrumb([
     { label: 'My Courses', hash: '#courses' },
     { label: course.displayName, hash: `#course/${courseId}` },
-    { label: subject.displayName, hash: `#course/${courseId}/${subjectId}` },
+    { label: 'Recorded Classes', hash: `#course/${courseId}/recorded` },
+    { label: subject.displayName, hash: `#course/${courseId}/recorded/${subjectId}` },
   ]);
 
   const sortedVideos = [...subject.videos].sort((a, b) => a.order - b.order);
@@ -222,7 +282,8 @@ async function renderVideoPlayer(courseId: string, videoId: string) {
   renderBreadcrumb([
     { label: 'My Courses', hash: '#courses' },
     { label: course.displayName, hash: `#course/${courseId}` },
-    { label: foundSubject.displayName, hash: `#course/${courseId}/${foundSubject.subjectId}` },
+    { label: 'Recorded Classes', hash: `#course/${courseId}/recorded` },
+    { label: foundSubject.displayName, hash: `#course/${courseId}/recorded/${foundSubject.subjectId}` },
     { label: foundVideo.title, hash: `#video/${courseId}/${videoId}` },
   ]);
 
@@ -241,7 +302,7 @@ async function renderVideoPlayer(courseId: string, videoId: string) {
       </div>
       <div class="video-player-nav">
         ${prevVideo ? `<a href="#video/${courseId}/${prevVideo.videoId}" class="btn btn--outline video-player-nav__prev"><i class="fas fa-chevron-left"></i> Previous</a>` : '<span></span>'}
-        <a href="#course/${courseId}/${foundSubject.subjectId}" class="btn btn--outline video-player-nav__list"><i class="fas fa-list"></i> All Videos</a>
+        <a href="#course/${courseId}/recorded/${foundSubject.subjectId}" class="btn btn--outline video-player-nav__list"><i class="fas fa-list"></i> All Videos</a>
         ${nextVideo ? `<a href="#video/${courseId}/${nextVideo.videoId}" class="btn btn--outline video-player-nav__next">Next <i class="fas fa-chevron-right"></i></a>` : '<span></span>'}
       </div>
     </div>
@@ -298,17 +359,31 @@ function route() {
     }
   }
 
-  // #course/{courseId}/{subjectId}
-  const subjectMatch = hash.match(/^course\/([^/]+)\/([^/]+)$/);
+  // #course/{courseId}/recorded/{subjectId}
+  const subjectMatch = hash.match(/^course\/([^/]+)\/recorded\/([^/]+)$/);
   if (subjectMatch) {
     renderVideoList(subjectMatch[1], subjectMatch[2]);
+    return;
+  }
+
+  // #course/{courseId}/recorded
+  const recordedMatch = hash.match(/^course\/([^/]+)\/recorded$/);
+  if (recordedMatch) {
+    renderSubjectList(recordedMatch[1]);
+    return;
+  }
+
+  // #course/{courseId}/live
+  const liveMatch = hash.match(/^course\/([^/]+)\/live$/);
+  if (liveMatch) {
+    renderLiveView(liveMatch[1]);
     return;
   }
 
   // #course/{courseId}
   const courseMatch = hash.match(/^course\/([^/]+)$/);
   if (courseMatch) {
-    renderSubjectList(courseMatch[1]);
+    renderClassTypeView(courseMatch[1]);
     return;
   }
 
@@ -350,7 +425,6 @@ onAuthStateChanged(auth, async (user) => {
     loadingEl.classList.remove('hidden');
     errorEl.classList.add('hidden');
     freeVideosSection?.classList.add('hidden');
-    liveVideoSection?.classList.remove('hidden');
 
     try {
       enrollments = await fetchEnrollments(user.uid);
@@ -372,7 +446,6 @@ onAuthStateChanged(auth, async (user) => {
     loadingEl.classList.add('hidden');
     errorEl.classList.add('hidden');
     freeVideosSection?.classList.remove('hidden');
-    liveVideoSection?.classList.add('hidden');
     breadcrumbEl.innerHTML = '';
   }
 });
