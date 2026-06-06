@@ -128,6 +128,9 @@ const COURSE_NAMES: Record<string, string> = {
   "apmc_1_0": "APMC 1.0",
   "apmc_2_0": "APMC 2.0",
   "csat": "CSAT",
+  "psir": "PSIR",
+  "kannada_literature": "Kannada Literature",
+  "anthropology": "Anthropology",
 };
 
 interface AdminEditCoursesRequest {

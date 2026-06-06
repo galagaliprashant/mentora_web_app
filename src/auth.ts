@@ -28,6 +28,9 @@ const ALL_COURSES = [
   { id: 'apmc_1_0', displayName: 'APMC 1.0' },
   { id: 'apmc_2_0', displayName: 'APMC 2.0' },
   { id: 'csat', displayName: 'CSAT' },
+  { id: 'psir', displayName: 'PSIR' },
+  { id: 'kannada_literature', displayName: 'Kannada Literature' },
+  { id: 'anthropology', displayName: 'Anthropology' },
 ];
 
 // ===== TAB SWITCHING =====
