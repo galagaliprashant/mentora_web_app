@@ -239,21 +239,6 @@ initCurrentAffairs();
 // ===== ENQUIRY FORMS =====
 import './enquiry';
 
-// ===== IFoS 2025 RANKS MODAL (HOMEPAGE) =====
-const ifosRanksModal = document.getElementById('ifos-ranks-modal');
-if (ifosRanksModal) {
-  const closeBtn = document.getElementById('ifos-modal-close');
-  const close = () => ifosRanksModal.classList.remove('open');
-  closeBtn?.addEventListener('click', close);
-  ifosRanksModal.addEventListener('click', (e) => {
-    if (e.target === ifosRanksModal) close();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') close();
-  });
-  setTimeout(() => ifosRanksModal.classList.add('open'), 600);
-}
-
 // ===== FREE CLASS COUNTDOWN =====
 const countdownEl = document.getElementById('countdown');
 if (countdownEl) {
