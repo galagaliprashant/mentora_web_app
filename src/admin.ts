@@ -24,6 +24,9 @@ const COURSES = [
   { courseId: 'apmc_1_0', displayName: 'APMC 1.0' },
   { courseId: 'apmc_2_0', displayName: 'APMC 2.0' },
   { courseId: 'csat', displayName: 'CSAT' },
+  { courseId: 'psir', displayName: 'PSIR' },
+  { courseId: 'kannada_literature', displayName: 'Kannada Literature' },
+  { courseId: 'anthropology', displayName: 'Anthropology' },
 ];
 
 // ===== DOM REFS =====

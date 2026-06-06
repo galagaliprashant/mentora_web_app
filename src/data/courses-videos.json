@@ -5054,6 +5054,27 @@
           ]
         }
       ]
+    },
+    {
+      "courseId": "psir",
+      "displayName": "PSIR",
+      "description": "UPSC optional — Political Science & International Relations",
+      "icon": "fas fa-landmark",
+      "subjects": []
+    },
+    {
+      "courseId": "kannada_literature",
+      "displayName": "Kannada Literature",
+      "description": "UPSC optional — Kannada Literature",
+      "icon": "fas fa-language",
+      "subjects": []
+    },
+    {
+      "courseId": "anthropology",
+      "displayName": "Anthropology",
+      "description": "UPSC optional — Anthropology",
+      "icon": "fas fa-people-group",
+      "subjects": []
     }
   ]
 }
