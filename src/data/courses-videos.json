@@ -987,18 +987,6 @@
               "order": 33
             }
           ]
-        },
-        {
-          "subjectId": "test",
-          "displayName": "Test",
-          "icon": "fas fa-landmark",
-          "videos": [
-            {
-              "videoId": "6b4febdde5c044f28de7f3e2e73bbeae",
-              "title": "Test",
-              "order": 1
-            }
-          ]
         }
       ]
     },
