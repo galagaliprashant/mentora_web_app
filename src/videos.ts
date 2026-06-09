@@ -41,6 +41,13 @@ const freeVideosSection = document.getElementById('classes');
 
 const LIVE_ID = '665202af9a8e4f47a502891bbdfe8de3';
 
+// Per-course live stream IDs (fall back to LIVE_ID when not listed)
+const LIVE_IDS: Record<string, string> = {
+  psir: 'abc123',
+  kannada_literature: 'def456',
+  anthropology: 'ghi789',
+};
+
 // ===== STATE =====
 let enrollments: Map<string, string> = new Map(); // courseId -> status
 let currentUser: User | null = null;
@@ -181,7 +188,7 @@ function renderLiveView(courseId: string) {
   appEl.innerHTML = `
     <div class="live-video__player-wrap">
       <iframe
-        src="https://player.vdocipher.com/live-v2?liveId=${LIVE_ID}"
+        src="https://player.vdocipher.com/live-v2?liveId=${LIVE_IDS[courseId] ?? LIVE_ID}"
         style="border:0;width:720px;aspect-ratio:16/9;max-width:100%;"
         allow="autoplay,fullscreen"
         allowfullscreen
