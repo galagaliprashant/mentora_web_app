@@ -39,7 +39,18 @@ const breadcrumbEl = document.getElementById('video-breadcrumb')!;
 const headerBtn = document.querySelector<HTMLAnchorElement>('.top-bar__login');
 const freeVideosSection = document.getElementById('classes');
 
-const LIVE_ID = '665202af9a8e4f47a502891bbdfe8de3';
+const DEFAULT_LIVE_ID = '665202af9a8e4f47a502891bbdfe8de3';
+
+// Per-course live stream IDs. Falls back to DEFAULT_LIVE_ID if not listed.
+const LIVE_IDS: Record<string, string> = {
+  psir: 'REPLACE_WITH_PSIR_LIVE_ID',
+  kannada_literature: 'REPLACE_WITH_KANNADA_LIVE_ID',
+  anthropology: 'REPLACE_WITH_ANTHROPOLOGY_LIVE_ID',
+};
+
+function getLiveId(courseId: string): string {
+  return LIVE_IDS[courseId] ?? DEFAULT_LIVE_ID;
+}
 
 // ===== STATE =====
 let enrollments: Map<string, string> = new Map(); // courseId -> status
@@ -181,7 +192,7 @@ function renderLiveView(courseId: string) {
   appEl.innerHTML = `
     <div class="live-video__player-wrap">
       <iframe
-        src="https://player.vdocipher.com/live-v2?liveId=${LIVE_ID}"
+        src="https://player.vdocipher.com/live-v2?liveId=${getLiveId(courseId)}"
         style="border:0;width:720px;aspect-ratio:16/9;max-width:100%;"
         allow="autoplay,fullscreen"
         allowfullscreen
