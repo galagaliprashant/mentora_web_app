@@ -6,7 +6,9 @@ import {
   signOut,
   updatePassword,
   reauthenticateWithCredential,
+  deleteUser,
   EmailAuthProvider,
+  type User,
 } from 'firebase/auth';
 import {
   doc,
@@ -305,8 +307,15 @@ signupForm.addEventListener('submit', async (e) => {
   signupBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating account...';
   signupInProgress = true;
 
+  // Track the auth user so we can roll it back if a later step fails.
+  // createUserWithEmailAndPassword is the first and least-reversible step:
+  // without rollback, a failure in setDoc/batch leaves an orphaned auth
+  // account that blocks any retry with auth/email-already-in-use.
+  let createdUser: User | null = null;
+
   try {
     const result = await createUserWithEmailAndPassword(auth, email, password);
+    createdUser = result.user;
     const uid = result.user.uid;
 
     // Create user document in Firestore
@@ -345,8 +354,22 @@ signupForm.addEventListener('submit', async (e) => {
     authTabs.classList.add('hidden');
     signupSuccess.classList.remove('hidden');
   } catch (err: unknown) {
-    signupInProgress = false;
     const msg = err instanceof Error ? err.message : '';
+
+    // Roll back the auth account if it was created but a later step failed,
+    // so the user can retry instead of being locked out by email-already-in-use.
+    // (createdUser is null when createUser itself threw — never delete then,
+    // since the existing account belongs to someone else.)
+    if (createdUser) {
+      try {
+        await deleteUser(createdUser);
+      } catch {
+        // Best-effort rollback; nothing more we can do client-side.
+      }
+      createdUser = null;
+    }
+
+    signupInProgress = false;
     if (msg.includes('email-already-in-use')) {
       signupError.textContent = 'This email is already registered. Please sign in instead.';
     } else {
