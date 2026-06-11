@@ -44,7 +44,7 @@ const DEFAULT_LIVE_ID = '665202af9a8e4f47a502891bbdfe8de3';
 // Per-course live stream IDs. Falls back to DEFAULT_LIVE_ID if not listed.
 const LIVE_IDS: Record<string, string> = {
   psir: '0da10b7223ff40bebab5ba85b8dc0e45',
-  kannada_literature: '6b4febdde5c044f28de7f3e2e73bbeae',
+  kannada_literature: '7oluypsdf',
   anthropology: 'REPLACE_WITH_ANTHROPOLOGY_LIVE_ID',
 };
 
