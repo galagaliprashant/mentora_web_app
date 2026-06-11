@@ -5225,6 +5225,27 @@
       "description": "UPSC optional — Anthropology",
       "icon": "fas fa-people-group",
       "subjects": []
+    },
+    {
+      "courseId": "gold_standard",
+      "displayName": "Gold Standard",
+      "description": "Advanced Mains Programme — target 450+ in GS Mains",
+      "icon": "fas fa-award",
+      "subjects": []
+    },
+    {
+      "courseId": "mains_mentorship",
+      "displayName": "Mains Mentorship",
+      "description": "Aspirant-tailored one-to-one mentorship for Mains 2026",
+      "icon": "fas fa-user-tie",
+      "subjects": []
+    },
+    {
+      "courseId": "daily_answer_writing",
+      "displayName": "Daily Answer Writing",
+      "description": "Classroom-based answer writing towards topper-level answers",
+      "icon": "fas fa-pen-fancy",
+      "subjects": []
     }
   ]
 }
