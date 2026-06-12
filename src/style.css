@@ -4557,6 +4557,8 @@ img {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 8px;
+  max-height: 45vh;
+  overflow-y: auto;
 }
 
 .edit-courses-option {
