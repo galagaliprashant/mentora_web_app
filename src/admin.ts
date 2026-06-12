@@ -54,6 +54,7 @@ const editCoursesStudentName = document.getElementById('edit-courses-student-nam
 const editCoursesCheckboxes = document.getElementById('edit-courses-checkboxes')!;
 const editCoursesSave = document.getElementById('edit-courses-save')!;
 const editCoursesCancel = document.getElementById('edit-courses-cancel')!;
+const editCoursesClose = document.getElementById('edit-courses-close')!;
 
 // Confirm modal
 const confirmModal = document.getElementById('admin-confirm-modal')!;
@@ -526,6 +527,7 @@ function showEditCoursesModal(uid: string, userName: string) {
     editCoursesModal.classList.remove('open');
     editCoursesSave.removeEventListener('click', onSave);
     editCoursesCancel.removeEventListener('click', onCancel);
+    editCoursesClose.removeEventListener('click', onCancel);
   };
 
   const onCancel = () => cleanup();
@@ -554,6 +556,7 @@ function showEditCoursesModal(uid: string, userName: string) {
 
   editCoursesSave.addEventListener('click', onSave);
   editCoursesCancel.addEventListener('click', onCancel);
+  editCoursesClose.addEventListener('click', onCancel);
 }
 
 // ===== CONFIRM MODAL =====

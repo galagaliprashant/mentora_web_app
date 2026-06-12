@@ -46,6 +46,9 @@ const LIVE_IDS: Record<string, string> = {
   psir: '0da10b7223ff40bebab5ba85b8dc0e45',
   kannada_literature: '7oluypsdf',
   anthropology: 'REPLACE_WITH_ANTHROPOLOGY_LIVE_ID',
+  gold_standard: 'REPLACE_WITH_GOLD_STANDARD_LIVE_ID',
+  mains_mentorship: 'REPLACE_WITH_MAINS_MENTORSHIP_LIVE_ID',
+  daily_answer_writing: 'REPLACE_WITH_DAILY_ANSWER_WRITING_LIVE_ID',
 };
 
 function getLiveId(courseId: string): string {
