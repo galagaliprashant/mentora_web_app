@@ -15,6 +15,8 @@ export default defineConfig({
         connect: resolve(__dirname, 'connect.html'),
         team: resolve(__dirname, 'team.html'),
         ifs2025: resolve(__dirname, 'ifs-2025-final-selection-list.html'),
+        currentAffairs: resolve(__dirname, 'current-affairs.html'),
+        blogs: resolve(__dirname, 'blogs.html'),
       },
     },
   },
