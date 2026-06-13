@@ -1018,50 +1018,6 @@
               "order": 1
             }
           ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
-            }
-          ]
         }
       ]
     },
@@ -2081,50 +2037,6 @@
               "title": "Economy",
               "duration": "1:53:40",
               "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
             }
           ]
         }
@@ -3148,50 +3060,6 @@
               "order": 1
             }
           ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
-            }
-          ]
         }
       ]
     },
@@ -4211,50 +4079,6 @@
               "title": "Economy",
               "duration": "1:53:40",
               "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
             }
           ]
         }
@@ -5278,50 +5102,6 @@
               "order": 1
             }
           ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
-            }
-          ]
         }
       ]
     },
@@ -5585,7 +5365,27 @@
       "displayName": "PSIR",
       "description": "UPSC optional — Political Science & International Relations",
       "icon": "fas fa-landmark",
-      "subjects": []
+      "subjects": [
+        {
+          "subjectId": "psir",
+          "displayName": "PSIR",
+          "icon": "fas fa-book",
+          "videos": [
+            {
+              "videoId": "b883710f43c74d04a47f4ad6357d6847",
+              "title": "PSIR Class",
+              "duration": "1:48:54",
+              "order": 1
+            },
+            {
+              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
+              "title": "PSIR Orientation Session",
+              "duration": "1:23:08",
+              "order": 2
+            }
+          ]
+        }
+      ]
     },
     {
       "courseId": "kannada_literature",
@@ -5636,25 +5436,6 @@
               "order": 3
             }
           ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
-            }
-          ]
         }
       ]
     },
@@ -5680,50 +5461,6 @@
               "title": "Economy",
               "duration": "1:53:40",
               "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
             }
           ]
         }
@@ -5753,50 +5490,6 @@
               "order": 1
             }
           ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
-            }
-          ]
         }
       ]
     },
@@ -5824,50 +5517,6 @@
               "order": 1
             }
           ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
-            }
-          ]
         }
       ]
     },
@@ -5893,50 +5542,6 @@
               "title": "Economy",
               "duration": "1:53:40",
               "order": 1
-            }
-          ]
-        },
-        {
-          "subjectId": "kannada_literature",
-          "displayName": "Kannada Literature",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "397bfc7a55d34980aa1d098b0389546d",
-              "title": "Kannada Literature",
-              "duration": "1:57:20",
-              "order": 1
-            },
-            {
-              "videoId": "5717b401195042a3a2d8ef9f5c306bfb",
-              "title": "Kannada literature",
-              "duration": "2:11:46",
-              "order": 2
-            },
-            {
-              "videoId": "f4b208dbaf294e1a8f7eb47140be2b1d",
-              "title": "Kannada literature Orientation",
-              "duration": "2:22:58",
-              "order": 3
-            }
-          ]
-        },
-        {
-          "subjectId": "psir",
-          "displayName": "PSIR ",
-          "icon": "fas fa-book",
-          "videos": [
-            {
-              "videoId": "b883710f43c74d04a47f4ad6357d6847",
-              "title": "PSIR Class",
-              "duration": "1:48:54",
-              "order": 1
-            },
-            {
-              "videoId": "69aaf8eddd6c4239be689dbcc66037aa",
-              "title": "PSIR Orientation Session",
-              "duration": "1:23:08",
-              "order": 2
             }
           ]
         }
