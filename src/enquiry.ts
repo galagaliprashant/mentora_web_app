@@ -108,7 +108,7 @@ function initCourseEnquiryModal() {
       hiddenBatchType.value = batchType;
 
       if (courseInfo) {
-        const batchLabel = batchType === 'online' ? 'Online Batch' : 'In-Person Batch';
+        const batchLabel = batchType === 'online' ? 'Online Batch' : 'Offline Batch';
         courseInfo.textContent = `${courseName} — ${batchLabel}`;
       }
 
