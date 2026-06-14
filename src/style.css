@@ -3649,6 +3649,10 @@ img {
 
   .main-nav__menu.open {
     display: flex;
+    max-height: calc(100dvh - 100% - 48px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
   .main-nav__menu>li>a {
