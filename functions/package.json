@@ -2,6 +2,7 @@
   "name": "mentora-functions",
   "main": "lib/index.js",
   "scripts": {
+    "genmap": "node scripts/gen-video-course-map.mjs",
     "build": "tsc",
     "serve": "npm run build && firebase emulators:start --only functions",
     "deploy": "firebase deploy --only functions"
