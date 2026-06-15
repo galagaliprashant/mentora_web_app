@@ -2,6 +2,9 @@ import {onCall, HttpsError} from "firebase-functions/v2/https";
 import {defineSecret} from "firebase-functions/params";
 import * as admin from "firebase-admin";
 import * as https from "https";
+// Generated from src/data/courses-videos.json by scripts/gen-video-course-map.mjs
+// Maps each videoId to the courseId(s) it belongs to. Regenerated on predeploy.
+import videoCourseMap from "./video-course-map.json";
 
 admin.initializeApp();
 
@@ -272,6 +275,18 @@ export const getVdoCipherOtp = onCall(
       throw new HttpsError(
         "invalid-argument",
         "videoId and courseId are required."
+      );
+    }
+
+    // Verify the video actually belongs to the requested course. Prevents a
+    // user enrolled in one course from pulling OTPs for another course's videos
+    // (all videoIds are present in the public client bundle).
+    const allowedCourses =
+      (videoCourseMap as Record<string, string[]>)[videoId] ?? [];
+    if (!allowedCourses.includes(courseId)) {
+      throw new HttpsError(
+        "invalid-argument",
+        "Video does not belong to this course."
       );
     }
 
