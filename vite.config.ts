@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         courses: resolve(__dirname, 'courses.html'),
+        course: resolve(__dirname, 'course.html'),
         freeClass: resolve(__dirname, 'free-class.html'),
         login: resolve(__dirname, 'login.html'),
         studentCorner: resolve(__dirname, 'student-corner.html'),
