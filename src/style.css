@@ -5463,3 +5463,309 @@ img {
     font-size: 2.1rem;
   }
 }
+/* ===== DEDICATED COURSE DETAIL PAGE ===== */
+.course-page__hero {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-card) 100%);
+  color: var(--white);
+  padding: 48px 0 56px;
+}
+
+.course-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, .75);
+  font-size: .9rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  transition: color var(--transition);
+}
+
+.course-page__back:hover {
+  color: var(--orange-light);
+}
+
+.course-page__tag {
+  display: inline-block;
+  background: rgba(232, 97, 10, .18);
+  color: var(--orange-light);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 5px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.course-page__hero-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 16px 0 4px;
+}
+
+.course-page__hero-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.course-page__hero-title h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.course-page__tagline {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, .82);
+  max-width: 760px;
+  margin-top: 6px;
+}
+
+.course-page__body {
+  padding: 48px 0 64px;
+  background: var(--white);
+}
+
+.course-page__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.course-page__meta-item {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid var(--orange);
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.course-page__meta-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+}
+
+.course-page__meta-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.course-page__placeholder-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(232, 97, 10, .07);
+  border: 1px dashed var(--orange);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: var(--orange-dark);
+  font-size: .92rem;
+  margin-bottom: 28px;
+}
+
+.course-page__prose {
+  max-width: 880px;
+}
+
+.course-page__heading {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  color: var(--black);
+  margin: 38px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.course-page__prose > .course-page__heading:first-child {
+  margin-top: 0;
+}
+
+.course-page__subheading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--orange-dark);
+  margin: 24px 0 10px;
+}
+
+.course-page__prose p {
+  color: var(--gray-700);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.course-page__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.course-page__list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+.course-page__list li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 11px;
+  width: 7px;
+  height: 7px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.course-page__checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.course-page__checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 13px 16px;
+  color: var(--gray-700);
+  line-height: 1.55;
+}
+
+.course-page__checklist li i {
+  color: var(--orange);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.course-page__faculty {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.course-page__faculty-card {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 22px 22px;
+}
+
+.course-page__faculty-card h4 {
+  font-size: 1.1rem;
+  color: var(--black);
+  margin-bottom: 6px;
+}
+
+.course-page__faculty-card p {
+  color: var(--gray-700);
+  line-height: 1.6;
+  font-size: .92rem;
+}
+
+.course-page__faculty-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.course-page__faculty-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--orange-dark);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  padding: 7px 14px;
+  border-radius: 20px;
+  transition: all var(--transition);
+}
+
+.course-page__faculty-links a:hover {
+  background: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+}
+
+.course-page__cta {
+  margin-top: 44px;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-card) 100%);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  text-align: center;
+}
+
+.course-page__cta h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 22px;
+}
+
+.course-page__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.course-page__notfound {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.course-page__notfound h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.course-page__notfound p {
+  color: var(--gray-700);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .course-page__hero-title h1 {
+    font-size: 1.5rem;
+  }
+  .course-page__hero-title {
+    gap: 14px;
+  }
+  .course-page__checklist {
+    grid-template-columns: 1fr;
+  }
+  .course-page__heading {
+    font-size: 1.35rem;
+  }
+}
