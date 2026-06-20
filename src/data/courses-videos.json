@@ -2495,13 +2495,13 @@
     },
     {
       "courseId": "gold_standard",
-      "displayName": "Gold Standard",
-      "description": "Advanced Mains Programme — target 450+ in GS Mains",
+      "displayName": "Advanced Mains Program",
+      "description": "Advanced Mains Program — target 450+ in GS Mains",
       "icon": "fas fa-award",
       "subjects": [
         {
           "subjectId": "gold_standard",
-          "displayName": "Gold Standard ",
+          "displayName": "Advanced Mains Program",
           "icon": "fas fa-book",
           "videos": []
         }

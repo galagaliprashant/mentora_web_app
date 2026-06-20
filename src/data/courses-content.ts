@@ -634,10 +634,10 @@ export const COURSES: CourseContent[] = [
     ],
   },
 
-  // ===== Gold Standard (Advanced Mains Programme) =====
+  // ===== Advanced Mains Program (AMP) =====
   {
     id: 'gold_standard',
-    name: 'Gold Standard — Advanced Mains Programme (AMP)',
+    name: 'Advanced Mains Program (AMP)',
     tag: 'Advanced',
     icon: 'fas fa-award',
     summary: 'Advanced Mains Programme — target 450+ in GS Mains',
