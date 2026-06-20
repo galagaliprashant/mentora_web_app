@@ -34,7 +34,6 @@ const ALL_COURSES = [
   { id: 'kannada_literature', displayName: 'Kannada Literature' },
   { id: 'anthropology', displayName: 'Anthropology' },
   { id: 'gold_standard', displayName: 'Gold Standard' },
-  { id: 'mains_mentorship', displayName: 'Mains Mentorship' },
   { id: 'daily_answer_writing', displayName: 'Daily Answer Writing' },
 ];
 
