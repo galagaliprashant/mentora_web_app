@@ -135,7 +135,6 @@ const COURSE_NAMES: Record<string, string> = {
   "kannada_literature": "Kannada Literature",
   "anthropology": "Anthropology",
   "gold_standard": "Gold Standard",
-  "mains_mentorship": "Mains Mentorship",
   "daily_answer_writing": "Daily Answer Writing",
 };
 

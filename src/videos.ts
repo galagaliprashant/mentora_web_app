@@ -47,7 +47,6 @@ const LIVE_IDS: Record<string, string> = {
   kannada_literature: '50a03cacf2744d3ca688fc3cdae8b0f4',
   anthropology: 'REPLACE_WITH_ANTHROPOLOGY_LIVE_ID',
   gold_standard: 'REPLACE_WITH_GOLD_STANDARD_LIVE_ID',
-  mains_mentorship: 'REPLACE_WITH_MAINS_MENTORSHIP_LIVE_ID',
   daily_answer_writing: 'REPLACE_WITH_DAILY_ANSWER_WRITING_LIVE_ID',
 };
 

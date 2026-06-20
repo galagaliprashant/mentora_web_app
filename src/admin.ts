@@ -28,7 +28,6 @@ const COURSES = [
   { courseId: 'kannada_literature', displayName: 'Kannada Literature' },
   { courseId: 'anthropology', displayName: 'Anthropology' },
   { courseId: 'gold_standard', displayName: 'Gold Standard' },
-  { courseId: 'mains_mentorship', displayName: 'Mains Mentorship' },
   { courseId: 'daily_answer_writing', displayName: 'Daily Answer Writing' },
 ];
 

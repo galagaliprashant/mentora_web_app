@@ -738,27 +738,6 @@ export const COURSES: CourseContent[] = [
     ],
   },
 
-  // ===== Mains Mentorship (placeholder) =====
-  {
-    id: 'mains_mentorship',
-    name: 'Mains Mentorship Programme',
-    tag: 'Mentorship',
-    icon: 'fas fa-user-tie',
-    summary: 'Aspirant-tailored one-to-one mentorship for Mains 2026',
-    placeholder: true,
-    blocks: [
-      {
-        type: 'list',
-        items: [
-          'You have only 85+ days to clear Mains 2026',
-          'Aspirant-tailored one-to-one mentorship',
-          'Subject-specific strategies & techniques to score 110+ in each paper',
-          'Structured answer writing with Chiranth Sir, Rajeev Sir and Rakesh Sir',
-        ],
-      },
-    ],
-  },
-
   // ===== Daily Answer Writing Programme =====
   {
     id: 'daily_answer_writing',
