@@ -928,6 +928,20 @@
     "apmc_1_0",
     "apmc_2_0"
   ],
+  "13ba7fbde35b44b6bdcdd45780f1d2c0": [
+    "1_year_foundation",
+    "2_year_foundation",
+    "3_year_foundation",
+    "apmc_1_0",
+    "apmc_2_0"
+  ],
+  "125ff64ccbf84034b0163b97b5332868": [
+    "1_year_foundation",
+    "2_year_foundation",
+    "3_year_foundation",
+    "apmc_1_0",
+    "apmc_2_0"
+  ],
   "92edcae9a8144151bf23efe5dd10d455": [
     "1_year_foundation",
     "2_year_foundation",
@@ -1178,10 +1192,85 @@
     "mains_mentorship",
     "daily_answer_writing"
   ],
+  "362d1dcd580944f9b487679a70a48ec0": [
+    "1_year_foundation",
+    "2_year_foundation",
+    "3_year_foundation",
+    "apmc_1_0",
+    "apmc_2_0",
+    "kannada_literature",
+    "anthropology",
+    "gold_standard",
+    "mains_mentorship",
+    "daily_answer_writing"
+  ],
+  "67d98daf7ccf4bfd80fb4681fd9f1245": [
+    "1_year_foundation",
+    "2_year_foundation",
+    "3_year_foundation",
+    "apmc_1_0",
+    "apmc_2_0",
+    "kannada_literature",
+    "anthropology",
+    "gold_standard",
+    "mains_mentorship",
+    "daily_answer_writing"
+  ],
+  "8836d5f0a2cf4bccbc80d810b59a51f2": [
+    "1_year_foundation",
+    "2_year_foundation",
+    "3_year_foundation",
+    "apmc_1_0",
+    "apmc_2_0",
+    "kannada_literature",
+    "anthropology",
+    "gold_standard",
+    "mains_mentorship",
+    "daily_answer_writing"
+  ],
+  "756dd01ba57b4f318700b830cb37d419": [
+    "1_year_foundation",
+    "2_year_foundation",
+    "3_year_foundation",
+    "apmc_1_0",
+    "apmc_2_0",
+    "kannada_literature",
+    "anthropology",
+    "gold_standard",
+    "mains_mentorship",
+    "daily_answer_writing"
+  ],
+  "126f949a0ab64050a428927b290af820": [
+    "1_year_foundation",
+    "2_year_foundation",
+    "3_year_foundation",
+    "apmc_1_0",
+    "apmc_2_0",
+    "kannada_literature",
+    "anthropology",
+    "gold_standard",
+    "mains_mentorship",
+    "daily_answer_writing"
+  ],
   "b883710f43c74d04a47f4ad6357d6847": [
     "psir"
   ],
   "69aaf8eddd6c4239be689dbcc66037aa": [
+    "psir"
+  ],
+  "53c1b753033440248f8aba0fcfc7afd1": [
+    "psir"
+  ],
+  "947ffeca4d624a628abce3eaf77b4a71": [
+    "psir"
+  ],
+  "8a4c78084f664efca8f6fcdb6720607b": [
+    "psir"
+  ],
+  "3c9fc4ca9c154b06a5b9a2fc0bb5fa3e": [
+    "psir"
+  ],
+  "561eafc584ed4f0fb9d754d9a17a0ce8": [
     "psir"
   ],
   "397bfc7a55d34980aa1d098b0389546d": [
@@ -1191,6 +1280,9 @@
     "kannada_literature"
   ],
   "f4b208dbaf294e1a8f7eb47140be2b1d": [
+    "kannada_literature"
+  ],
+  "72bd2f0b60b94990a36939e75c9d294b": [
     "kannada_literature"
   ]
 }
