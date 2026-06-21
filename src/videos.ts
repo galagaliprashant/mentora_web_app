@@ -43,6 +43,12 @@ const DEFAULT_LIVE_ID = '665202af9a8e4f47a502891bbdfe8de3';
 
 // Per-course live stream IDs. Falls back to DEFAULT_LIVE_ID if not listed.
 const LIVE_IDS: Record<string, string> = {
+  '1_year_foundation': 'REPLACE_WITH_1_YEAR_FOUNDATION_LIVE_ID',
+  '2_year_foundation': 'REPLACE_WITH_2_YEAR_FOUNDATION_LIVE_ID',
+  '3_year_foundation': 'REPLACE_WITH_3_YEAR_FOUNDATION_LIVE_ID',
+  apmc_1_0: 'REPLACE_WITH_APMC_1_0_LIVE_ID',
+  apmc_2_0: 'REPLACE_WITH_APMC_2_0_LIVE_ID',
+  csat: 'REPLACE_WITH_CSAT_LIVE_ID',
   psir: '1857f44263344846b992d643025d2362',
   kannada_literature: '50a03cacf2744d3ca688fc3cdae8b0f4',
   anthropology: 'REPLACE_WITH_ANTHROPOLOGY_LIVE_ID',
