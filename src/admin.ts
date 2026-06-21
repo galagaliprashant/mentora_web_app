@@ -27,7 +27,7 @@ const COURSES = [
   { courseId: 'psir', displayName: 'PSIR' },
   { courseId: 'kannada_literature', displayName: 'Kannada Literature' },
   { courseId: 'anthropology', displayName: 'Anthropology' },
-  { courseId: 'gold_standard', displayName: 'Gold Standard' },
+  { courseId: 'gold_standard', displayName: 'Advanced Mains Program' },
   { courseId: 'daily_answer_writing', displayName: 'Daily Answer Writing' },
 ];
 

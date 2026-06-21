@@ -611,33 +611,133 @@ export const COURSES: CourseContent[] = [
     ],
   },
 
-  // ===== Anthropology (placeholder) =====
+  // ===== Anthropology Optional =====
   {
     id: 'anthropology',
-    name: 'Anthropology — UPSC Optional',
+    name: 'Anthropology Optional Subject for UPSC CSE',
     tag: 'Optional',
     icon: 'fas fa-people-group',
     summary: 'Anthropology optional for UPSC Mains',
-    placeholder: true,
+    meta: [
+      { label: 'Fee', value: 'Rs. 30,000/-' },
+      { label: 'Faculty', value: 'Anusha PC' },
+      { label: 'Mode', value: 'Classroom / Live Online' },
+    ],
     blocks: [
+      {
+        type: 'paragraph',
+        text: 'Anthropology is one of the most popular UPSC optional subjects, known for its concise syllabus, scoring potential, and strong overlap with General Studies, Essay, and Interview preparation. It provides valuable insights into human evolution, society, culture, tribal issues, and contemporary social change.',
+      },
+      {
+        type: 'paragraph',
+        text: 'At Mentora IAS, our Anthropology Optional Programme focuses on building conceptual clarity, analytical thinking, and answer-writing skills through a structured, exam-oriented approach. With simplified explanations, contemporary examples, and UPSC-aligned preparation, we help students confidently master the subject and maximize their performance in the Civil Services Examination.',
+      },
+      { type: 'heading', text: 'Why Choose Mentora IAS for Anthropology Optional?' },
       {
         type: 'list',
         items: [
-          'Complete coverage of Anthropology optional syllabus (Paper-I & Paper-II)',
-          'Conceptual clarity on physical, social and cultural anthropology',
-          'Diagram-based answer-writing practice with topic-wise and full-length tests',
-          'Coverage of Indian anthropology, tribal issues and current developments',
-          'Mentorship by experts',
-          "Backup of Missed Classes available on student's portal",
+          '<strong>Complete Syllabus Coverage</strong> – Comprehensive coverage of Anthropology Paper I & II with a structured learning approach.',
+          '<strong>Conceptual Clarity</strong> – Simplified teaching methodology that makes complex theories and concepts easy to understand.',
+          '<strong>UPSC-Focused Preparation</strong> – Lectures designed around UPSC trends, PYQs, and evolving question patterns.',
+          '<strong>Current Affairs Integration</strong> – Link anthropological concepts with contemporary issues and real-world developments.',
+          '<strong>Interactive Learning</strong> – Engaging classroom discussions, active participation, and instant doubt resolution.',
+          '<strong>Integrated Answer Writing</strong> – Regular practice to improve structure, application, and scoring potential.',
+          '<strong>Application-Based Learning</strong> – Extensive use of examples, tribal case studies, and contemporary illustrations.',
+          '<strong>Comprehensive Study Material</strong> – Concise, updated, and exam-oriented notes for effective preparation and revision.',
+          '<strong>Flexible Learning Modes</strong> – Available in both Classroom and Live Online formats.',
+          '<strong>Dedicated Mentorship</strong> – Continuous academic guidance and personalized support throughout preparation.',
+        ],
+      },
+      { type: 'heading', text: 'Programme Highlights' },
+      {
+        type: 'checklist',
+        items: [
+          'Complete Coverage of Anthropology Paper I & II',
+          'Anthropological Theories, Thinkers & Concepts',
+          'Integrated Previous Year Question Analysis',
+          'Regular Answer Writing Practice & Evaluation',
+          'Physical, Biological & Social Anthropology Made Simple',
+          'Case Studies and Contemporary Examples',
+          'Structured Revision Support',
+          'Mentorship and Personalized Guidance',
+        ],
+      },
+      { type: 'heading', text: 'Understanding the Anthropology Optional Syllabus' },
+      {
+        type: 'paragraph',
+        text: 'The Anthropology Optional syllabus is divided into two papers, covering the scientific, social, and cultural dimensions of human life and society.',
+      },
+      { type: 'subheading', text: 'Anthropology Paper I' },
+      {
+        type: 'paragraph',
+        text: 'Paper I focuses on the fundamental concepts and theories of Anthropology, providing a strong foundation in understanding human evolution, biological diversity, and socio-cultural systems.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Meaning, Scope, and Development of Anthropology',
+          'Physical & Biological Anthropology',
+          'Human Evolution and Genetics',
+          'Primatology and Human Variation',
+          'Archaeological Anthropology',
+          'Social and Cultural Anthropology',
+          'Marriage, Family, Kinship, and Religion',
+          'Economic and Political Organization',
+          'Anthropological Theories and Thinkers',
+          'Research Methods and Fieldwork',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'This paper builds the conceptual and scientific foundation required to understand human evolution, culture, and social organization.',
+      },
+      { type: 'subheading', text: 'Anthropology Paper II' },
+      {
+        type: 'paragraph',
+        text: 'Paper II applies anthropological concepts to the Indian context, focusing on society, culture, tribal communities, and contemporary developmental issues.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Evolution of Indian Culture and Civilization',
+          'Indian Social System and Cultural Diversity',
+          'Tribal Communities in India',
+          'Problems of Tribal Development',
+          'Caste, Religion, and Social Change',
+          'Rural and Urban Anthropology',
+          'Anthropology of Development',
+          'Tribal Policies and Constitutional Safeguards',
+          'Impact of Globalization and Modernization',
+          'Contemporary Issues in Indian Society',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'This paper helps students understand how anthropological perspectives can be applied to governance, development, social policy, and contemporary challenges in India.',
+      },
+      { type: 'heading', text: 'Building the Perspective Required for UPSC' },
+      {
+        type: 'paragraph',
+        text: 'Success in Anthropology Optional requires more than mastering theories and concepts—it demands the ability to apply anthropological perspectives to contemporary social issues, tribal development, public policy, and human diversity. At Mentora IAS, students are trained to connect static syllabus topics with current affairs, case studies, and real-world examples, enabling them to develop analytical, balanced, and application-oriented answers. This approach not only strengthens Anthropology Optional preparation but also enhances performance in General Studies, Essay, and the UPSC Personality Test.',
+      },
+    ],
+    faculty: [
+      {
+        name: 'Anusha PC',
+        detail: '6+ years of teaching experience in Delhi and Bangalore',
+        links: [
+          { label: 'Orientation Class', url: 'https://drive.google.com/file/d/1lPTF_sYz5hxQOctivnAl3haiG0ff7xb7/view?usp=drive_link' },
+          { label: 'Demo Class 1', url: 'https://drive.google.com/file/d/1ekKQiPOOfMrlXAK75E5o9NSWds8iMk-4/view?usp=drive_link' },
+          { label: 'Demo Class 2', url: 'https://drive.google.com/file/d/1nLcaxDc33WvsQyUEKxvbsURm5rORWUqZ/view?usp=drive_link' },
         ],
       },
     ],
   },
 
-  // ===== Gold Standard (Advanced Mains Programme) =====
+  // ===== Advanced Mains Program (AMP) =====
   {
     id: 'gold_standard',
-    name: 'Gold Standard — Advanced Mains Programme (AMP)',
+    name: 'Advanced Mains Program (AMP)',
     tag: 'Advanced',
     icon: 'fas fa-award',
     summary: 'Advanced Mains Programme — target 450+ in GS Mains',
