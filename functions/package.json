@@ -5,7 +5,8 @@
     "genmap": "node scripts/gen-video-course-map.mjs",
     "build": "tsc",
     "serve": "npm run build && firebase emulators:start --only functions",
-    "deploy": "firebase deploy --only functions"
+    "deploy": "firebase deploy --only functions",
+    "deploy:otp": "npm run build && firebase deploy --only functions:getVdoCipherOtp"
   },
   "engines": {
     "node": "22"
