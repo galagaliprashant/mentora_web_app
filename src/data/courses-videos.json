@@ -798,6 +798,18 @@
               "title": "Minirals (Part 2)",
               "duration": "2:15:15",
               "order": 59
+            },
+            {
+              "videoId": "cff5cf5c7e8540ca8ec0d96532553a3b",
+              "title": "Minirals (Part 3)",
+              "duration": "2:05:09",
+              "order": 60
+            },
+            {
+              "videoId": "b07d913273104dcf9056a6c2f056b0d5",
+              "title": "Land Use and Agriculture",
+              "duration": "1:11:04",
+              "order": 61
             }
           ]
         },
@@ -1052,6 +1064,18 @@
               "title": "Unemployment",
               "duration": "2:07:02",
               "order": 6
+            },
+            {
+              "videoId": "9ea1d7d4b58142f79eecb20731305671",
+              "title": "National Income Accounting",
+              "duration": "2:00:51",
+              "order": 7
+            },
+            {
+              "videoId": "39249761810748ffac01b53a502182d6",
+              "title": "National Income Accounting (Part 2)",
+              "duration": "2:00:34",
+              "order": 8
             }
           ]
         }
@@ -1855,6 +1879,18 @@
               "title": "Minirals (Part 2)",
               "duration": "2:15:15",
               "order": 59
+            },
+            {
+              "videoId": "cff5cf5c7e8540ca8ec0d96532553a3b",
+              "title": "Minirals (Part 3)",
+              "duration": "2:05:09",
+              "order": 60
+            },
+            {
+              "videoId": "b07d913273104dcf9056a6c2f056b0d5",
+              "title": "Land Use and Agriculture",
+              "duration": "1:11:04",
+              "order": 61
             }
           ]
         },
@@ -2109,6 +2145,18 @@
               "title": "Unemployment",
               "duration": "2:07:02",
               "order": 6
+            },
+            {
+              "videoId": "9ea1d7d4b58142f79eecb20731305671",
+              "title": "National Income Accounting",
+              "duration": "2:00:51",
+              "order": 7
+            },
+            {
+              "videoId": "39249761810748ffac01b53a502182d6",
+              "title": "National Income Accounting (Part 2)",
+              "duration": "2:00:34",
+              "order": 8
             }
           ]
         }
@@ -2442,6 +2490,18 @@
               "title": "PSIR Class",
               "duration": "1:57:47",
               "order": 7
+            },
+            {
+              "videoId": "fa661e4d411a431da81fa6ddb0d6662d",
+              "title": "PSIR Class",
+              "duration": "1:37:25",
+              "order": 8
+            },
+            {
+              "videoId": "34eed7fbe01246a1b30bb9ad7dc46c85",
+              "title": "PSIR Class",
+              "duration": "1:46:27",
+              "order": 9
             }
           ]
         }
