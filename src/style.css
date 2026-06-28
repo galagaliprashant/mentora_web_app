@@ -5677,10 +5677,66 @@ img {
   padding: 22px 22px;
 }
 
+.course-page__faculty-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 14px;
+  border: 2px solid var(--gray-200);
+  background: var(--white);
+}
+
+.course-page__faculty-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .course-page__faculty-card h4 {
   font-size: 1.1rem;
   color: var(--black);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+}
+
+.course-page__faculty-role {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--orange-dark);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.course-page__faculty-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.course-page__faculty-points li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--gray-700);
+  line-height: 1.5;
+  font-size: .9rem;
+}
+
+.course-page__faculty-points li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--orange);
+  font-size: .78rem;
 }
 
 .course-page__faculty-card p {

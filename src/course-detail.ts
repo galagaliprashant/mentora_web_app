@@ -39,10 +39,23 @@ function renderFaculty(course: CourseContent): string {
             )
             .join('')}</div>`
         : '';
-      return `<div class="course-page__faculty-card"><h4>${f.name}</h4><p>${f.detail}</p>${links}</div>`;
+      const photo = f.photo
+        ? `<div class="course-page__faculty-photo"><img src="${f.photo}" alt="${f.name}" loading="lazy"${
+            f.photoPosition ? ` style="object-position:${f.photoPosition}"` : ''
+          } /></div>`
+        : '';
+      const role = f.role ? `<span class="course-page__faculty-role">${f.role}</span>` : '';
+      const body =
+        f.points && f.points.length > 0
+          ? `<ul class="course-page__faculty-points">${f.points.map((p) => `<li>${p}</li>`).join('')}</ul>`
+          : f.detail
+            ? `<p>${f.detail}</p>`
+            : '';
+      return `<div class="course-page__faculty-card">${photo}<h4>${f.name}</h4>${role}${body}${links}</div>`;
     })
     .join('');
-  return `<h2 class="course-page__heading">Faculty</h2><div class="course-page__faculty">${cards}</div>`;
+  const title = course.facultyTitle ?? 'Faculty';
+  return `<h2 class="course-page__heading">${title}</h2><div class="course-page__faculty">${cards}</div>`;
 }
 
 function renderNotFound(): string {
