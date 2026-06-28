@@ -18,7 +18,15 @@ export interface MetaItem {
 
 export interface FacultyItem {
   name: string;
-  detail: string;
+  /** Single-line description. Used when `points` is not provided. */
+  detail?: string;
+  /** Short role/designation shown under the name. */
+  role?: string;
+  /** Credential bullet points, rendered as a list under the role. */
+  points?: string[];
+  photo?: string;
+  /** CSS object-position for the photo, e.g. 'top center'. Defaults to centered. */
+  photoPosition?: string;
   links?: { label: string; url: string }[];
 }
 
@@ -32,7 +40,129 @@ export interface CourseContent {
   meta?: MetaItem[];
   blocks: Block[];
   faculty?: FacultyItem[];
+  /** Heading for the faculty section. Defaults to 'Faculty'. */
+  facultyTitle?: string;
   placeholder?: boolean;
+}
+
+// Shared faculty roster for the GS Foundation courses — leadership first,
+// then the "Meet Our Mentors" line-up (team.html) in the same order.
+const FOUNDATION_FACULTY: FacultyItem[] = [
+  {
+    name: 'Chiranth Rajashekar',
+    role: 'Co-founder & Managing Director',
+    points: [
+      '15+ years of experience',
+      '140+ selections in UPSC',
+      "Ex-Senior Faculty at Drishti IAS, Unacademy, Vajirao IAS, Rao's IAS, Evolution IAS & others",
+      'Subjects — Environment and Ecology, S&T and Forestry (Optional)',
+      'MS from Cornell University, New York, USA',
+      'Two Gold Medals — University topper',
+    ],
+    photo: '/chiranth-rajashekar.jpg',
+    photoPosition: 'right center',
+  },
+  {
+    name: 'Rajeev Chauhan',
+    role: 'Co-founder & Director',
+    points: [
+      '12+ years of experience',
+      '60+ selections in IAS',
+      'Appeared in 4 IAS interviews',
+      'Subjects — Economics, Political Science (Optional) and Ethics',
+      'Ex-Faculty and Interview Panelist at Drishti IAS, Delhi',
+      'Worked as an analyst in HSBC Bank London (UK)',
+      'B.Tech (CSE) from National Institute of Technology',
+    ],
+    photo: '/Rajeev.jpeg',
+    photoPosition: 'top center',
+  },
+  {
+    name: 'Dr. Rakesh E.S.',
+    role: 'Co-founder & CEO',
+    points: [
+      '15+ years of experience',
+      '100+ selections in UPSC',
+      'Ex-Faculty Sriram IAS, Delhi',
+      'MSc (Ag) & PhD',
+      'Subjects — Kannada Literature (Optional), Governance and Public Policy',
+    ],
+    photo: '/dr-rakesh-es.png',
+    photoPosition: 'top center',
+  },
+  {
+    name: 'Rashid Yasin',
+    role: 'Senior Faculty',
+    points: ['Over 16 years of teaching experience', 'MA from JNU'],
+    photo: '/faculty-5.jpg',
+  },
+  {
+    name: 'Sunil Gupta',
+    role: 'Senior Faculty',
+    points: ['Over 20 years of teaching experience', 'B.Tech (IIT-BHU)'],
+    photo: '/faculty-3.jpeg',
+  },
+  {
+    name: 'Priyesh Singh',
+    role: 'Senior Faculty',
+    points: ['Over 15 years of teaching experience', 'MSc from IIT'],
+    photo: '/priyesh-singh.jpg',
+  },
+  {
+    name: 'Sonali Mehra',
+    role: 'Faculty',
+    points: [
+      'Over 6 years of teaching experience in Delhi, Chandigarh and South India',
+      'M.Tech (Civil Engineering) from JUIT',
+    ],
+    photo: '/sonali-mehra.jpg',
+  },
+  {
+    name: 'Anusha PC',
+    role: 'Faculty',
+    points: ['6+ years of teaching experience in Delhi and Bengaluru', 'B.Tech (ISE), EWIT, Bengaluru'],
+    photo: '/anusha-pc.jpg',
+    photoPosition: 'top center',
+  },
+  {
+    name: 'Vineet',
+    role: 'Senior Faculty',
+    points: [
+      'Over 10 years of teaching experience',
+      'Appeared twice in the UPSC Civil Services Interview',
+      'B.Tech from NIT',
+    ],
+    photo: '/vineet.jpg',
+  },
+  {
+    name: 'Ambuj Gautam',
+    role: 'Senior Faculty',
+    points: ['Over 8 years of teaching experience', 'Appeared twice in the UPSC Civil Services Interview'],
+    photo: '/ambuj-gautam.jpg',
+  },
+  {
+    name: 'Safir Sadique',
+    role: 'Faculty',
+    points: [
+      '7 years of dedicated teaching in Delhi and southern India',
+      'B.Tech (Mechanical Engineering) from ITER',
+    ],
+    photo: '/safir-sadique.jpg',
+  },
+];
+
+// Pick faculty from the shared roster by name, in the order given.
+function pickFaculty(...names: string[]): FacultyItem[] {
+  return names.map((n) => {
+    const f = FOUNDATION_FACULTY.find((m) => m.name === n);
+    if (!f) throw new Error(`Unknown faculty: ${n}`);
+    return f;
+  });
+}
+
+// Roster entry with course-specific class links attached.
+function facultyWithLinks(name: string, links: { label: string; url: string }[]): FacultyItem {
+  return { ...pickFaculty(name)[0], links };
 }
 
 export const COURSES: CourseContent[] = [
@@ -99,6 +229,7 @@ export const COURSES: CourseContent[] = [
         text: 'Take the First Step Toward Your Administrative Goals. Join our upcoming batch and experience a pedagogical shift that converts effort into ranks.',
       },
     ],
+    faculty: FOUNDATION_FACULTY,
   },
 
   // ===== 2-Year GS Foundation =====
@@ -168,6 +299,7 @@ export const COURSES: CourseContent[] = [
         text: 'Admissions Open for the New Batch. Secure your seat today and take your first definitive step toward realizing your dream of serving the nation.',
       },
     ],
+    faculty: FOUNDATION_FACULTY,
   },
 
   // ===== 3-Year GS Foundation (placeholder) =====
@@ -177,55 +309,7 @@ export const COURSES: CourseContent[] = [
     tag: 'Foundation',
     icon: 'fas fa-layer-group',
     summary: 'Build from basics to advanced mastery',
-    placeholder: true,
-    blocks: [
-      { type: 'subheading', text: '1st Year — Building Strong Foundations' },
-      {
-        type: 'list',
-        items: [
-          'Focus on building a very strong foundation',
-          'Special focus on NCERT books and selected ICSE books',
-          'Classes conducted by core teachers',
-          'Streamline students into the groove of READING – WRITING – THINKING',
-          '3 days a week classes',
-          'Sectional and Periodic tests',
-          'Value addition booklets',
-          'Introduction to reading of The Hindu',
-          'Personality Development Classes',
-          'Regular meeting with serving civil servants',
-        ],
-      },
-      { type: 'subheading', text: '2nd Year — Complete Syllabus Coverage' },
-      {
-        type: 'list',
-        items: [
-          'Focus on completion of the syllabus',
-          'Over 1100+ hours of structured learning covering every facet of UPSC CSE preparation in 12 months',
-          'Integrated preparation of Prelims and Mains stages',
-          'Subject wise structured curriculum and advance pedagogy',
-          'Mentorship by experts',
-          'Weekly Current Affairs Classes (Access to A-CAP)',
-          "Backup of Missed Classes available on student's portal",
-          'Weekly and Monthly Class Tests',
-          'Comprehensive Study Material',
-          'Dedicated Classes for Answer Writing',
-          'Essay Writing classes',
-        ],
-      },
-      { type: 'subheading', text: '3rd Year — Advanced Mentorship & Test Readiness' },
-      {
-        type: 'list',
-        items: [
-          'Focus on Advance Personal Mentorship',
-          'Regular answer writing classes',
-          'Weekly Test',
-          'PMP (Prelims–Mains–Personality Test) schedule to simulate real UPSC',
-          'Focus on skill building relevant for Prelims and Mains',
-          'Core idea — PRACTICE–ACCESS–PERFORM',
-          'Regular meeting with serving civil servants',
-        ],
-      },
-    ],
+    blocks: [{ type: 'paragraph', text: 'Stay tuned for more details.' }],
   },
 
   // ===== APMC-1.0 (Advanced Answer Writing Program 1.0) =====
@@ -280,6 +364,8 @@ export const COURSES: CourseContent[] = [
         text: 'By the end of the program, students develop the ability to write structured, analytical, and examination-ready answers while maintaining consistency, accountability, and revision discipline throughout their UPSC journey.',
       },
     ],
+    facultyTitle: 'Program Directors',
+    faculty: pickFaculty('Chiranth Rajashekar', 'Rajeev Chauhan'),
   },
 
   // ===== APMC-2.0 (Advanced UPSC Mentorship Program 2.0) =====
@@ -335,6 +421,8 @@ export const COURSES: CourseContent[] = [
         text: 'Success in UPSC requires more than classroom teaching. Through personalized mentoring, continuous monitoring, structured revision, and regular assessment, we help students stay disciplined, accountable, and exam-ready throughout their preparation journey.',
       },
     ],
+    facultyTitle: 'Program Directors',
+    faculty: pickFaculty('Chiranth Rajashekar', 'Rajeev Chauhan'),
   },
 
   // ===== CSAT (CSAT Mastery Program) =====
@@ -382,6 +470,7 @@ export const COURSES: CourseContent[] = [
         text: 'CSAT should never be a hurdle in your UPSC journey. Through systematic preparation, regular testing, targeted mentoring, and continuous practice, we help aspirants develop the confidence and competence required to comfortably qualify the CSAT paper and focus on securing a strong overall Prelims performance.',
       },
     ],
+    faculty: pickFaculty('Safir Sadique'),
   },
 
   // ===== PSIR =====
@@ -488,14 +577,10 @@ export const COURSES: CourseContent[] = [
       },
     ],
     faculty: [
-      {
-        name: 'Rajeev Chauhan',
-        detail: 'Co-founder and Director · Ex-faculty at DRISHTI IAS · 12+ years of experience · Mains: 06 · Interviews: 04',
-        links: [
-          { label: 'Orientation Class', url: 'https://www.youtube.com/live/9W7Jt_CPhKY' },
-          { label: 'Demo Class', url: 'https://www.youtube.com/live/uomr2d5EWQU' },
-        ],
-      },
+      facultyWithLinks('Rajeev Chauhan', [
+        { label: 'Orientation Class', url: 'https://www.youtube.com/live/9W7Jt_CPhKY' },
+        { label: 'Demo Class', url: 'https://www.youtube.com/live/uomr2d5EWQU' },
+      ]),
     ],
   },
 
@@ -600,14 +685,10 @@ export const COURSES: CourseContent[] = [
       },
     ],
     faculty: [
-      {
-        name: 'Dr. Rakesh E.S',
-        detail: '15+ years of experience · Ex-Faculty, Sriram IAS, Delhi',
-        links: [
-          { label: 'Orientation Class', url: 'https://www.youtube.com/live/B61yJEY5cjM' },
-          { label: 'Demo Class', url: 'https://www.youtube.com/live/ESJG4Wis56o' },
-        ],
-      },
+      facultyWithLinks('Dr. Rakesh E.S.', [
+        { label: 'Orientation Class', url: 'https://www.youtube.com/live/B61yJEY5cjM' },
+        { label: 'Demo Class', url: 'https://www.youtube.com/live/ESJG4Wis56o' },
+      ]),
     ],
   },
 
@@ -722,15 +803,11 @@ export const COURSES: CourseContent[] = [
       },
     ],
     faculty: [
-      {
-        name: 'Anusha PC',
-        detail: '6+ years of teaching experience in Delhi and Bangalore',
-        links: [
-          { label: 'Orientation Class', url: 'https://drive.google.com/file/d/1lPTF_sYz5hxQOctivnAl3haiG0ff7xb7/view?usp=drive_link' },
-          { label: 'Demo Class 1', url: 'https://drive.google.com/file/d/1ekKQiPOOfMrlXAK75E5o9NSWds8iMk-4/view?usp=drive_link' },
-          { label: 'Demo Class 2', url: 'https://drive.google.com/file/d/1nLcaxDc33WvsQyUEKxvbsURm5rORWUqZ/view?usp=drive_link' },
-        ],
-      },
+      facultyWithLinks('Anusha PC', [
+        { label: 'Orientation Class', url: 'https://drive.google.com/file/d/1lPTF_sYz5hxQOctivnAl3haiG0ff7xb7/view?usp=drive_link' },
+        { label: 'Demo Class 1', url: 'https://drive.google.com/file/d/1ekKQiPOOfMrlXAK75E5o9NSWds8iMk-4/view?usp=drive_link' },
+        { label: 'Demo Class 2', url: 'https://drive.google.com/file/d/1nLcaxDc33WvsQyUEKxvbsURm5rORWUqZ/view?usp=drive_link' },
+      ]),
     ],
   },
 
@@ -829,13 +906,7 @@ export const COURSES: CourseContent[] = [
         ],
       },
     ],
-    faculty: [
-      { name: 'Rajeev Chauhan Sir', detail: 'Team Mentora' },
-      { name: 'Chiranth Rajashekhar Sir', detail: 'Team Mentora' },
-      { name: 'Sonali Mehra Madam', detail: 'Team Mentora' },
-      { name: 'Anusha PC Madam', detail: 'Team Mentora' },
-      { name: 'Safir Sadique Sir', detail: 'Team Mentora' },
-    ],
+    faculty: pickFaculty('Chiranth Rajashekar', 'Rajeev Chauhan', 'Sonali Mehra', 'Safir Sadique'),
   },
 
   // ===== Daily Answer Writing Programme =====
@@ -903,6 +974,8 @@ export const COURSES: CourseContent[] = [
         text: '<strong>The Mains Mantra:</strong> You do not write fast because you have a fast pen; you write fast because your thoughts are structured before you pick it up. Let’s start structuring your success today.',
       },
     ],
+    facultyTitle: 'Program Director',
+    faculty: pickFaculty('Anusha PC'),
   },
 ];
 
