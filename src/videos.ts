@@ -49,7 +49,7 @@ const LIVE_IDS: Record<string, string> = {
   apmc_1_0: 'REPLACE_WITH_APMC_1_0_LIVE_ID',
   apmc_2_0: 'REPLACE_WITH_APMC_2_0_LIVE_ID',
   csat: 'REPLACE_WITH_CSAT_LIVE_ID',
-  psir: '0a514fbc76c64ce280339944684de6b0',
+  psir: '06e18fbe298c40aaa0054b1f4e920c57',
   kannada_literature: '444e76cc657e47d5855c96b9496c14fd',
   anthropology: 'REPLACE_WITH_ANTHROPOLOGY_LIVE_ID',
   gold_standard: 'REPLACE_WITH_GOLD_STANDARD_LIVE_ID',
