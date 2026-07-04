@@ -302,14 +302,130 @@ export const COURSES: CourseContent[] = [
     faculty: FOUNDATION_FACULTY,
   },
 
-  // ===== 3-Year GS Foundation (placeholder) =====
+  // ===== 3-Year Integrated Foundation (Triveni) =====
   {
     id: '3_year_foundation',
-    name: '3-Year GS Foundation Course',
+    name: '3-Year Integrated Foundation Programme (Triveni)',
     tag: 'Foundation',
     icon: 'fas fa-layer-group',
-    summary: 'Build from basics to advanced mastery',
-    blocks: [{ type: 'paragraph', text: 'Stay tuned for more details.' }],
+    summary: 'Graduate with a degree and UPSC readiness together',
+    tagline: 'Graduate With a Degree and UPSC Readiness Together',
+    meta: [
+      { label: 'Duration', value: '3 Years' },
+      { label: 'Eligibility', value: 'Class 12 passed / appearing' },
+      { label: 'Mode', value: 'Offline / Live Online' },
+      { label: 'Year 1 Batch', value: 'Weekend — Sat & Sun, 2.5 hrs/day' },
+      { label: 'Year 2–3 Batch', value: 'Weekday Evening — Mon–Fri, 6:00–8:00 PM' },
+    ],
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'The Triveni Program is a 3-Year Integrated UPSC Foundation Program that lets you prepare for the Civil Services Examination in parallel with your graduation. Most aspirants begin only after graduation, but effective preparation takes 3 years or more—making 24–25 the peak success age. By starting right after Class 12, you reach your first attempt at 21–22 with the full syllabus already covered, revised, and practised.',
+      },
+      {
+        type: 'paragraph',
+        text: 'The difference is not talent—it is compounding time. Three years of parallel preparation means NCERT and current affairs habits built early, an optional subject chosen strategically (with a degree picked to complement it), answer writing practised for years rather than final months, and no age or backlog pressure eating into your effective attempts.',
+      },
+
+      { type: 'heading', text: 'Year 1 — Foundation (Weekend Batch)' },
+      {
+        type: 'paragraph',
+        text: '<strong>Build the base no one can skip.</strong> NCERT mastery (Class 6–12), newspaper analysis, and habit formation—the bedrock. Weekend classes (Saturday & Sunday, 2.5 hours each) fit seamlessly around college. Students who skip this base spend twice as long correcting gaps later.',
+      },
+      {
+        type: 'list',
+        items: [
+          '<strong>Module 1 — Complete NCERT Coverage:</strong> History (6–12), Geography (6–12), Polity (9–12), Economy (9–12), Science & Environment, Society & Social Issues.',
+          '<strong>Module 2 — Newspaper Reading & Analysis:</strong> Editorial understanding, issue-based analysis, structured note-making.',
+          '<strong>Module 3 — Current Affairs Foundation:</strong> National & international issues, current affairs linkage, constitutional developments.',
+          '<strong>Module 4 — CSAT & Skill Foundation:</strong> Government schemes, reports/indices/rankings, aptitude & reasoning basics, reading comprehension, note-making techniques, study discipline & revision strategy.',
+        ],
+      },
+
+      { type: 'heading', text: 'Year 2 — Advanced Preparation (Weekday Evening Batch)' },
+      {
+        type: 'paragraph',
+        text: '<strong>Complete GS + Optional while still in college.</strong> Full General Studies across all four Mains papers, optional subject classes, and intensive current affairs—while graduation gives daily exposure to relevant subjects. A student finishing Year 2 has done what most aspirants scramble to do post-graduation. Classes run Monday–Friday, 6:00–8:00 PM.',
+      },
+      {
+        type: 'list',
+        items: [
+          '<strong>Module 1 — Advanced General Studies:</strong> Polity & Governance, Modern/Ancient/Medieval History, Indian & World Geography, Economy & Economic Survey, Environment & Ecology, International Relations, Internal Security, Science & Technology.',
+          '<strong>Module 2 — Optional Subject Begins:</strong> Strategic optional selection guidance, full concept classes (Paper I & II), topic-wise notes, previous year question analysis.',
+          '<strong>Module 3 — Mains Enrichment:</strong> Ethics & Integrity (GS Paper IV), essay writing techniques, Society & Social Justice, Governance & Policy analysis.',
+          '<strong>Module 4 — Intensive Current Affairs:</strong> Daily issue analysis, Budget & Economic Survey, PIB/Yojana/Kurukshetra, monthly consolidation booklets.',
+        ],
+      },
+
+      { type: 'heading', text: 'Year 3 — Exam Orientation (Weekday Evening Batch)' },
+      {
+        type: 'paragraph',
+        text: '<strong>Final-year student. Fully exam-ready.</strong> Targeted Prelims and Mains test series, daily answer writing, multiple revision cycles, and personality development. By graduation day the student is not beginning preparation—they are completing it. Classes run Monday–Friday, 6:00–8:00 PM.',
+      },
+      {
+        type: 'list',
+        items: [
+          '<strong>Module 1 — Prelims Exclusive Program:</strong> MCQ solving & elimination strategies, time management under pressure, CSAT intensive practice, topic-wise & sectional tests, 3 full-length mock prelims.',
+          '<strong>Module 2 — Full Mains Program:</strong> Daily answer writing (GS I–IV), essay test series, optional full revision (2 cycles), optional test series with feedback.',
+          '<strong>Module 3 — Revision Architecture:</strong> Multiple structured revision cycles, micro-notes, quick-revision booklets, PYQ pattern analysis.',
+          '<strong>Module 4 — Personality & Interview Prep:</strong> Communication skills & body language, DAF (Detailed Application Form) analysis, interview ethics & current affairs, mock interview sessions.',
+        ],
+      },
+
+      { type: 'heading', text: 'You Are Never Preparing Alone' },
+      {
+        type: 'list',
+        items: [
+          '<strong>Personal Mentorship:</strong> A dedicated mentor throughout all 3 years—tracking progress, adjusting strategy, and guiding subject sequencing and optional selection.',
+          '<strong>Performance Tracking:</strong> Test results analysed to spot weak areas early, with personalised feedback after every evaluation—not just a score sheet.',
+          '<strong>Doubt Resolution:</strong> Continuous academic support with no "prior notice only" policy—faculty address conceptual doubts as they arise.',
+          '<strong>Revision Framework:</strong> Structured multi-cycle revision with spaced repetition built in for long-term retention across the vast UPSC syllabus.',
+        ],
+      },
+
+      { type: 'heading', text: 'Everything You Need, Included' },
+      {
+        type: 'list',
+        items: [
+          'Printed class notes — comprehensive, exam-mapped, for all GS subjects',
+          'NCERT summary notes — distilled essence of Class 6–12 NCERTs',
+          'Monthly current affairs magazine & compiled booklets',
+          'Ethics material — case studies, thinkers, and answer-framework guide (GS IV)',
+          'Prelims practice booklets — MCQ sets with explanations, PYQ-pattern based',
+          'Mains enrichment notes — analysis, case studies, multi-dimensional answers',
+          'Essay booklets — theme-based practice with model answers',
+          'Optional subject notes + test series — full Paper I & II notes and evaluated tests',
+        ],
+      },
+
+      { type: 'heading', text: 'What You Leave With After 3 Years' },
+      {
+        type: 'checklist',
+        items: [
+          'Full UPSC syllabus completed — all GS papers (I–IV), optional, and current affairs, revised multiple times',
+          'Strong conceptual foundation — 3-year deep learning, not last-minute cramming',
+          'Mains answer writing ability — 100+ answers written and evaluated',
+          'Prelims & Mains test series done — multiple full-length mocks, exam temperament and cut-off awareness built',
+          '3-year current affairs bank — ongoing, live coverage with no backlog',
+          'Interview-ready personality — communication skills, DAF-based mock interviews, structured development',
+        ],
+      },
+
+      { type: 'heading', text: 'Program Eligibility' },
+      {
+        type: 'list',
+        items: [
+          'Students who have completed or are completing Class 12',
+          'Aspirants who want to prepare early for IAS, IPS, IFS, IRS',
+          'Students willing to commit to structured, long-term preparation',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Every year you wait is a year your competition does not. Secure your seat in the Triveni Program and complete your UPSC journey by graduation day.',
+      },
+    ],
+    faculty: FOUNDATION_FACULTY,
   },
 
   // ===== APMC-1.0 (Advanced Answer Writing Program 1.0) =====
