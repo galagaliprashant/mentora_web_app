@@ -43,7 +43,7 @@ const DEFAULT_LIVE_ID = '665202af9a8e4f47a502891bbdfe8de3';
 
 // Per-course live stream IDs. Falls back to DEFAULT_LIVE_ID if not listed.
 const LIVE_IDS: Record<string, string> = {
-  '1_year_foundation': 'REPLACE_WITH_1_YEAR_FOUNDATION_LIVE_ID',
+  '1_year_foundation': 'bff3e1f15fd3415ba3a654307f27da47',
   '2_year_foundation': 'REPLACE_WITH_2_YEAR_FOUNDATION_LIVE_ID',
   '3_year_foundation': 'REPLACE_WITH_3_YEAR_FOUNDATION_LIVE_ID',
   apmc_1_0: 'REPLACE_WITH_APMC_1_0_LIVE_ID',
