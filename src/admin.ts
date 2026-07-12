@@ -4,10 +4,12 @@ import { onAuthStateChanged, signOut } from 'firebase/auth';
 import {
   doc,
   getDoc,
+  setDoc,
   collection,
   getDocs,
   query,
   orderBy,
+  serverTimestamp,
 } from 'firebase/firestore';
 import { httpsCallable } from 'firebase/functions';
 
@@ -55,6 +57,10 @@ const editCoursesSave = document.getElementById('edit-courses-save')!;
 const editCoursesCancel = document.getElementById('edit-courses-cancel')!;
 const editCoursesClose = document.getElementById('edit-courses-close')!;
 
+// Upload Videos panel
+const videosListEl = document.getElementById('videos-live-list')!;
+const videosSyncBtn = document.getElementById('videos-sync-btn') as HTMLButtonElement;
+
 // Confirm modal
 const confirmModal = document.getElementById('admin-confirm-modal')!;
 const confirmTitle = document.getElementById('admin-confirm-title')!;
@@ -92,9 +98,20 @@ interface UserInfo {
   email: string;
 }
 
+interface LiveConfig {
+  isYoutube: boolean;
+  youtubeLiveId: string;
+  youtubeLiveUrl: string;
+}
+
+// Default placeholder shown for any course an admin hasn't synced yet. Mirrors
+// PLACEHOLDER_YOUTUBE_LIVE_ID in videos.ts. https://www.youtube.com/watch?v=5Jxcod4OI4s
+const PLACEHOLDER_YOUTUBE_URL = 'https://www.youtube.com/watch?v=5Jxcod4OI4s';
+
 let allEnrollments: EnrollmentData[] = [];
 let allEnquiries: EnquiryData[] = [];
 let userMap: Map<string, UserInfo> = new Map();
+let liveConfigs: Map<string, LiveConfig> = new Map(); // courseId -> live backend config
 
 // ===== AUTH GATE =====
 onAuthStateChanged(auth, async (user) => {
@@ -164,10 +181,11 @@ enquirySearch.addEventListener('input', renderEnquiries);
 
 // ===== LOAD DASHBOARD =====
 async function loadDashboard() {
-  await Promise.all([fetchEnrollments(), fetchEnquiries()]);
+  await Promise.all([fetchEnrollments(), fetchEnquiries(), fetchLiveConfigs()]);
   renderStats();
   renderEnrollments();
   renderEnquiries();
+  renderVideosPanel();
 }
 
 // ===== FETCH ENROLLMENTS =====
@@ -558,6 +576,157 @@ function showEditCoursesModal(uid: string, userName: string) {
   editCoursesClose.addEventListener('click', onCancel);
 }
 
+// ===== UPLOAD VIDEOS (LIVE BACKEND) =====
+
+// Parse a YouTube URL (or raw 11-char id) into a video id.
+// Returns '' for empty input (clears the value), or null if invalid.
+function parseYoutubeId(input: string): string | null {
+  const s = input.trim();
+  if (!s) return '';
+
+  // Raw video id
+  if (/^[a-zA-Z0-9_-]{11}$/.test(s)) return s;
+
+  let url: URL;
+  try {
+    url = new URL(s);
+  } catch {
+    return null;
+  }
+
+  const host = url.hostname.replace(/^www\./, '');
+  if (host === 'youtu.be') {
+    const id = url.pathname.split('/').filter(Boolean)[0];
+    return /^[a-zA-Z0-9_-]{11}$/.test(id || '') ? id : null;
+  }
+  if (host === 'youtube.com' || host === 'm.youtube.com') {
+    const v = url.searchParams.get('v');
+    if (v && /^[a-zA-Z0-9_-]{11}$/.test(v)) return v;
+    // /live/<id>, /embed/<id>, /shorts/<id>
+    const parts = url.pathname.split('/').filter(Boolean);
+    const idx = parts.findIndex((p) => p === 'live' || p === 'embed' || p === 'shorts');
+    if (idx >= 0 && parts[idx + 1] && /^[a-zA-Z0-9_-]{11}$/.test(parts[idx + 1])) {
+      return parts[idx + 1];
+    }
+  }
+  return null;
+}
+
+async function fetchLiveConfigs() {
+  liveConfigs = new Map();
+  await Promise.all(
+    COURSES.map(async (c) => {
+      const snap = await getDoc(doc(db, 'courses', c.courseId));
+      const data = snap.exists() ? snap.data() : {};
+      const hasConfig = typeof data.isYoutube === 'boolean';
+      liveConfigs.set(c.courseId, {
+        // Unsynced courses default to the YouTube placeholder.
+        isYoutube: hasConfig ? data.isYoutube === true : true,
+        youtubeLiveId: typeof data.youtubeLiveId === 'string' ? data.youtubeLiveId : '',
+        youtubeLiveUrl: hasConfig
+          ? (typeof data.youtubeLiveUrl === 'string' ? data.youtubeLiveUrl : '')
+          : PLACEHOLDER_YOUTUBE_URL,
+      });
+    })
+  );
+}
+
+function renderVideosPanel() {
+  videosListEl.innerHTML = COURSES.map((c) => {
+    const cfg = liveConfigs.get(c.courseId);
+    const value = cfg?.youtubeLiveUrl || cfg?.youtubeLiveId || '';
+    const checked = cfg?.isYoutube ? 'checked' : '';
+    const backend = cfg?.isYoutube && value ? 'YouTube' : 'VdoCipher';
+    return `
+      <div class="admin-video-row" data-course="${c.courseId}">
+        <div class="admin-video-row__head">
+          <span class="admin-video-row__name">${escapeHtml(c.displayName)}</span>
+          <span class="admin-badge admin-badge--${backend === 'YouTube' ? 'approved' : 'contacted'}">${backend}</span>
+        </div>
+        <div class="admin-video-row__controls">
+          <label class="admin-video-row__toggle">
+            <input type="checkbox" class="admin-video-yt-toggle" ${checked} /> Use YouTube
+          </label>
+          <input type="text" class="admin-video-yt-input admin-filter-search"
+            placeholder="Paste YouTube live link (or leave blank for VdoCipher)"
+            value="${escapeHtml(value)}" />
+        </div>
+      </div>`;
+  }).join('');
+}
+
+async function handleVideosSync() {
+  const rows = Array.from(videosListEl.querySelectorAll<HTMLElement>('.admin-video-row'));
+
+  // Validate + build the set of writes first, so an invalid link aborts everything.
+  const writes: { courseId: string; isYoutube: boolean; youtubeLiveId: string; youtubeLiveUrl: string }[] = [];
+
+  for (const row of rows) {
+    const courseId = row.dataset.course!;
+    const toggle = row.querySelector<HTMLInputElement>('.admin-video-yt-toggle')!;
+    const input = row.querySelector<HTMLInputElement>('.admin-video-yt-input')!;
+    const raw = input.value.trim();
+
+    const id = parseYoutubeId(raw);
+    if (id === null) {
+      const course = COURSES.find((c) => c.courseId === courseId);
+      showToast(`Invalid YouTube link for ${course?.displayName || courseId}.`, true);
+      input.focus();
+      return;
+    }
+
+    if (toggle.checked && !id) {
+      const course = COURSES.find((c) => c.courseId === courseId);
+      showToast(`${course?.displayName || courseId} is set to YouTube but has no link.`, true);
+      input.focus();
+      return;
+    }
+
+    writes.push({
+      courseId,
+      isYoutube: toggle.checked,
+      youtubeLiveId: id,
+      youtubeLiveUrl: raw,
+    });
+  }
+
+  videosSyncBtn.disabled = true;
+  const originalHtml = videosSyncBtn.innerHTML;
+  videosSyncBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Syncing…';
+
+  // Centered in-progress indicator; stays until the sync resolves.
+  const dismissSyncing = showToast('Syncing…', { center: true, spinner: true, persist: true });
+
+  try {
+    await Promise.all(
+      writes.map((w) =>
+        setDoc(
+          doc(db, 'courses', w.courseId),
+          {
+            isYoutube: w.isYoutube,
+            youtubeLiveId: w.youtubeLiveId,
+            youtubeLiveUrl: w.youtubeLiveUrl,
+            liveUpdatedAt: serverTimestamp(),
+          },
+          { merge: true }
+        )
+      )
+    );
+    await fetchLiveConfigs();
+    renderVideosPanel();
+    dismissSyncing();
+    showToast('Live backends synced to database.', { center: true });
+  } catch (err: any) {
+    dismissSyncing();
+    showToast(err.message || 'Sync failed. Please try again.', { isError: true, center: true });
+  } finally {
+    videosSyncBtn.disabled = false;
+    videosSyncBtn.innerHTML = originalHtml;
+  }
+}
+
+videosSyncBtn.addEventListener('click', handleVideosSync);
+
 // ===== CONFIRM MODAL =====
 function showConfirm(title: string, message: string): Promise<boolean> {
   return new Promise((resolve) => {
@@ -580,21 +749,37 @@ function showConfirm(title: string, message: string): Promise<boolean> {
 }
 
 // ===== TOAST NOTIFICATIONS =====
-function showToast(message: string, isError = false) {
+interface ToastOptions {
+  isError?: boolean;
+  center?: boolean;    // render in the center of the screen instead of bottom-right
+  spinner?: boolean;   // show a spinner icon (for in-progress states)
+  persist?: boolean;   // don't auto-dismiss; caller removes via the returned handle
+}
+
+function showToast(message: string, opts: boolean | ToastOptions = {}) {
+  // Back-compat: showToast(msg, true) still means an error toast.
+  const { isError = false, center = false, spinner = false, persist = false } =
+    typeof opts === 'boolean' ? { isError: opts } : opts;
+
   const existing = document.querySelector('.admin-toast');
   if (existing) existing.remove();
 
   const toast = document.createElement('div');
-  toast.className = `admin-toast ${isError ? 'admin-toast--error' : 'admin-toast--success'}`;
-  toast.innerHTML = `<i class="fas ${isError ? 'fa-exclamation-circle' : 'fa-check-circle'}"></i> ${escapeHtml(message)}`;
+  toast.className = `admin-toast ${isError ? 'admin-toast--error' : 'admin-toast--success'}${center ? ' admin-toast--center' : ''}`;
+  const icon = spinner ? 'fa-spinner fa-spin' : isError ? 'fa-exclamation-circle' : 'fa-check-circle';
+  toast.innerHTML = `<i class="fas ${icon}"></i> ${escapeHtml(message)}`;
   document.body.appendChild(toast);
 
   requestAnimationFrame(() => toast.classList.add('admin-toast--visible'));
 
-  setTimeout(() => {
+  const dismiss = () => {
     toast.classList.remove('admin-toast--visible');
     setTimeout(() => toast.remove(), 300);
-  }, 3000);
+  };
+
+  if (!persist) setTimeout(dismiss, 3000);
+
+  return dismiss;
 }
 
 // ===== UTILS =====
