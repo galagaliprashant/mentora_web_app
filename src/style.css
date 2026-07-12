@@ -4346,6 +4346,66 @@ img {
   display: block;
 }
 
+/* Upload Videos panel */
+.admin-videos-intro {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: var(--gray-600, #555);
+  line-height: 1.5;
+}
+
+.admin-videos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-video-row {
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.admin-video-row__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.admin-video-row__name {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.admin-video-row__controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-video-row__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.admin-video-yt-input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.admin-videos-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Filters */
 .admin-filters {
   display: flex;
@@ -4663,6 +4723,20 @@ img {
 .admin-toast--visible {
   transform: translateY(0);
   opacity: 1;
+}
+
+.admin-toast--center {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, calc(-50% + 20px));
+  padding: 18px 28px;
+  font-size: 1rem;
+}
+
+.admin-toast--center.admin-toast--visible {
+  transform: translate(-50%, -50%);
 }
 
 .admin-toast--success {

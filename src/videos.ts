@@ -60,6 +60,41 @@ function getLiveId(courseId: string): string {
   return LIVE_IDS[courseId] ?? DEFAULT_LIVE_ID;
 }
 
+// ===== YOUTUBE LIVE BACKEND =====
+// Live backend config is stored per course in Firestore at courses/{courseId}:
+//   { isYoutube: boolean, youtubeLiveId: string }
+// The admin "Upload Videos" tab writes these fields. If isYoutube is true and a
+// youtubeLiveId is set, the live view uses YouTube; otherwise it falls back to
+// the VdoCipher live stream.
+interface LiveConfig {
+  isYoutube: boolean;
+  youtubeLiveId: string;
+}
+
+// Default placeholder: until an admin syncs a real link, every course telecasts
+// this YouTube video. https://www.youtube.com/watch?v=5Jxcod4OI4s
+const PLACEHOLDER_YOUTUBE_LIVE_ID = '5Jxcod4OI4s';
+
+async function fetchLiveConfig(courseId: string): Promise<LiveConfig> {
+  try {
+    const snap = await getDoc(doc(db, 'courses', courseId));
+    const data = snap.exists() ? snap.data() : {};
+    // If the admin has set an explicit config, use it; otherwise default to the
+    // YouTube placeholder for all courses.
+    const hasConfig = typeof data.isYoutube === 'boolean';
+    if (hasConfig) {
+      return {
+        isYoutube: data.isYoutube === true,
+        youtubeLiveId: typeof data.youtubeLiveId === 'string' ? data.youtubeLiveId : '',
+      };
+    }
+    return { isYoutube: true, youtubeLiveId: PLACEHOLDER_YOUTUBE_LIVE_ID };
+  } catch {
+    // On any read error, fall back to the YouTube placeholder.
+    return { isYoutube: true, youtubeLiveId: PLACEHOLDER_YOUTUBE_LIVE_ID };
+  }
+}
+
 // ===== STATE =====
 let enrollments: Map<string, string> = new Map(); // courseId -> status
 let currentUser: User | null = null;
@@ -197,16 +232,39 @@ function renderLiveView(courseId: string) {
     { label: 'Live Classes', hash: `#course/${courseId}/live` },
   ]);
 
-  appEl.innerHTML = `
-    <div class="live-video__player-wrap">
-      <iframe
-        src="https://player.vdocipher.com/live-v2?liveId=${getLiveId(courseId)}"
-        style="border:0;width:720px;aspect-ratio:16/9;max-width:100%;"
-        allow="autoplay,fullscreen"
-        allowfullscreen
-      ></iframe>
-    </div>
-  `;
+  // Show a loading placeholder while the live backend config loads.
+  appEl.innerHTML = `<div class="live-video__player-wrap"><p class="admin-loading">Loading live class…</p></div>`;
+
+  fetchLiveConfig(courseId).then((cfg) => {
+    // Guard against navigation away while the config was loading.
+    if (!location.hash.match(new RegExp(`^#course/${courseId}/live$`))) return;
+
+    if (cfg.isYoutube && cfg.youtubeLiveId) {
+      // YouTube unlisted live backend
+      appEl.innerHTML = `
+        <div class="live-video__player-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/${encodeURIComponent(cfg.youtubeLiveId)}?autoplay=1&rel=0"
+            style="border:0;width:720px;aspect-ratio:16/9;max-width:100%;"
+            allow="autoplay;encrypted-media;fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+      `;
+    } else {
+      // VdoCipher live backend
+      appEl.innerHTML = `
+        <div class="live-video__player-wrap">
+          <iframe
+            src="https://player.vdocipher.com/live-v2?liveId=${getLiveId(courseId)}"
+            style="border:0;width:720px;aspect-ratio:16/9;max-width:100%;"
+            allow="autoplay,fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+      `;
+    }
+  });
 }
 
 // ===== VIEW: SUBJECT LIST (Recorded) =====

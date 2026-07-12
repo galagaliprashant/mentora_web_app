@@ -109,6 +109,9 @@
           <button class="admin-tab" data-tab="enquiries">
             <i class="fas fa-envelope"></i> Enquiries
           </button>
+          <button class="admin-tab" data-tab="videos">
+            <i class="fas fa-video"></i> Upload Videos
+          </button>
         </div>
 
         <!-- Enrollments panel -->
@@ -145,6 +148,17 @@
             <input type="text" id="enquiry-search" class="admin-filter-search" placeholder="Search by name or email..." />
           </div>
           <div id="enquiries-list" class="admin-table-wrap"></div>
+        </div>
+
+        <!-- Upload Videos panel -->
+        <div class="admin-panel" id="panel-videos">
+          <div class="admin-videos-intro">
+            <p>Set the <strong>live class backend</strong> for each course. Paste the YouTube (unlisted live) link and tick <strong>Use YouTube</strong> to telecast via YouTube. Untick to use VdoCipher. Click <strong>Sync</strong> to save all changes to the database.</p>
+          </div>
+          <div id="videos-live-list" class="admin-videos-list"></div>
+          <div class="admin-videos-actions">
+            <button class="btn btn--primary" id="videos-sync-btn"><i class="fas fa-sync"></i> Sync</button>
+          </div>
         </div>
 
       </div>
