@@ -818,10 +818,16 @@
               "order": 62
             },
             {
-              "videoId": "da45b11fa0cc470396c7e26af38c13e8",
-              "title": "Disaster Management",
-              "duration": "2:05:19",
+              "videoId": "a9005a63e09243ef8c73906e4f7edcb7",
+              "title": "Water resource of India",
+              "duration": "41:39",
               "order": 63
+            },
+            {
+              "videoId": "517a3f9fc2d2485f8928f29517da8273",
+              "title": "Manufacturing Industries",
+              "duration": "1:15:12",
+              "order": 64
             }
           ]
         },
@@ -1184,6 +1190,79 @@
               "title": "Banking System",
               "duration": "1:58:17",
               "order": 24
+            }
+          ]
+        },
+        {
+          "subjectId": "disaster_management",
+          "displayName": "Disaster Management",
+          "icon": "fas fa-triangle-exclamation",
+          "videos": [
+            {
+              "videoId": "da45b11fa0cc470396c7e26af38c13e8",
+              "title": "Disaster Management",
+              "duration": "2:05:19",
+              "order": 1
+            },
+            {
+              "videoId": "b287a7d7c210405ea28b8201bbfbfe8d",
+              "title": "Disaster Management",
+              "duration": "2:54:40",
+              "order": 2
+            },
+            {
+              "videoId": "4f345982582941ce8035b0cf8fc6650b",
+              "title": "Disaster Management",
+              "duration": "1:55:22",
+              "order": 3
+            },
+            {
+              "videoId": "2226e590877f4d84aead8bf2aa36f316",
+              "title": "Disaster Management",
+              "duration": "1:48:59",
+              "order": 4
+            },
+            {
+              "videoId": "ffdf65cf6248481391c47185c199651c",
+              "title": "Disaster Management",
+              "duration": "2:00:41",
+              "order": 5
+            },
+            {
+              "videoId": "8ecb4d3380c24effba93d7fe34ea2f6b",
+              "title": "Disaster Management",
+              "duration": "2:04:31",
+              "order": 6
+            },
+            {
+              "videoId": "e9e91479c3264fed9b9ad480589f2dff",
+              "title": "Disaster Management",
+              "duration": "1:58:20",
+              "order": 7
+            },
+            {
+              "videoId": "b3f3a5f875cf42bf996970a4d954e48d",
+              "title": "Disaster Management",
+              "duration": "2:02:15",
+              "order": 8
+            },
+            {
+              "videoId": "545c855f38344517b7feb27f818437a9",
+              "title": "Disaster Management",
+              "duration": "2:09:23",
+              "order": 9
+            },
+            {
+              "videoId": "24c3521264964f2f928d6553a50752a2",
+              "title": "Disaster Management",
+              "duration": "2:02:31",
+              "order": 10
+            },
+            {
+              "videoId": "ba4edd487f0840aa8cfc058b6268b8e5",
+              "title": "Disaster Management",
+              "duration": "49:05",
+              "order": 11
             }
           ]
         }
@@ -2007,10 +2086,16 @@
               "order": 62
             },
             {
-              "videoId": "da45b11fa0cc470396c7e26af38c13e8",
-              "title": "Disaster Management",
-              "duration": "2:05:19",
+              "videoId": "a9005a63e09243ef8c73906e4f7edcb7",
+              "title": "Water resource of India",
+              "duration": "41:39",
               "order": 63
+            },
+            {
+              "videoId": "517a3f9fc2d2485f8928f29517da8273",
+              "title": "Manufacturing Industries",
+              "duration": "1:15:12",
+              "order": 64
             }
           ]
         },
@@ -2373,6 +2458,79 @@
               "title": "Banking System",
               "duration": "1:58:17",
               "order": 24
+            }
+          ]
+        },
+        {
+          "subjectId": "disaster_management",
+          "displayName": "Disaster Management",
+          "icon": "fas fa-triangle-exclamation",
+          "videos": [
+            {
+              "videoId": "da45b11fa0cc470396c7e26af38c13e8",
+              "title": "Disaster Management",
+              "duration": "2:05:19",
+              "order": 1
+            },
+            {
+              "videoId": "b287a7d7c210405ea28b8201bbfbfe8d",
+              "title": "Disaster Management",
+              "duration": "2:54:40",
+              "order": 2
+            },
+            {
+              "videoId": "4f345982582941ce8035b0cf8fc6650b",
+              "title": "Disaster Management",
+              "duration": "1:55:22",
+              "order": 3
+            },
+            {
+              "videoId": "2226e590877f4d84aead8bf2aa36f316",
+              "title": "Disaster Management",
+              "duration": "1:48:59",
+              "order": 4
+            },
+            {
+              "videoId": "ffdf65cf6248481391c47185c199651c",
+              "title": "Disaster Management",
+              "duration": "2:00:41",
+              "order": 5
+            },
+            {
+              "videoId": "8ecb4d3380c24effba93d7fe34ea2f6b",
+              "title": "Disaster Management",
+              "duration": "2:04:31",
+              "order": 6
+            },
+            {
+              "videoId": "e9e91479c3264fed9b9ad480589f2dff",
+              "title": "Disaster Management",
+              "duration": "1:58:20",
+              "order": 7
+            },
+            {
+              "videoId": "b3f3a5f875cf42bf996970a4d954e48d",
+              "title": "Disaster Management",
+              "duration": "2:02:15",
+              "order": 8
+            },
+            {
+              "videoId": "545c855f38344517b7feb27f818437a9",
+              "title": "Disaster Management",
+              "duration": "2:09:23",
+              "order": 9
+            },
+            {
+              "videoId": "24c3521264964f2f928d6553a50752a2",
+              "title": "Disaster Management",
+              "duration": "2:02:31",
+              "order": 10
+            },
+            {
+              "videoId": "ba4edd487f0840aa8cfc058b6268b8e5",
+              "title": "Disaster Management",
+              "duration": "49:05",
+              "order": 11
             }
           ]
         }
@@ -2826,6 +2984,24 @@
               "title": "Karl Marx",
               "duration": "1:48:56",
               "order": 27
+            },
+            {
+              "videoId": "70710b0f49e447f8a84081e179b2d01d",
+              "title": "Karl Marx",
+              "duration": "2:04:20",
+              "order": 28
+            },
+            {
+              "videoId": "eb8ba8fb0a544de497315d5550128b26",
+              "title": "Karl Marx",
+              "duration": "2:06:51",
+              "order": 29
+            },
+            {
+              "videoId": "f8e736e9663b4b47b977b61f89cc1195",
+              "title": "Karl Marx",
+              "duration": "2:06:27",
+              "order": 30
             }
           ]
         }
