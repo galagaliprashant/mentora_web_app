@@ -1208,6 +1208,66 @@
               "title": "Banking System",
               "duration": "2:02:58",
               "order": 27
+            },
+            {
+              "videoId": "be4f1e7f97764d7eb34fd7e05beac053",
+              "title": "Banking System",
+              "duration": "1:59:44",
+              "order": 28
+            },
+            {
+              "videoId": "5d8c0cfd2b6e485598d8ccd378981964",
+              "title": "Fiscal Policy",
+              "duration": "1:59:40",
+              "order": 29
+            },
+            {
+              "videoId": "924cb5b33629400c8c7ba44f2e97c29a",
+              "title": "Fiscal Policy",
+              "duration": "1:56:16",
+              "order": 30
+            },
+            {
+              "videoId": "a0e316c543a644d29152ee5b14f58035",
+              "title": "Fiscal Policy",
+              "duration": "2:01:36",
+              "order": 31
+            },
+            {
+              "videoId": "04788921285345d1aad172f511773f29",
+              "title": "Fiscal Policy",
+              "duration": "2:03:28",
+              "order": 32
+            },
+            {
+              "videoId": "16063bc535d044e29fc9e4cb3465882f",
+              "title": "Fiscal Policy",
+              "duration": "2:00:38",
+              "order": 33
+            },
+            {
+              "videoId": "9413c61a0d234cd280246f868e238594",
+              "title": "Taxation",
+              "duration": "2:05:23",
+              "order": 34
+            },
+            {
+              "videoId": "ded7606cff574457b21211b8b69bee85",
+              "title": "Taxation",
+              "duration": "1:57:29",
+              "order": 35
+            },
+            {
+              "videoId": "fc0139074a1949c7b79ef60bd95321bc",
+              "title": "External Sector",
+              "duration": "1:57:08",
+              "order": 36
+            },
+            {
+              "videoId": "304181507b0d45abbc7ef94c2d08e190",
+              "title": "Balance of Trade",
+              "duration": "1:56:07",
+              "order": 37
             }
           ]
         },
@@ -1287,6 +1347,55 @@
               "title": "Disaster Management",
               "duration": "2:41:57",
               "order": 12
+            }
+          ]
+        },
+        {
+          "subjectId": "general_science",
+          "displayName": "General Science",
+          "icon": "fas fa-flask",
+          "videos": [
+            {
+              "videoId": "a5176cd00ec442fcb090a19ab111ff16",
+              "title": "Cells",
+              "duration": "1:44:50",
+              "order": 1
+            },
+            {
+              "videoId": "ad7ad3eaeeb04b5795251f66c0194a41",
+              "title": "Genetic and Hereditary",
+              "duration": "1:52:51",
+              "order": 2
+            },
+            {
+              "videoId": "02ba23a6a8aa406b93adf1eaeadf8a65",
+              "title": "Tissues",
+              "duration": "1:50:19",
+              "order": 3
+            },
+            {
+              "videoId": "60fd0c8538354984ab9d40c1332e972f",
+              "title": "Nervous System",
+              "duration": "2:04:58",
+              "order": 4
+            },
+            {
+              "videoId": "551e4a067ae24816b1ec3167829e92a6",
+              "title": "Kingdom Protista",
+              "duration": "1:54:27",
+              "order": 5
+            },
+            {
+              "videoId": "dff3f65f39044ea48934d33c0342d33b",
+              "title": "Kingdom Plante",
+              "duration": "1:54:39",
+              "order": 6
+            },
+            {
+              "videoId": "4f40806cceee489f8b5dcb994a8a1988",
+              "title": "Invertebrate",
+              "duration": "1:23:54",
+              "order": 7
             }
           ]
         }
@@ -2500,6 +2609,66 @@
               "title": "Banking System",
               "duration": "2:02:58",
               "order": 27
+            },
+            {
+              "videoId": "be4f1e7f97764d7eb34fd7e05beac053",
+              "title": "Banking System",
+              "duration": "1:59:44",
+              "order": 28
+            },
+            {
+              "videoId": "5d8c0cfd2b6e485598d8ccd378981964",
+              "title": "Fiscal Policy",
+              "duration": "1:59:40",
+              "order": 29
+            },
+            {
+              "videoId": "924cb5b33629400c8c7ba44f2e97c29a",
+              "title": "Fiscal Policy",
+              "duration": "1:56:16",
+              "order": 30
+            },
+            {
+              "videoId": "a0e316c543a644d29152ee5b14f58035",
+              "title": "Fiscal Policy",
+              "duration": "2:01:36",
+              "order": 31
+            },
+            {
+              "videoId": "04788921285345d1aad172f511773f29",
+              "title": "Fiscal Policy",
+              "duration": "2:03:28",
+              "order": 32
+            },
+            {
+              "videoId": "16063bc535d044e29fc9e4cb3465882f",
+              "title": "Fiscal Policy",
+              "duration": "2:00:38",
+              "order": 33
+            },
+            {
+              "videoId": "9413c61a0d234cd280246f868e238594",
+              "title": "Taxation",
+              "duration": "2:05:23",
+              "order": 34
+            },
+            {
+              "videoId": "ded7606cff574457b21211b8b69bee85",
+              "title": "Taxation",
+              "duration": "1:57:29",
+              "order": 35
+            },
+            {
+              "videoId": "fc0139074a1949c7b79ef60bd95321bc",
+              "title": "External Sector",
+              "duration": "1:57:08",
+              "order": 36
+            },
+            {
+              "videoId": "304181507b0d45abbc7ef94c2d08e190",
+              "title": "Balance of Trade",
+              "duration": "1:56:07",
+              "order": 37
             }
           ]
         },
@@ -2579,6 +2748,55 @@
               "title": "Disaster Management",
               "duration": "2:41:57",
               "order": 12
+            }
+          ]
+        },
+        {
+          "subjectId": "general_science",
+          "displayName": "General Science",
+          "icon": "fas fa-flask",
+          "videos": [
+            {
+              "videoId": "a5176cd00ec442fcb090a19ab111ff16",
+              "title": "Cells",
+              "duration": "1:44:50",
+              "order": 1
+            },
+            {
+              "videoId": "ad7ad3eaeeb04b5795251f66c0194a41",
+              "title": "Genetic and Hereditary",
+              "duration": "1:52:51",
+              "order": 2
+            },
+            {
+              "videoId": "02ba23a6a8aa406b93adf1eaeadf8a65",
+              "title": "Tissues",
+              "duration": "1:50:19",
+              "order": 3
+            },
+            {
+              "videoId": "60fd0c8538354984ab9d40c1332e972f",
+              "title": "Nervous System",
+              "duration": "2:04:58",
+              "order": 4
+            },
+            {
+              "videoId": "551e4a067ae24816b1ec3167829e92a6",
+              "title": "Kingdom Protista",
+              "duration": "1:54:27",
+              "order": 5
+            },
+            {
+              "videoId": "dff3f65f39044ea48934d33c0342d33b",
+              "title": "Kingdom Plante",
+              "duration": "1:54:39",
+              "order": 6
+            },
+            {
+              "videoId": "4f40806cceee489f8b5dcb994a8a1988",
+              "title": "Invertebrate",
+              "duration": "1:23:54",
+              "order": 7
             }
           ]
         }
@@ -3056,6 +3274,78 @@
               "title": "Karl Marx",
               "duration": "1:52:41",
               "order": 31
+            },
+            {
+              "videoId": "8de3c108076947e7bb9ba7a1a50957ee",
+              "title": "International Relations",
+              "duration": "2:00:31",
+              "order": 32
+            },
+            {
+              "videoId": "ff08423e147a438082c5dc8885bac27c",
+              "title": "Different schools of realism",
+              "duration": "2:11:41",
+              "order": 33
+            },
+            {
+              "videoId": "10749535309d4236b995d3402150e8fa",
+              "title": "Neoclassical realism",
+              "duration": "2:01:48",
+              "order": 34
+            },
+            {
+              "videoId": "b586756e83b74ba18e58ab2094dd9637",
+              "title": "Liberalism",
+              "duration": "2:00:55",
+              "order": 35
+            },
+            {
+              "videoId": "fc83567e504f4883b7bcec5ea713093d",
+              "title": "Liberalism",
+              "duration": "2:02:20",
+              "order": 36
+            },
+            {
+              "videoId": "b781d5e5f8eb4890b8c6cf98c2d45373",
+              "title": "Sociological liberalism",
+              "duration": "2:19:56",
+              "order": 37
+            },
+            {
+              "videoId": "6ec03dd04a3e4fc89e0bbb83f3f3af9b",
+              "title": "The Marxist Approach",
+              "duration": "1:58:16",
+              "order": 38
+            },
+            {
+              "videoId": "10887d55b4f8458cbca84b8db8de1a71",
+              "title": "The Marxist Approach",
+              "duration": "2:10:07",
+              "order": 39
+            },
+            {
+              "videoId": "3b4a34d09ea54a32a1d36d67bd75708a",
+              "title": "Feminist , Social Constructivism,post Modernism",
+              "duration": "2:02:43",
+              "order": 40
+            },
+            {
+              "videoId": "56460f58fc6d4cb7a5ba64a4fa257909",
+              "title": "Feminist , Social Constructivism,post Modernism",
+              "duration": "1:51:57",
+              "order": 41
+            },
+            {
+              "videoId": "b680efbdfa6d45fc921de4926f291a1d",
+              "title": "National Interest",
+              "duration": "1:46:23",
+              "order": 42
+            },
+            {
+              "videoId": "923f40d3fdb4435596fca5c354ba9009",
+              "title": "Treditional Idea",
+              "duration": "1:11:00",
+              "order": 43
             }
           ]
         }
