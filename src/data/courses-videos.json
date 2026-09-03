@@ -1268,6 +1268,30 @@
               "title": "Balance of Trade",
               "duration": "1:56:07",
               "order": 37
+            },
+            {
+              "videoId": "69cf37c9fb9d4e24936f0126e877733a",
+              "title": "External Sector(part-3)",
+              "duration": "2:00:29",
+              "order": 38
+            },
+            {
+              "videoId": "345c5af6a4834888baea01e5bfd57c06",
+              "title": "External Sector(part-4)",
+              "duration": "1:53:52",
+              "order": 39
+            },
+            {
+              "videoId": "59586d11b56a4cb7854289da69469821",
+              "title": "External Sector(Part -5)",
+              "duration": "2:00:03",
+              "order": 40
+            },
+            {
+              "videoId": "fbf8cc1afa68475ba4bc5a097a237ed6",
+              "title": "External Sector(Part - 6)",
+              "duration": "2:02:10",
+              "order": 41
             }
           ]
         },
@@ -2669,6 +2693,30 @@
               "title": "Balance of Trade",
               "duration": "1:56:07",
               "order": 37
+            },
+            {
+              "videoId": "69cf37c9fb9d4e24936f0126e877733a",
+              "title": "External Sector(part-3)",
+              "duration": "2:00:29",
+              "order": 38
+            },
+            {
+              "videoId": "345c5af6a4834888baea01e5bfd57c06",
+              "title": "External Sector(part-4)",
+              "duration": "1:53:52",
+              "order": 39
+            },
+            {
+              "videoId": "59586d11b56a4cb7854289da69469821",
+              "title": "External Sector(Part -5)",
+              "duration": "2:00:03",
+              "order": 40
+            },
+            {
+              "videoId": "fbf8cc1afa68475ba4bc5a097a237ed6",
+              "title": "External Sector(Part - 6)",
+              "duration": "2:02:10",
+              "order": 41
             }
           ]
         },
@@ -3346,6 +3394,30 @@
               "title": "Treditional Idea",
               "duration": "1:11:00",
               "order": 43
+            },
+            {
+              "videoId": "da20c7761c854e779e561b98770a392f",
+              "title": "Power",
+              "duration": "2:05:44",
+              "order": 44
+            },
+            {
+              "videoId": "0ab6136496624f52beae8cbd114b0091",
+              "title": "Balance of Power",
+              "duration": "2:03:51",
+              "order": 45
+            },
+            {
+              "videoId": "4ba83de1ba3e43edb29181964a123698",
+              "title": "Collective Security",
+              "duration": "2:00:43",
+              "order": 46
+            },
+            {
+              "videoId": "852e3110b6524e51a79dfc759c973d04",
+              "title": "Nato",
+              "duration": "1:55:17",
+              "order": 47
             }
           ]
         }
