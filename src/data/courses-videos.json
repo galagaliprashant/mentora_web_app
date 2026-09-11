@@ -1292,6 +1292,30 @@
               "title": "External Sector(Part - 6)",
               "duration": "2:02:10",
               "order": 41
+            },
+            {
+              "videoId": "604d134020884f828b068949346a013c",
+              "title": "External Sector(WTO)",
+              "duration": "1:55:51",
+              "order": 42
+            },
+            {
+              "videoId": "7ee10fd19b7d4d7d99c36a4c3939f19a",
+              "title": "Growth and Development",
+              "duration": "1:57:27",
+              "order": 43
+            },
+            {
+              "videoId": "b4da72c2499e4ffeaa8b21b9c9eb745e",
+              "title": "Growth and Development(Part -2)",
+              "duration": "2:07:23",
+              "order": 44
+            },
+            {
+              "videoId": "e4345226b7fc4c679ad283ce9e64998f",
+              "title": "Poverty and Unemployment",
+              "duration": "1:24:53",
+              "order": 45
             }
           ]
         },
@@ -2717,6 +2741,30 @@
               "title": "External Sector(Part - 6)",
               "duration": "2:02:10",
               "order": 41
+            },
+            {
+              "videoId": "604d134020884f828b068949346a013c",
+              "title": "External Sector(WTO)",
+              "duration": "1:55:51",
+              "order": 42
+            },
+            {
+              "videoId": "7ee10fd19b7d4d7d99c36a4c3939f19a",
+              "title": "Growth and Development",
+              "duration": "1:57:27",
+              "order": 43
+            },
+            {
+              "videoId": "b4da72c2499e4ffeaa8b21b9c9eb745e",
+              "title": "Growth and Development(Part -2)",
+              "duration": "2:07:23",
+              "order": 44
+            },
+            {
+              "videoId": "e4345226b7fc4c679ad283ce9e64998f",
+              "title": "Poverty and Unemployment",
+              "duration": "1:24:53",
+              "order": 45
             }
           ]
         },
@@ -3418,6 +3466,30 @@
               "title": "Nato",
               "duration": "1:55:17",
               "order": 47
+            },
+            {
+              "videoId": "1f0d07b705ef4d01b904ca294c462ba0",
+              "title": "Deterrence",
+              "duration": "2:00:27",
+              "order": 48
+            },
+            {
+              "videoId": "fe8ecab4f6004bb280157499c4e91c09",
+              "title": "Transnational actors",
+              "duration": "2:04:42",
+              "order": 49
+            },
+            {
+              "videoId": "48accb668235436683ddb637173f6f9f",
+              "title": "Transnational actors",
+              "duration": "2:13:15",
+              "order": 50
+            },
+            {
+              "videoId": "caa6d0d2682b44758ce4aef2cc9f47b5",
+              "title": "Cold War",
+              "duration": "2:02:52",
+              "order": 51
             }
           ]
         }
