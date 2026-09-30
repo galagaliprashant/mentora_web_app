@@ -11,6 +11,15 @@ interface VideoEntry {
   title: string;
   duration: string;
   order: number;
+  addedAt?: string; // ISO timestamp; shows a "New" badge for 24h after this
+}
+
+const NEW_BADGE_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+function isNewVideo(video: VideoEntry): boolean {
+  if (!video.addedAt) return false;
+  const age = Date.now() - Date.parse(video.addedAt);
+  return age >= 0 && age < NEW_BADGE_WINDOW_MS;
 }
 
 interface Subject {
@@ -329,7 +338,7 @@ function renderVideoList(courseId: string, subjectId: string) {
     html += `
       <a href="#video/${courseId}/${video.videoId}" class="video-list__item">
         <span class="video-list__order">${video.order}</span>
-        <span class="video-list__title">${video.title}</span>
+        <span class="video-list__title">${video.title}${isNewVideo(video) ? ' <span class="video-list__new">New</span>' : ''}</span>
         <span class="video-list__duration"><i class="fas fa-clock"></i> ${video.duration}</span>
       </a>
     `;
