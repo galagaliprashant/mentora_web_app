@@ -22,6 +22,16 @@ function isNewVideo(video: VideoEntry): boolean {
   return age >= 0 && age < NEW_BADGE_WINDOW_MS;
 }
 
+function subjectHasNew(subject: Subject): boolean {
+  return subject.videos.some(isNewVideo);
+}
+
+function courseHasNew(course: Course): boolean {
+  return course.subjects.some(subjectHasNew);
+}
+
+const NEW_BADGE = ' <span class="new-badge">New</span>';
+
 interface Subject {
   subjectId: string;
   displayName: string;
@@ -172,7 +182,7 @@ function renderCourseGrid() {
       <a href="${href}" class="course-card ${statusClass}" ${dataAttr}>
         ${badge}
         <div class="course-card__icon"><i class="${course.icon}"></i></div>
-        <h3 class="course-card__title">${course.displayName}</h3>
+        <h3 class="course-card__title">${course.displayName}${courseHasNew(course) ? NEW_BADGE : ''}</h3>
         <p class="course-card__desc">${course.description}</p>
         <span class="course-card__count">${course.subjects.length} subject${course.subjects.length !== 1 ? 's' : ''}</span>
       </a>
@@ -220,7 +230,7 @@ function renderClassTypeView(courseId: string) {
       </a>
       <a href="#course/${courseId}/recorded" class="subject-card">
         <div class="subject-card__icon"><i class="fas fa-photo-video"></i></div>
-        <h3 class="subject-card__title">Recorded Classes</h3>
+        <h3 class="subject-card__title">Recorded Classes${courseHasNew(course) ? NEW_BADGE : ''}</h3>
         <span class="subject-card__count">${course.subjects.length} subject${course.subjects.length !== 1 ? 's' : ''}</span>
       </a>
     </div>
@@ -298,7 +308,7 @@ function renderSubjectList(courseId: string) {
     html += `
       <a href="#course/${courseId}/recorded/${subject.subjectId}" class="subject-card">
         <div class="subject-card__icon"><i class="${subject.icon}"></i></div>
-        <h3 class="subject-card__title">${subject.displayName}</h3>
+        <h3 class="subject-card__title">${subject.displayName}${subjectHasNew(subject) ? NEW_BADGE : ''}</h3>
         <span class="subject-card__count">${subject.videos.length} video${subject.videos.length !== 1 ? 's' : ''}</span>
       </a>
     `;
@@ -338,7 +348,7 @@ function renderVideoList(courseId: string, subjectId: string) {
     html += `
       <a href="#video/${courseId}/${video.videoId}" class="video-list__item">
         <span class="video-list__order">${video.order}</span>
-        <span class="video-list__title">${video.title}${isNewVideo(video) ? ' <span class="video-list__new">New</span>' : ''}</span>
+        <span class="video-list__title">${video.title}${isNewVideo(video) ? NEW_BADGE : ''}</span>
         <span class="video-list__duration"><i class="fas fa-clock"></i> ${video.duration}</span>
       </a>
     `;
