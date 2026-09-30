@@ -1413,6 +1413,20 @@ img {
   color: #1f2937;
 }
 
+.video-list__new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: var(--orange, #f97316);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  vertical-align: middle;
+}
+
 .video-list__duration {
   font-size: 0.8rem;
   color: #9ca3af;

@@ -190,6 +190,13 @@
               "title": "Pollution II",
               "duration": "1:26:27",
               "order": 30
+            },
+            {
+              "videoId": "301702dfe2a34b2eace7fdbc3ad2b57e",
+              "title": "Climate Change",
+              "duration": "17:23",
+              "order": 31,
+              "addedAt": "2026-09-30T10:22:12Z"
             }
           ]
         },
@@ -1663,6 +1670,13 @@
               "title": "Pollution II",
               "duration": "1:26:27",
               "order": 30
+            },
+            {
+              "videoId": "301702dfe2a34b2eace7fdbc3ad2b57e",
+              "title": "Climate Change",
+              "duration": "17:23",
+              "order": 31,
+              "addedAt": "2026-09-30T10:22:12Z"
             }
           ]
         },
