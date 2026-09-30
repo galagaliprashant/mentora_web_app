@@ -1425,6 +1425,13 @@ img {
   text-transform: uppercase;
   letter-spacing: .5px;
   vertical-align: middle;
+  animation: livePulse 1.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-list__new {
+    animation: none;
+  }
 }
 
 .video-list__duration {
