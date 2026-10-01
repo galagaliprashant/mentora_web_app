@@ -8,6 +8,7 @@ export default tseslint.config(
   {
     ignores: [
       'dist/**',
+      'android/**',
       'node_modules/**',
       'scripts/**',
       '*.config.js',

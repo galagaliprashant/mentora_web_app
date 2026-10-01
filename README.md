@@ -197,3 +197,18 @@ mentora_web_app/
 ---
 
 <p align="center">Copyright © 2025 Mentora IAS. All Rights Reserved.</p>
+
+## Android app
+
+The Android app wraps this same web build with [Capacitor](https://capacitorjs.com) (`capacitor.config.ts`, native project in `android/`). It opens on **My Courses** (`/videos.html`), blocks screenshots/screen recording, plays videos fullscreen in landscape, and hides the admin link.
+
+**Getting the APK:** every push to the `android-app` branch runs `.github/workflows/android.yml`, which builds `app-debug.apk` and attaches it to the run under **Actions → Android APK → Artifacts**. The workflow needs the six `VITE_FIREBASE_*` values from `.env.example` added as repository secrets (Settings → Secrets and variables → Actions).
+
+**Building locally** (needs Android Studio / Android SDK):
+
+```bash
+npm run build && npx cap sync android
+cd android && ./gradlew assembleDebug   # → app/build/outputs/apk/debug/app-debug.apk
+```
+
+App icon and splash sources live in `assets/`; regenerate with `npx capacitor-assets generate --android`.

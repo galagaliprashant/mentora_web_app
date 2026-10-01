@@ -1,3 +1,4 @@
+import './native';
 import './style.css';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, type User } from 'firebase/auth';

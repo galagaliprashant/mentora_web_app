@@ -5899,3 +5899,9 @@ img {
     font-size: 1.35rem;
   }
 }
+
+/* ===== ANDROID APP ===== */
+/* The admin dashboard stays web-only. */
+.is-native-app .top-bar__admin {
+  display: none !important;
+}
