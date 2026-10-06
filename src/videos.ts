@@ -82,35 +82,25 @@ function getLiveId(courseId: string): string {
 // ===== YOUTUBE LIVE BACKEND =====
 // Live backend config is stored per course in Firestore at courses/{courseId}:
 //   { isYoutube: boolean, youtubeLiveId: string }
-// The admin "Upload Videos" tab writes these fields. If isYoutube is true and a
-// youtubeLiveId is set, the live view uses YouTube; otherwise it falls back to
-// the VdoCipher live stream.
+// The admin "Upload Videos" tab writes these fields. Only if isYoutube is true
+// and a youtubeLiveId is set does the live view use YouTube; otherwise (no
+// config, or a read error) it uses the VdoCipher live stream.
 interface LiveConfig {
   isYoutube: boolean;
   youtubeLiveId: string;
 }
 
-// Default placeholder: until an admin syncs a real link, every course telecasts
-// this YouTube video. https://www.youtube.com/watch?v=5Jxcod4OI4s
-const PLACEHOLDER_YOUTUBE_LIVE_ID = '5Jxcod4OI4s';
-
 async function fetchLiveConfig(courseId: string): Promise<LiveConfig> {
   try {
     const snap = await getDoc(doc(db, 'courses', courseId));
     const data = snap.exists() ? snap.data() : {};
-    // If the admin has set an explicit config, use it; otherwise default to the
-    // YouTube placeholder for all courses.
-    const hasConfig = typeof data.isYoutube === 'boolean';
-    if (hasConfig) {
-      return {
-        isYoutube: data.isYoutube === true,
-        youtubeLiveId: typeof data.youtubeLiveId === 'string' ? data.youtubeLiveId : '',
-      };
-    }
-    return { isYoutube: true, youtubeLiveId: PLACEHOLDER_YOUTUBE_LIVE_ID };
+    return {
+      isYoutube: data.isYoutube === true,
+      youtubeLiveId: typeof data.youtubeLiveId === 'string' ? data.youtubeLiveId : '',
+    };
   } catch {
-    // On any read error, fall back to the YouTube placeholder.
-    return { isYoutube: true, youtubeLiveId: PLACEHOLDER_YOUTUBE_LIVE_ID };
+    // On any read error, fall back to VdoCipher.
+    return { isYoutube: false, youtubeLiveId: '' };
   }
 }
 
