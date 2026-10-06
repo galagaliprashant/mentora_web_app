@@ -104,10 +104,6 @@ interface LiveConfig {
   youtubeLiveUrl: string;
 }
 
-// Default placeholder shown for any course an admin hasn't synced yet. Mirrors
-// PLACEHOLDER_YOUTUBE_LIVE_ID in videos.ts. https://www.youtube.com/watch?v=5Jxcod4OI4s
-const PLACEHOLDER_YOUTUBE_URL = 'https://www.youtube.com/watch?v=5Jxcod4OI4s';
-
 let allEnrollments: EnrollmentData[] = [];
 let allEnquiries: EnquiryData[] = [];
 let userMap: Map<string, UserInfo> = new Map();
@@ -618,14 +614,11 @@ async function fetchLiveConfigs() {
     COURSES.map(async (c) => {
       const snap = await getDoc(doc(db, 'courses', c.courseId));
       const data = snap.exists() ? snap.data() : {};
-      const hasConfig = typeof data.isYoutube === 'boolean';
       liveConfigs.set(c.courseId, {
-        // Unsynced courses default to the YouTube placeholder.
-        isYoutube: hasConfig ? data.isYoutube === true : true,
+        // Unsynced courses default to VdoCipher.
+        isYoutube: data.isYoutube === true,
         youtubeLiveId: typeof data.youtubeLiveId === 'string' ? data.youtubeLiveId : '',
-        youtubeLiveUrl: hasConfig
-          ? (typeof data.youtubeLiveUrl === 'string' ? data.youtubeLiveUrl : '')
-          : PLACEHOLDER_YOUTUBE_URL,
+        youtubeLiveUrl: typeof data.youtubeLiveUrl === 'string' ? data.youtubeLiveUrl : '',
       });
     })
   );
