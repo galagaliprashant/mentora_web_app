@@ -306,6 +306,30 @@
               "title": "POLLUTION_43(Part-3)",
               "duration": "1:34:12",
               "order": 48
+            },
+            {
+              "videoId": "d3cea08ff95d4da8be1d1c9b913b2427",
+              "title": "WaterPollution",
+              "duration": "1:54:47",
+              "order": 49
+            },
+            {
+              "videoId": "0fd305cc182746bf9453b61cd8f407e3",
+              "title": "Waste management",
+              "duration": "2:21:39",
+              "order": 50
+            },
+            {
+              "videoId": "0960feba2cdc4b3dae195dbcced0ce03",
+              "title": "Waste management",
+              "duration": "2:18:52",
+              "order": 51
+            },
+            {
+              "videoId": "91503b735d934b72bf68fa3b4b1cf15b",
+              "title": "Waste management",
+              "duration": "1:59:26",
+              "order": 52
             }
           ]
         },
@@ -1584,6 +1608,31 @@
               "title": "Invertebrate",
               "duration": "1:23:54",
               "order": 7
+            }
+          ]
+        },
+        {
+          "subjectId": "polity",
+          "displayName": "Polity",
+          "icon": "fas fa-scale-balanced",
+          "videos": [
+            {
+              "videoId": "648c985bf48b4b58bd8d6cdb5bf89982",
+              "title": "Introduction Polity Class",
+              "duration": "1:40:26",
+              "order": 1
+            },
+            {
+              "videoId": "703532519bbf4e10a2ce4ef359bab136",
+              "title": "Historical background of Indian Constitution",
+              "duration": "1:47:25",
+              "order": 2
+            },
+            {
+              "videoId": "ee3bd3c54d3642deba17922525f2e7d0",
+              "title": "Historical background of Indian Constitution",
+              "duration": "4:11:34",
+              "order": 3
             }
           ]
         }
@@ -1895,6 +1944,30 @@
               "title": "POLLUTION_43(Part-3)",
               "duration": "1:34:12",
               "order": 48
+            },
+            {
+              "videoId": "d3cea08ff95d4da8be1d1c9b913b2427",
+              "title": "WaterPollution",
+              "duration": "1:54:47",
+              "order": 49
+            },
+            {
+              "videoId": "0fd305cc182746bf9453b61cd8f407e3",
+              "title": "Waste management",
+              "duration": "2:21:39",
+              "order": 50
+            },
+            {
+              "videoId": "0960feba2cdc4b3dae195dbcced0ce03",
+              "title": "Waste management",
+              "duration": "2:18:52",
+              "order": 51
+            },
+            {
+              "videoId": "91503b735d934b72bf68fa3b4b1cf15b",
+              "title": "Waste management",
+              "duration": "1:59:26",
+              "order": 52
             }
           ]
         },
@@ -3173,6 +3246,31 @@
               "title": "Invertebrate",
               "duration": "1:23:54",
               "order": 7
+            }
+          ]
+        },
+        {
+          "subjectId": "polity",
+          "displayName": "Polity",
+          "icon": "fas fa-scale-balanced",
+          "videos": [
+            {
+              "videoId": "648c985bf48b4b58bd8d6cdb5bf89982",
+              "title": "Introduction Polity Class",
+              "duration": "1:40:26",
+              "order": 1
+            },
+            {
+              "videoId": "703532519bbf4e10a2ce4ef359bab136",
+              "title": "Historical background of Indian Constitution",
+              "duration": "1:47:25",
+              "order": 2
+            },
+            {
+              "videoId": "ee3bd3c54d3642deba17922525f2e7d0",
+              "title": "Historical background of Indian Constitution",
+              "duration": "4:11:34",
+              "order": 3
             }
           ]
         }
