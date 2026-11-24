@@ -1693,6 +1693,18 @@
               "title": "Parliament of India",
               "duration": "3:23:16",
               "order": 6
+            },
+            {
+              "videoId": "8b6f744bb50240ea979c12bee9531de9",
+              "title": "Parliament of India",
+              "duration": "1:56:09",
+              "order": 7
+            },
+            {
+              "videoId": "61d7c6fd09c54f23b27d83e44bf998bc",
+              "title": "Parliament of India",
+              "duration": "2:50:23",
+              "order": 8
             }
           ]
         },
@@ -1718,6 +1730,36 @@
               "title": "Determinants of ethics Class 3",
               "duration": "2:42:46",
               "order": 3
+            },
+            {
+              "videoId": "cda05dd48f57469887c8e9e72f538404",
+              "title": "Dimensions of Ethics",
+              "duration": "2:24:06",
+              "order": 4
+            },
+            {
+              "videoId": "a77210bb9ff248b4abec4a89013c057d",
+              "title": "dimension of ethics",
+              "duration": "1:57:25",
+              "order": 5
+            },
+            {
+              "videoId": "a2182853c84f4c99bd6af9d2a97f9d1b",
+              "title": "Ethics Class 6",
+              "duration": "2:40:54",
+              "order": 6
+            },
+            {
+              "videoId": "200b6ef88485441c82f84f29a4bc8db2",
+              "title": "Ethics in Human action",
+              "duration": "1:59:48",
+              "order": 7
+            },
+            {
+              "videoId": "81e7d175b5644e25983dfbd7296cb8a3",
+              "title": "Ethics in Public and Private Relationship",
+              "duration": "2:25:26",
+              "order": 8
             }
           ]
         }
@@ -3416,6 +3458,18 @@
               "title": "Parliament of India",
               "duration": "3:23:16",
               "order": 6
+            },
+            {
+              "videoId": "8b6f744bb50240ea979c12bee9531de9",
+              "title": "Parliament of India",
+              "duration": "1:56:09",
+              "order": 7
+            },
+            {
+              "videoId": "61d7c6fd09c54f23b27d83e44bf998bc",
+              "title": "Parliament of India",
+              "duration": "2:50:23",
+              "order": 8
             }
           ]
         },
@@ -3441,6 +3495,36 @@
               "title": "Determinants of ethics Class 3",
               "duration": "2:42:46",
               "order": 3
+            },
+            {
+              "videoId": "cda05dd48f57469887c8e9e72f538404",
+              "title": "Dimensions of Ethics",
+              "duration": "2:24:06",
+              "order": 4
+            },
+            {
+              "videoId": "a77210bb9ff248b4abec4a89013c057d",
+              "title": "dimension of ethics",
+              "duration": "1:57:25",
+              "order": 5
+            },
+            {
+              "videoId": "a2182853c84f4c99bd6af9d2a97f9d1b",
+              "title": "Ethics Class 6",
+              "duration": "2:40:54",
+              "order": 6
+            },
+            {
+              "videoId": "200b6ef88485441c82f84f29a4bc8db2",
+              "title": "Ethics in Human action",
+              "duration": "1:59:48",
+              "order": 7
+            },
+            {
+              "videoId": "81e7d175b5644e25983dfbd7296cb8a3",
+              "title": "Ethics in Public and Private Relationship",
+              "duration": "2:25:26",
+              "order": 8
             }
           ]
         }
@@ -4222,6 +4306,12 @@
               "title": "Introduction of Political Theory",
               "duration": "1:52:01",
               "order": 81
+            },
+            {
+              "videoId": "82929243487a4684a17cca2cf4f4eaec",
+              "title": "(Rights)",
+              "duration": "1:56:22",
+              "order": 82
             }
           ]
         }
