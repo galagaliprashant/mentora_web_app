@@ -1760,6 +1760,43 @@
               "title": "Ethics in Public and Private Relationship",
               "duration": "2:25:26",
               "order": 8
+            },
+            {
+              "videoId": "7b1426c896fb4b08ae68b8507159ba8d",
+              "title": "Human Values",
+              "duration": "2:41:51",
+              "order": 9
+            }
+          ]
+        },
+        {
+          "subjectId": "science_technology",
+          "displayName": "Science & Technology",
+          "icon": "fas fa-microchip",
+          "videos": [
+            {
+              "videoId": "67679fd00ac245cc8daead29dc835ef4",
+              "title": "Basic Science & Technology",
+              "duration": "1:09:42",
+              "order": 1
+            },
+            {
+              "videoId": "c5a5514bc74c44258de8914d421781f2",
+              "title": "Biotechnology",
+              "duration": "2:06:12",
+              "order": 2
+            },
+            {
+              "videoId": "32b835a108d743b7b8419021392b4625",
+              "title": "Branches of Biotechnology",
+              "duration": "2:02:36",
+              "order": 3
+            },
+            {
+              "videoId": "c838d936b372477da1afbdd4d7a7a008",
+              "title": "Biotechnology",
+              "duration": "1:52:06",
+              "order": 4
             }
           ]
         }
@@ -3525,6 +3562,43 @@
               "title": "Ethics in Public and Private Relationship",
               "duration": "2:25:26",
               "order": 8
+            },
+            {
+              "videoId": "7b1426c896fb4b08ae68b8507159ba8d",
+              "title": "Human Values",
+              "duration": "2:41:51",
+              "order": 9
+            }
+          ]
+        },
+        {
+          "subjectId": "science_technology",
+          "displayName": "Science & Technology",
+          "icon": "fas fa-microchip",
+          "videos": [
+            {
+              "videoId": "67679fd00ac245cc8daead29dc835ef4",
+              "title": "Basic Science & Technology",
+              "duration": "1:09:42",
+              "order": 1
+            },
+            {
+              "videoId": "c5a5514bc74c44258de8914d421781f2",
+              "title": "Biotechnology",
+              "duration": "2:06:12",
+              "order": 2
+            },
+            {
+              "videoId": "32b835a108d743b7b8419021392b4625",
+              "title": "Branches of Biotechnology",
+              "duration": "2:02:36",
+              "order": 3
+            },
+            {
+              "videoId": "c838d936b372477da1afbdd4d7a7a008",
+              "title": "Biotechnology",
+              "duration": "1:52:06",
+              "order": 4
             }
           ]
         }
@@ -4312,6 +4386,24 @@
               "title": "(Rights)",
               "duration": "1:56:22",
               "order": 82
+            },
+            {
+              "videoId": "a71efe5ad478433cac00690e29042015",
+              "title": "Human Rights",
+              "duration": "1:51:51",
+              "order": 83
+            },
+            {
+              "videoId": "7a39979de85c43df9e49623e3af79e9a",
+              "title": "Democracy",
+              "duration": "1:57:20",
+              "order": 84
+            },
+            {
+              "videoId": "f0faf45446124205b9a28f1cb23bea85",
+              "title": "Democracy-2",
+              "duration": "1:33:19",
+              "order": 85
             }
           ]
         }
